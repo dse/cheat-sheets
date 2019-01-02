@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+	    <meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+	    <title>[PAGE TITLE] | [SITE NAME]</title>
+        <link rel="canonical" href="...">
+		<link rel="stylesheet" href="...">
+	    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+	                 integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+	                 crossorigin="anonymous"></script>
+    </head>
+    <body>
+	    <h1>...</h1>
+	    <p>...</p>
+    </body>
+</html>
+<!-- Local Variables: -->
+<!-- mode: web -->
+<!-- End: -->
