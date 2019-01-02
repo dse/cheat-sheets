@@ -24,28 +24,28 @@ Details: <https://css-tricks.com/snippets/css/a-guide-to-flexbox/>
     flex-flow: <flex-direction> <flex-wrap>; /* default: row nowrap */
 
     /* alignment and distribution of space along main axis */
-    justify-content: flex-start;        /* default */
-                     flex-end;
-                     center;
-                     space-between;
-                     space-around;
-                     space-evenly;
+    justify-content: flex-start;        /* |[XXX][XXX][XXX]            | def. */
+                     flex-end;          /* |            [XXX][XXX][XXX]| */
+                     center;            /* |      [XXX][XXX][XXX]      | */
+                     space-between;     /* |[XXX]      [XXX]      [XXX]| */
+                     space-around;      /* |  [XXX]    [XXX]    [XXX]  | */
+                     space-evenly;      /* |   [XXX]   [XXX]   [XXX]   | */
 
     /* alignment along cross axis */
     align-items: flex-start;
                  flex-end;
                  center;
                  baseline;
-                 stretch;
+                 stretch;               /* default */
 
-    /* for multiple rows, alignment and distribution of space
-       along cross axis */
-    align-content: flex-start;          /* default */
-                   flex-end;
-                   center;
-                   stretch;
-                   space-between;
-                   space-around;
+    /* for multiple rows, alignment and distribution of space along
+       cross axis */
+    align-content: flex-start;          /* |[XXX][XXX][XXX]            | */
+                   flex-end;            /* |            [XXX][XXX][XXX]| */
+                   center;              /* |      [XXX][XXX][XXX]      | */
+                   space-between;       /* |[XXX]      [XXX]      [XXX]| */
+                   space-around;        /* |  [XXX]    [XXX]    [XXX]  | */
+                   stretch;             /* |[XXXXXXX][XXXXXXX][XXXXXXX]| def. */
 
 }
 ````
