@@ -38,8 +38,8 @@ Details: <https://css-tricks.com/snippets/css/a-guide-to-flexbox/>
                  baseline;
                  stretch;
 
-    /* alignment and distribution of space along cross axis,
-       for multiple rows */
+    /* for multiple rows, alignment and distribution of space
+       along cross axis */
     align-content: flex-start;          /* default */
                    flex-end;
                    center;
