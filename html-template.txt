@@ -12,8 +12,13 @@
                      crossorigin="anonymous"></script>
     </head>
     <body>
+
         <h1>...</h1>
+
         <p>...</p>
+
+        <script src="..."></script>
+
     </body>
 </html>
 <!-- Local Variables: -->
