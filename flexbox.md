@@ -24,12 +24,12 @@ Details: <https://css-tricks.com/snippets/css/a-guide-to-flexbox/>
     flex-flow: <flex-direction> <flex-wrap>; /* default: row nowrap */
 
     /* alignment and distribution of space along main axis */
-    justify-content: flex-start;        /* |[XXX][XXX][XXX]            | def. */
-                     flex-end;          /* |            [XXX][XXX][XXX]| */
-                     center;            /* |      [XXX][XXX][XXX]      | */
-                     space-between;     /* |[XXX]      [XXX]      [XXX]| */
-                     space-around;      /* |  [XXX]    [XXX]    [XXX]  | */
-                     space-evenly;      /* |   [XXX]   [XXX]   [XXX]   | */
+    justify-content: flex-start;        /* |[X][X][X]            | default */
+                     flex-end;          /* |            [X][X][X]| */
+                     center;            /* |      [X][X][X]      | */
+                     space-between;     /* |[X]      [X]      [X]| */
+                     space-around;      /* |  [X]    [X]    [X]  | */
+                     space-evenly;      /* |   [X]   [X]   [X]   | */
 
     /* alignment along cross axis */
     align-items: flex-start;
@@ -40,12 +40,12 @@ Details: <https://css-tricks.com/snippets/css/a-guide-to-flexbox/>
 
     /* for multiple rows, alignment and distribution of space along
        cross axis */
-    align-content: flex-start;          /* |[XXX][XXX][XXX]            | */
-                   flex-end;            /* |            [XXX][XXX][XXX]| */
-                   center;              /* |      [XXX][XXX][XXX]      | */
-                   space-between;       /* |[XXX]      [XXX]      [XXX]| */
-                   space-around;        /* |  [XXX]    [XXX]    [XXX]  | */
-                   stretch;             /* |[XXXXXXX][XXXXXXX][XXXXXXX]| def. */
+    align-content: flex-start;          /* |[X][X][X]            | */
+                   flex-end;            /* |            [X][X][X]| */
+                   center;              /* |      [X][X][X]      | */
+                   space-between;       /* |[X]      [X]      [X]| */
+                   space-around;        /* |  [X]    [X]    [X]  | */
+                   stretch;             /* |[XXXXX][XXXXX][XXXXX]| default */
 
 }
 ````
