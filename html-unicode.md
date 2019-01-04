@@ -28,6 +28,13 @@ In HTML:
 | `’`       |    U+2019 | RIGHT SINGLE QUOTATION MARK |    8217 | `&rsquo;` |
 | `“`       |    U+201C | LEFT DOUBLE QUOTATION MARK  |    8220 | `&ldquo;` |
 | `”`       |    U+201D | RIGHT DOUBLE QUOTATION MARK |    8221 | `&rdquo;` |
+
+-   Use RIGHT SINGLE QUOTATION MARK as an apostrophe.
+    -   Example: isn’t, cf. isn't
+    -   Example: wouldn’t’ve, cf. wouldn't've
+
+| Character | Codepoint | Name                        | Decimal | HTML      |
+|:---------:|----------:|:----------------------------|--------:|:---------:|
 | `–`       |    U+2013 | EN DASH                     |    8211 | `&ndash;` |
 | `—`       |    U+2014 | EM DASH                     |    8212 | `&mdash;` |
 
@@ -56,7 +63,6 @@ In HTML:
 -   Examples:
     -   5′10″ tall; cf. 5'10" tall
     -   38°24′30″ N; cf. 38°24'30" N
-
 
 | Character | Codepoint | Name            | Decimal | HTML      |
 |:---------:|----------:|:----------------|--------:|:---------:|
