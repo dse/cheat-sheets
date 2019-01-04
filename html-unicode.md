@@ -1,5 +1,7 @@
 # Entering Unicode in HTML
 
+## HTML Special Characters
+
 | Character | Codepoint | Name              | Decimal | HTML     |
 |:---------:|----------:|:------------------|--------:|:--------:|
 | `<`       |    U+003C | LESS-THAN SIGN    | `&#60;` | `&lt;`   |
@@ -7,6 +9,13 @@
 | `&`       |    U+0026 | AMPERSAND         | `&#38;` | `&amp;`  |
 | `'`       |    U+0027 | APOSTROPHE        | `&#39;` | `&#39;`  |
 | `"`       |    U+0022 | QUOTATION MARK    | `&#34;` | `&quot;` |
+
+In HTML:
+-   You only need to escape `"` in double-quoted values containing `"`, i.e., `value="&quot;"`.
+-   You only need to escape `'` in double-quoted values containing `'`, i.e., `value='&#39;'`.
+-   You **must** escape `<`, `>`, and `&`.
+
+## Typographic Symbols
 
 | Character | Codepoint | Name                      | Decimal  | HTML       |
 |:---------:|----------:|:--------------------------|---------:|:----------:|
@@ -22,6 +31,10 @@
 | `–`       |    U+2013 | EN DASH                     | `&#8211;` | `&ndash;` |
 | `—`       |    U+2014 | EM DASH                     | `&#8212;` | `&mdash;` |
 
+-   Use the EN DASH for numeric ranges and other purposes.
+    -   Example: Hours 8am – 5pm; cf. 8am - 5pm
+-   Use the EM DASH for sentence interruptions and other purposes.
+
 | Character | Codepoint | Name                | Decimal   | HTML       |
 |:---------:|----------:|:--------------------|----------:|:----------:|
 | `−`       |    U+2212 | MINUS SIGN          | `&#8722;` | `&minus;`  |
@@ -30,10 +43,20 @@
 | `±`       |    U+00B1 | PLUS-MINUS SIGN     |  `&#177;` | `&plusmn;` |
 | `≠`       |    U+2260 | NOT EQUAL TO        | `&#8800;` | `&ne;`     |
 
+-   Use the MINUS SIGN as a counterpart to the plus sign, and to represent negative numbers.
+    -   Example: 5 − 8 = −3; cf. 5 - 8 = -3
+
 | Character | Codepoint | Name         | Decimal   | HTML      |
 |:---------:|----------:|:-------------|----------:|:---------:|
 | `′`       |    U+2032 | PRIME        | `&#8242;` | `&prime;` |
 | `″`       |    U+2033 | DOUBLE PRIME | `&#8243;` | `&Prime;` |
+
+-   Use PRIME to represent feet, or minutes.
+-   Use DOUBLE PRIME to represent inches, or seconds.
+-   Examples:
+    -   5′10″ tall; cf. 5'10" tall
+    -   38°24′30″ N; cf. 38°24'30" N
+
 
 | Character | Codepoint | Name            | Decimal   | HTML      |
 |:---------:|----------:|:----------------|----------:|:---------:|
