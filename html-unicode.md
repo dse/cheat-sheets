@@ -51,7 +51,7 @@ In HTML:
 | `≠`       |    U+2260 | NOT EQUAL TO        |    8800 | `&ne;`     |
 
 -   Use the MINUS SIGN as a counterpart to the plus sign, and to represent negative numbers.
-    -   Example: 5 − 8 = −3; cf. 5 - 8 = -3
+    -   Example: 5 − 8 + 2 = −1; cf. 5 - 8 + 2 = -1
 
 | Character | Codepoint | Name         | Decimal | HTML      |
 |:---------:|----------:|:-------------|--------:|:---------:|
