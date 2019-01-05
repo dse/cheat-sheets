@@ -33,10 +33,11 @@ In HTML:
     -   Example: isn’t, cf. isn't
     -   Example: wouldn’t’ve, cf. wouldn't've
 
-| Character | Codepoint | Name                        | Decimal | HTML      |
-|:---------:|----------:|:----------------------------|--------:|:---------:|
-| `–`       |    U+2013 | EN DASH                     |    8211 | `&ndash;` |
-| `—`       |    U+2014 | EM DASH                     |    8212 | `&mdash;` |
+| Character | Codepoint | Name                        | Decimal | HTML       |
+|:---------:|----------:|:----------------------------|--------:|:----------:|
+| `–`       |    U+2013 | EN DASH                     |    8211 | `&ndash;`  |
+| `—`       |    U+2014 | EM DASH                     |    8212 | `&mdash;`  |
+| `…`       |    U+2026 | HORIZONTAL ELLIPSIS         |    8230 | `&hellip;` |
 
 -   Use the EN DASH for numeric ranges and other purposes.
     -   Example: Hours 8am – 5pm; cf. 8am - 5pm
