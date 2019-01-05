@@ -19,6 +19,7 @@ For detailed Unicode info: `C-u C-x =`
 | `C-x 8 }`            | `”` |    U+201D | RIGHT DOUBLE QUOTATION MARK |
 | `C-x 8 _ n`          | `–` |    U+2013 | EN DASH                     |
 | `C-x 8 _ m`          | `—` |    U+2014 | EM DASH                     |
+| `C-x 8 RET 2026 RET` | `…` |    U+2026 | HORIZONTAL ELLIPSIS         |
 | `C-x 8 _ -`          | `−` |    U+2212 | MINUS SIGN                  |
 | `C-x 8 x`            | `×` |    U+00D7 | MULTIPLICATION SIGN         |
 | `C-x 8 / /`          | `÷` |    U+00F7 | DIVISION SIGN               |
