@@ -28,7 +28,12 @@
 
 That's:
 
--   `]]` - the first part of `]]>`
--   `]]>` - to end a CDATA section
--   `<![CDATA[` - to start a new CDATA section
--   `>` - the last part of `]]>`
+````
+]] ]]> <![CDATA[ >
+11 222 333333333 4
+````
+
+1.  `]]` - the first part of `]]>`
+2.  `]]>` - to end a CDATA section
+3.  `<![CDATA[` - to start a new CDATA section
+4.  `>` - the last part of `]]>`
