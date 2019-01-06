@@ -18,5 +18,5 @@
     </body>
 </html>
 <!-- Local Variables: -->
-<!-- mode: html -->
+<!-- mode: web -->
 <!-- End: -->
