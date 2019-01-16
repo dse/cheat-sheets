@@ -54,6 +54,11 @@ In HTML:
 -   Use the MINUS SIGN as a counterpart to the plus sign, and to represent negative numbers.
     -   Example: 5 − 8 + 2 = −1; cf. 5 - 8 + 2 = -1
 
+| Character | Codepoint | Name             | Decimal | HTML       |
+|:---------:|----------:|:-----------------|--------:|:----------:|
+| ` `       |    U+00A0 | NO-BREAK SPACE   |     160 | `&nbsp;`   |
+| -         |    U+200B | ZERO WIDTH SPACE |    8203 | `&#x200b;` |
+
 | Character | Codepoint | Name         | Decimal | HTML      |
 |:---------:|----------:|:-------------|--------:|:---------:|
 | `′`       |    U+2032 | PRIME        |    8242 | `&prime;` |
@@ -81,3 +86,11 @@ In HTML:
 | Character | Codepoint | Name   | Decimal | HTML     |
 |:---------:|----------:|:-------|--------:|:--------:|
 | `•`       |    U+2022 | BULLET |    8226 | `&bull;` |
+
+| Character | Codepoint | Name              | Decimal | HTML       |
+|:---------:|----------:|:------------------|--------:|:----------:|
+| `†`       |    U+2020 | DAGGER            |    8224 | `&dagger;` |
+| `‡`       |    U+2021 | DOUBLE DAGGER     |    8225 | `&Dagger;` |
+| `¹`       |    U+00B9 | SUPERSCRIPT ONE   |     185 | `&sup1;`   |
+| `²`       |    U+00B2 | SUPERSCRIPT TWO   |     178 | `&sup2;`   |
+| `³`       |    U+00B3 | SUPERSCRIPT THREE |     179 | `&sup3;`   |
