@@ -117,7 +117,7 @@ If `OPTERR` is set to 0, no error messages are displayed even if
 
 ## An Archetypal 'getopts' Example
 
-See [getopts-demo.sh](`getopts-demo.sh`).
+See [`getopts-demo.sh`](getopts-demo.sh).
 
 This example does not illustrate silent error reporting, nor the use
 of `getopts` to parse arguments other than the positional parameters.
@@ -144,7 +144,7 @@ The steroids you add to the above example are as follows:
 
 ### A Long Options Example
 
-See [getopts-long-demo.sh](`getopts-long-demo.sh`).
+See [`getopts-long-demo.sh`](getopts-long-demo.sh).
 
 Limitations are as follows:
 
