@@ -163,6 +163,16 @@ Limitations are as follows:
 
 # Excerpts from bash(1)
 
+The following excerpts are from the man page for GNU Bash.  License
+information follows:
+
+>   GNU bash, version 4.4.12(3)-release (x86_64-unknown-cygwin)<br>
+>   Copyright (C) 2016 Free Software Foundation, Inc.<br>
+>   License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+> 
+>   This is free software; you are free to change and redistribute it.<br>
+>   There is NO WARRANTY, to the extent permitted by law.
+
 ## Parameters
 
 ### Shell Variables
