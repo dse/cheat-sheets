@@ -122,7 +122,7 @@ See [`getopts-demo.sh`](getopts-demo.sh).
 This example does not illustrate silent error reporting, nor the use
 of `getopts` to parse arguments other than the positional parameters.
 
-## Long Options?  You Might As Well Jump off a Cliff.
+## Long Options?  You Might As Well Jump off a Cliff.  But Hey, More Power to You.
 
 You may use `-` as an option character.  You can take advantage of
 this to implement long options for your shell script in a crude
