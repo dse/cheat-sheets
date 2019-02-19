@@ -18,21 +18,27 @@ ANSI-style escape sequences.
     the *de facto* standard used by almost every video terminal or
     terminal emulator in existence to this day.
 
--   [ECMA-48](http://www.ecma-international.org/publications/standards/Ecma-048.htm), 5th Edition, 1991
+-   [ECMA-48](http://www.ecma-international.org/publications/standards/Ecma-048.htm), *Control Functions for Coded Character Sets*, 5th Edition, 1991
 
     The official standard for terminal control sequences.  The first
     edition of ECMA-48, adopted in 1976, was first commercially
     implemented in DEC's VT100 terminal.  (Ecma, originally a European
     body, is now a worldwide standards organization.)
 
-    **ISO/IEC 6429** is the international standards bodies'
-    equiavelent standard.
+-   **ISO/IEC 6429:1992**, *Information technology — Control Functions for Coded Character Sets*
 
--   **ANSI X3.64**, *Additional Controls For Use With American National Standard Code for Information Interchange*
+    This is the international standards bodies' equiavelent standard.
+
+    If you really want to [purchase a copy](https://www.iso.org/standard/12782.html), then more power to you.
+
+-   **ANSI X3.64-1979**, *Additional Controls For Use With American National Standard Code for Information Interchange*
 
     This was the American standards body's version of the standard.
-    Adopted in 1979 and withdrawn in 1994 in favor of ECMA-48, it is
+    Adopted in 1979, and withdrawn in 1994 in favor of ECMA-48, it is
     why these are frequently called "ANSI escape sequences".
+
+    If you really want to purchase a copy of this **historical standard**,
+    [you can do so](https://www.browntechnical.org/products/ansi-x3-64-1979-historical-edition-american-national-standard-additional-controls-for-use-with-american-national-standard-code-for-information-interchange.html).
 
 -   `terminfo(5)` is the Un*x man page describing the terminfo
     capability database.  Most if not all terminal capabilities listed
