@@ -68,6 +68,10 @@ Notes:
     visual separation are `- . ( )`.  We also allow spaces, though
     `tel:` URIs do not.
 
+    We may consider allowing additional punctuation, though it will
+    significantly increase the length of the regular expression:
+    `,/[]{}`
+
 -   Whitespace at permissible points in the string shall be allowed.
 
 -   This regular expression **does not** check the ten-digit phone
@@ -79,7 +83,8 @@ the following:
 
     <input type="tel" inputmode="tel" name="phone-number" value=""
            pattern="[\-\.\(\)\s]*(?:[Tt][Ee][Ll]:[\-\.\(\)\s]*)?(?:(?:\+[\-\.\(\)\s]*)?1[\-\.\(\)\s]*)?(\d{3})[\-\.\(\)\s]*(\d{3})[\-\.\(\)\s]*(\d{4})[\-\.\(\)\s]*(?:\;.*)"
-           data-pattern-mismatch="Please enter a valid phone number including area code.  Example: 555-555-5555">
+           data-value-missing="Please enter a phone number."
+           data-pattern-mismatch="Please enter a valid 10-digit phone number including area code.  Example: 555-555-5555">
 
 Note that we had to fix `tel:` because `pattern` attributes cannot be
 interpreted case-insensitively.
