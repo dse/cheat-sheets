@@ -136,5 +136,10 @@ URI.
     and 18 other countries primarily in North America, including the
     Caribbean.
 
+-   [LincMad's site](http://lincmad.com/), containing literally
+    everything you could possibly know about North American (Numbering
+    Plan) telephone numbers and their history.  I included this just
+    for fun.  Totally not to lead you down an Internet rabbit hole.
+
 -   [libphonenumber](https://github.com/googlei18n/libphonenumber),
-    Google's phone number parsing library
+    Google's phone number parsing library.
