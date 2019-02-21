@@ -36,6 +36,7 @@ The following common formats, and numerous variants, are allowed:
     1-502-555-1212
     +1 (502) 555-1212
     502.555.1212
+    tel:+1-502-555-1212
 
 Notes:
 
