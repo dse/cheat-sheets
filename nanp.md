@@ -29,23 +29,25 @@ It is broken down thusly for readability:
         [\-\.\(\)\s]*
     $/i
 
--   The following common formats, and numerous variants, are allowed:
+The following common formats, and numerous variants, are allowed:
 
-        1-502-555-1212
-        +1 (502) 555-1212
-        502-555-1212
-        5025551212
-        502.555.1212
+    502-555-1212
+    5025551212
+    1-502-555-1212
+    +1 (502) 555-1212
+    502.555.1212
 
--   The capturing subgroups save the first three, next four, and last
-    three digits of the telephone number.  No other subgroups are
-    captured.
+Notes:
+
+-   The capturing subgroups save the groups of the first three, next
+    four, and last three digits of the telephone number.  No other
+    subgroups are captured.
 
 -   The `tel:` prefix is optional, and shall be allowed, for
     copy/paste convenience.
 
 -   A `+1` or `1` prefix is optional, and shall be allowed, before the
-    ten-digit phone number.
+    ten-digit phone number, to allow an E.123 notated phone number.
 
 -   Any permissible punctuation between the groups of three digits,
     and between the optional +1 prefix and the area code, shall be
@@ -99,17 +101,19 @@ Future possibilities:
     the first non-visual-separator character after the phone number
     shall **not** be a digit.
 
-## Sources
+## Sources and Resources
 
 -   [RFC 3966: The tel URI for Telephone Numbers](https://tools.ietf.org/html/rfc3966)
 
-## Resources
+-   [E.123](https://en.wikipedia.org/wiki/E.123), Notation for national and international telephone numbers, e-mail addresses and Web addresses
 
--   [libphonenumber](https://github.com/googlei18n/libphonenumber),
-    Google's phone number parsing library
+-   [E.164](https://en.wikipedia.org/wiki/E.164), The international public telecommunication numbering plan
 
 -   The
     [North American Numbering Plain](https://en.wikipedia.org/wiki/North_American_Numbering_Plan) is
     the telephone numbering plan used by the United States, Canada,
     and 18 other countries primarily in North America, including the
     Caribbean.
+
+-   [libphonenumber](https://github.com/googlei18n/libphonenumber),
+    Google's phone number parsing library
