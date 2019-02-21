@@ -11,12 +11,13 @@ format, and most others, within reason.
 It is broken down thusly for readability:
 
     /^
-        [\-\.\(\)\s]*
-        (?:
+        [\-\.\(\)\s]*           (?# visual separators: spaces)
+                                (?#      and/or punctuation)
+        (?:                     (?# for tel: URIs)
             tel:
-            [\-\.\(\)\s]*
+            [\-\.\(\)\s]*       (?# for good measure)
         )?
-        (?:
+        (?:                     (?# optional +1 or 1 prefix)
             (?:
                 \+
                 [\-\.\(\)\s]*
@@ -24,15 +25,15 @@ It is broken down thusly for readability:
             1
             [\-\.\(\)\s]*
         )?
-        (\d{3})
+        (\d{3})                 (?# NPA or area code)
         [\-\.\(\)\s]*
-        (\d{3})
+        (\d{3})                 (?# NXX or exchange code)
         [\-\.\(\)\s]*
-        (\d{4})
+        (\d{4})                 (?# XXXX or subscriber number)
         [\-\.\(\)\s]*
-        (?:
-            \;.*
-        )?
+        (?:                     (?# for tel: URIs containing)
+            \;.*                (?#     additional data after the)
+        )?                      (?#     phone number)
     $/i
 
 The following common formats, and numerous variants, are allowed:
@@ -116,6 +117,10 @@ Future possibilities:
     In this case the following restriction **must** be implemented:
     the first non-visual-separator character after the phone number
     shall **not** be a digit.
+
+Any of these possibilities will most likely be mutually exclusive with
+any optional `;` separated data after the phone number for a `tel:`
+URI.
 
 ## Sources and Resources
 
