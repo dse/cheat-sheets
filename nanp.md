@@ -3,7 +3,10 @@
 The PCRE-compatible regular expression to match a NANP
 (US/Canada/etc.) telephone number shall be as follows:
 
-    /^[\-\.\(\)\s]*(?:tel:[\-\.\(\)\s]*)?(?:(?:\+[\-\.\(\)\s]*)?1[\-\.\(\)\s]*)?(\d{3})[\-\.\(\)\s]*(\d{3})[\-\.\(\)\s]*(\d{4})[\-\.\(\)\s]*$/i
+    /^[\-\.\(\)\s]*(?:tel:[\-\.\(\)\s]*)?(?:(?:\+[\-\.\(\)\s]*)?1[\-\.\(\)\s]*)?(\d{3})[\-\.\(\)\s]*(\d{3})[\-\.\(\)\s]*(\d{4})[\-\.\(\)\s]*(?:\;.*)$/i
+
+It is designed to encompass and parse every common telephone number
+format, and most others, within reason.
 
 It is broken down thusly for readability:
 
@@ -27,6 +30,9 @@ It is broken down thusly for readability:
         [\-\.\(\)\s]*
         (\d{4})
         [\-\.\(\)\s]*
+        (?:
+            \;.*
+        )?
     $/i
 
 The following common formats, and numerous variants, are allowed:
@@ -46,6 +52,10 @@ Notes:
 
 -   The `tel:` prefix is optional, and shall be allowed, for
     copy/paste convenience.
+
+    This regular expression now accomodates `tel:` URIs containing
+    telephone extensions (`;ext=...`) and other semicolon-separated
+    data in addition to the subscriber telephone number.
 
 -   A `+1` or `1` prefix is optional, and shall be allowed, before the
     ten-digit phone number, to allow an E.123 notated phone number.
@@ -68,7 +78,7 @@ An HTML5 input element for entering a phone number shall be similar to
 the following:
 
     <input type="tel" inputmode="tel" name="phone-number" value=""
-           pattern="[\-\.\(\)\s]*(?:[Tt][Ee][Ll]:[\-\.\(\)\s]*)?(?:(?:\+[\-\.\(\)\s]*)?1[\-\.\(\)\s]*)?(\d{3})[\-\.\(\)\s]*(\d{3})[\-\.\(\)\s]*(\d{4})[\-\.\(\)\s]*"
+           pattern="[\-\.\(\)\s]*(?:[Tt][Ee][Ll]:[\-\.\(\)\s]*)?(?:(?:\+[\-\.\(\)\s]*)?1[\-\.\(\)\s]*)?(\d{3})[\-\.\(\)\s]*(\d{3})[\-\.\(\)\s]*(\d{4})[\-\.\(\)\s]*(?:\;.*)"
            data-pattern-mismatch="Please enter a valid phone number including area code.  Example: 555-555-5555">
 
 Note that we had to fix `tel:` because `pattern` attributes cannot be
