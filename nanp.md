@@ -8,7 +8,7 @@ The PCRE-compatible regular expression to match a NANP
 It is designed to encompass and parse every common telephone number
 format, and most others, within reason.
 
-It is broken down thusly for readability:
+It is broken down and commented thusly for readability:
 
     /^
         [\-\.\(\)\s]*           (?# visual separators: spaces)
