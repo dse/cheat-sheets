@@ -44,6 +44,14 @@ run:
 
 -   [`use Task::Kensho;`](https://metacpan.org/pod/Task::Kensho)
 
+## Other Cool Things
+
+-   [`use perl5i;`](https://metacpan.org/pod/perl5i)
+-   [`use uni::perl;`](https://metacpan.org/pod/release/MONS/uni-perl-0.03/lib/uni/perl.pm)
+-   [`use Toolkit;`](https://metacpan.org/pod/Toolkit)
+-   [`use ToolSet;`](https://metacpan.org/pod/ToolSet)
+-   [`use Acme::Very::Modern::Perl;`](https://metacpan.org/pod/Acme::Very::Modern::Perl)
+
 ## Resources
 
 -   [Mishin's Perl Cheat Sheet](https://www.cheatography.com/mishin/cheat-sheets/perlcheat/)
