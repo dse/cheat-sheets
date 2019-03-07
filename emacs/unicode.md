@@ -28,6 +28,10 @@ For detailed Unicode info: `C-u C-x =`
 | `C-x 8 / /`          | `÷` |    U+00F7 | DIVISION SIGN               |
 | `C-x 8 +`            | `±` |    U+00B1 | PLUS-MINUS SIGN             |
 | `C-x 8 / =`          | `≠` |    U+2260 | NOT EQUAL TO                |
+| `C-x 8 RET 2245 RET` | `≅` |    U+2245 | APPROXIMATELY EQUAL TO      |
+| `C-x 8 ~ =`          | `≈` |    U+2248 | ALMOST EQUAL TO             |
+| `C-x 8 _ <`          | `≤` |    U+2264 | LESS-THAN OR EQUAL TO       |
+| `C-x 8 _ >`          | `≥` |    U+2265 | GREATER-THAN OR EQUAL TO    |
 |                      |     |           |                             |
 | `C-x 8 SPC`          | ` ` |    U+00A0 | NO-BREAK SPACE              |
 | `C-x 8 RET 200B RET` | -   |    U+200B | ZERO WIDTH SPACE            |
@@ -51,5 +55,9 @@ For detailed Unicode info: `C-u C-x =`
 | `C-x 8 ^ 1`          | `¹` |    U+00B9 | SUPERSCRIPT ONE             |
 | `C-x 8 ^ 2`          | `²` |    U+00B2 | SUPERSCRIPT TWO             |
 | `C-x 8 ^ 3`          | `³` |    U+00B3 | SUPERSCRIPT THREE           |
+|                      |     |           |                             |
+| `C-x 8 a <`          | `←` |    U+2190 | LEFTWARDS ARROW             |
+| `C-x 8 a >`          | `→` |    U+2192 | RIGHTWARDS ARROW            |
+| `C-x 8 a =`          | `↔` |    U+2194 | LEFT RIGHT ARROW            |
 
 Complete list: `C-x 8 C-h`
