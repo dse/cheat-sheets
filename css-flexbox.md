@@ -70,7 +70,7 @@ Details: <https://css-tricks.com/snippets/css/a-guide-to-flexbox/>
     flex: none;                         /* => 0 0 auto */
           <basis>;
           <grow> <shrink>? <basis>?;
-          1 1 auto;                     /* default */
+          0 1 auto;                     /* default */
 
     /* override parent's align-items property */
     align-self: <align-items>;          /* default based on parent */
