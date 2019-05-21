@@ -45,3 +45,8 @@ HTML 5 restrictions are looser:
     -   `\` followed by 1+ hexdigits followed by optional whitespace (LF, CR, FF, tab, U+0020 SPACE)
     -   `\` followed by any character other than hexdigit, LF, CR, or FF
     -   `\:` does not work in IE<8; use `\3a ` instead.
+
+Sources:
+
+-   <https://mathiasbynens.be/notes/css-escapes>
+-   CSS Syntax Module Level 3 <https://drafts.csswg.org/css-syntax/#ident-token-diagram>
