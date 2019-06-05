@@ -40,6 +40,6 @@
 
 ## Character Categories
 
-    \c<class>  \C<class>        any character matching, or not matching, a character category
+    \c<class>    \C<class>      any character matching, or not matching, a character category
 
 <https://www.gnu.org/software/emacs/manual/html_node/elisp/Categories.html#Categories>
