@@ -39,6 +39,7 @@ HTML 5 restrictions are looser:
     -   `-` by itself
 -   cannot contain any of:
     -   U+0020 SPACE, U+007F DELETE, or `!"#$%&'()*+,./:;<=>?@[\]^``{|}~`
+        (that's all punctuation except for `-` and `_`)
     -   unless it's part of an escape
 
 -   An escape may be:
