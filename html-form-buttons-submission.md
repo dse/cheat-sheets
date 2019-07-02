@@ -22,3 +22,8 @@
     <button type="button" class="button"></button>
 
     <a class="button"></a>
+
+    <a>
+        <p>paragraph text</p>
+        <p><span class="button">button text</span></p>
+    </a>
