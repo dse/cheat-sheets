@@ -2,95 +2,34 @@
 /*jshint eqeqeq: true, -W094 */
 {
     // Documentation for all JSHint options: <https://jshint.com/docs/options/>
-
-    // "bitwise": xxx,
-    //     This option prohibits the use of bitwise operators such as ^ (XOR), | (OR) and others.
-
-    "curly": true,
-    //     This option requires you to always put curly braces around blocks in loops and conditionals.
-
-    "eqeqeq": true,
-    //     This options prohibits the use of == and != in favor of === and !==.
-
-    "esversion": 5,
-    //     This option is used to specify the ECMAScript version to which the code must adhere.
-    //     It can be 3, 5, 6, 7, 8, or 9.  5 is the baseline for IE11 support.
-
-    "forin": true,
-    //     This option requires all for in loops to filter object's items.
-
-    "freeze": true,
-    //     This options prohibits overwriting prototypes of native objects such as Array, Date and so on.
-
-    "futurehostile": true,
-    //     This option enables warnings about the use of identifiers which are defined in future versions of JavaScript.
-
-    // "globals": xxx,
-    //     This option can be used to specify a white list of global variables that are not formally defined in the source code.
-
-    "latedef": "nofunc",
-    //     This option prohibits the use of a variable before it was defined.
-    //     Setting this option to 'nofunc' will allow function declarations to be ignored.
-
-    "leanswitch": true,
-    //     This option prohibits unnecessary clauses within switch statements.
-
+    "bitwise": true,            // prohibits use of bitwise opberators
+    "browser": true,            // defines globals exposed by web browsers
+    "curly": true,              // requires {} in loops and conditionals
+    "eqeqeq": true,             // prohibits == and != in favor of === and !==
+    "esversion": 5,             // 3, 5, 6, 7, 8, or 9.  5 is IE11 baseline.
+    "forin": true,              // requires `for in` loops to filter items
+    "freeze": true,             // prohibits overwriting native prototypes
+    "futurehostile": true,      // warns about future keywords, reserved words
+    // "globals": xxx,          // whitelist of global variables
+    "latedef": "nofunc",        // prohibits use of variables before definition
+    "leanswitch": true,         // prohibits unnecessary switch clauses
     // "maxcomplexity": xxx,
-    //     This option lets you control cyclomatic complexity throughout your code.
-
     // "maxdepth": xxx,
-    //     This option lets you control how nested do you want your blocks to be.
-
     // "maxerr": xxx,
-    //     This options allows you to set the maximum amount of warnings JSHint will produce before giving up. Default is 50.
-
     // "maxparams": xxx,
-    //     This option lets you set the max number of formal parameters allowed per function.
-
     // "maxstatements": xxx,
-    //     This option lets you set the max number of statements allowed per function.
-
-    // "noarg": xxx,
-    //     This option prohibits the use of arguments.caller and arguments.callee.
-
-    "nocomma": true,
-    //     This option prohibits the use of the comma operator.
-
-    "nonbsp": true,
-    //     This option warns about "non-breaking whitespace" characters.
-
-    "nonew": true,
-    //     This option prohibits the use of constructor functions for side-effects.
-
+    // "noarg": xxx,            // prohibits arguments.caller, arguments.callee
+    "nocomma": true,            // prohibits comma operator
+    "nonbsp": true,             // warns about U+00A0 NO-BREAK SPACE characters
+    "nonew": true,              // prohibits side-effect-only use of new
     // "noreturnawait": xxx,
-    //     Async functions resolve on their return value. In most cases, this makes returning the result of an AwaitExpression (which is itself a Promise instance) unnecessary. For clarity, it's often preferable to return the result of the asynchronous operation directly. The notable exception is within the try clause of a TryStatement--for more, see "await vs return vs return await":
-
-    //     https://jakearchibald.com/2017/await-vs-return-vs-return-await/
-
-    // "predef": xxx,
-    //     This option allows you to control which variables JSHint considers to be implicitly defined in the environment.
-
-    // "regexpu": xxx,
-    //     This option enables warnings for regular expressions which do not include the `u` flag. The `u` flag extends support for Unicode and also enables more strict parsing rules. JSHint will enforce these rules even if it is executed in a JavaScript engine which does not support the `u` flag.
-
-    // "shadow": xxx,
-    //     This option suppresses warnings about variable shadowing, i.e., declaring a variable that had been already declared somewhere in the outer scope.
-
-    "singleGroups": true,
-    //     This option prohibits the use of the grouping operator when it is not strictly required.
-
-    // "strict": xxx,
-    //     This option requires the code to run in ECMAScript 5's strict mode.
-
-    // "trailingcomma": xxx,
-    //     This option warns when a comma is NOT placed after the last element in an array or object literal.
-
-    "undef": true,
-    //     This option prohibits the use of explicitly undeclared variables.
-
-    // "unused": xxx,
-    //     This option warns when you define and never use your variables.
-
-    // "varstmt": xxx,
-    //     When set to true, the use of `var` statements are forbidden.
+    // "predef": xxx,           // whitelist of variables implicitly defined
+    // "regexpu": xxx,          // warns about regexps not using the `u` flag
+    // "shadow": xxx,           // suppresses warnings about variable shadowing
+    "singleGroups": true,       // prohibits unnecessary use of grouping oper.
+    // "strict": xxx,           // requires ES5 strict mode
+    // "trailingcomma": xxx,    // warns about comma NOT placed after last elt
+    "undef": true,              // prohibits use of undeclared variables
+    // "unused": xxx,           // warns about defined but unused variables
+    // "varstmt": xxx,          // prohibits use of `var` statements
 }
