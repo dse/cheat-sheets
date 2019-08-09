@@ -7,95 +7,95 @@
     //     When set to true, these options will make JSHint produce more warnings about your code.
     // ========================================================================
 
-    // bitwise: xxx,
+    // "bitwise": xxx,
     //     This option prohibits the use of bitwise operators such as ^ (XOR), | (OR) and others.
 
-    // curly: xxx,
+    // "curly": xxx,
     //     This option requires you to always put curly braces around blocks in loops and conditionals.
 
-    // eqeqeq: xxx,
+    // "eqeqeq": xxx,
     //     This options prohibits the use of == and != in favor of === and !==.
 
-    // esversion: xxx,
+    // "esversion": xxx,
     //     This option is used to specify the ECMAScript version to which the code must adhere.
     //     It can be 3, 5, 6, 7, 8, or 9.  5 is the baseline for IE11 support.
 
-    // forin: xxx,
+    // "forin": xxx,
     //     This option requires all for in loops to filter object's items. 
 
-    // freeze: xxx,
+    // "freeze": xxx,
     //     This options prohibits overwriting prototypes of native objects such as Array, Date and so on.
 
-    // futurehostile: xxx,
+    // "futurehostile": xxx,
     //     This option enables warnings about the use of identifiers which are defined in future versions of JavaScript.
 
-    // globals: xxx,
+    // "globals": xxx,
     //     This option can be used to specify a white list of global variables that are not formally defined in the source code.
 
-    // latedef: xxx,
+    // "latedef": xxx,
     //     This option prohibits the use of a variable before it was defined.
     //     Setting this option to 'nofunc' will allow function declarations to be ignored.
 
-    // leanswitch: xxx,
+    // "leanswitch": xxx,
     //     This option prohibits unnecessary clauses within switch statements.
 
-    // maxcomplexity: xxx,
+    // "maxcomplexity": xxx,
     //     This option lets you control cyclomatic complexity throughout your code.
 
-    // maxdepth: xxx,
+    // "maxdepth": xxx,
     //     This option lets you control how nested do you want your blocks to be.
 
-    // maxerr: xxx,
+    // "maxerr": xxx,
     //     This options allows you to set the maximum amount of warnings JSHint will produce before giving up. Default is 50.
 
-    // maxparams: xxx,
+    // "maxparams": xxx,
     //     This option lets you set the max number of formal parameters allowed per function.
 
-    // maxstatements: xxx,
+    // "maxstatements": xxx,
     //     This option lets you set the max number of statements allowed per function.
 
-    // noarg: xxx,
+    // "noarg": xxx,
     //     This option prohibits the use of arguments.caller and arguments.callee.
 
-    // nocomma: xxx,
+    // "nocomma": xxx,
     //     This option prohibits the use of the comma operator.
 
-    // nonbsp: xxx,
+    // "nonbsp": xxx,
     //     This option warns about "non-breaking whitespace" characters.
 
-    // nonew: xxx,
+    // "nonew": xxx,
     //     This option prohibits the use of constructor functions for side-effects.
 
-    // noreturnawait: xxx,
+    // "noreturnawait": xxx,
     //     Async functions resolve on their return value. In most cases, this makes returning the result of an AwaitExpression (which is itself a Promise instance) unnecessary. For clarity, it's often preferable to return the result of the asynchronous operation directly. The notable exception is within the try clause of a TryStatement--for more, see "await vs return vs return await":
 
     //     https://jakearchibald.com/2017/await-vs-return-vs-return-await/
 
-    // predef: xxx,
+    // "predef": xxx,
     //     This option allows you to control which variables JSHint considers to be implicitly defined in the environment.
 
-    // regexpu: xxx,
+    // "regexpu": xxx,
     //     This option enables warnings for regular expressions which do not include the `u` flag. The `u` flag extends support for Unicode and also enables more strict parsing rules. JSHint will enforce these rules even if it is executed in a JavaScript engine which does not support the `u` flag.
 
-    // shadow: xxx,
+    // "shadow": xxx,
     //     This option suppresses warnings about variable shadowing, i.e., declaring a variable that had been already declared somewhere in the outer scope.
 
-    // singleGroups: xxx,
+    // "singleGroups": xxx,
     //     This option prohibits the use of the grouping operator when it is not strictly required.
 
-    // strict: xxx,
+    // "strict": xxx,
     //     This option requires the code to run in ECMAScript 5's strict mode.
 
-    // trailingcomma: xxx,
+    // "trailingcomma": xxx,
     //     This option warns when a comma is NOT placed after the last element in an array or object literal.
 
-    // undef: xxx,
+    // "undef": xxx,
     //     This option prohibits the use of explicitly undeclared variables.
 
-    // unused: xxx,
+    // "unused": xxx,
     //     This option warns when you define and never use your variables.
 
-    // varstmt: xxx,
+    // "varstmt": xxx,
     //     When set to true, the use of `var` statements are forbidden.
 
     // See also:
