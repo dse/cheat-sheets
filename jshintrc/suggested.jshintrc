@@ -1,5 +1,5 @@
 /* -*- javascript -*- */
-/*jshint eqeqeq: true, -W094 */
+/*jshint -W094 */
 {
     // Documentation for all JSHint options: <https://jshint.com/docs/options/>
     "bitwise": true,            // prohibits use of bitwise opberators
