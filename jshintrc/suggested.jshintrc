@@ -1,5 +1,4 @@
 /* -*- javascript -*- */
-/*jshint -W094 */
 {
     // Documentation for all JSHint options: <https://jshint.com/docs/options/>
     "bitwise": true,            // prohibits use of bitwise opberators
@@ -10,26 +9,11 @@
     "forin": true,              // requires `for in` loops to filter items
     "freeze": true,             // prohibits overwriting native prototypes
     "futurehostile": true,      // warns about future keywords, reserved words
-    // "globals": xxx,          // whitelist of global variables
     "latedef": "nofunc",        // prohibits use of variables before definition
     "leanswitch": true,         // prohibits unnecessary switch clauses
-    // "maxcomplexity": xxx,
-    // "maxdepth": xxx,
-    // "maxerr": xxx,
-    // "maxparams": xxx,
-    // "maxstatements": xxx,
-    // "noarg": xxx,            // prohibits arguments.caller, arguments.callee
     "nocomma": true,            // prohibits comma operator
     "nonbsp": true,             // warns about U+00A0 NO-BREAK SPACE characters
     "nonew": true,              // prohibits side-effect-only use of new
-    // "noreturnawait": xxx,
-    // "predef": xxx,           // whitelist of variables implicitly defined
-    // "regexpu": xxx,          // warns about regexps not using the `u` flag
-    // "shadow": xxx,           // suppresses warnings about variable shadowing
     "singleGroups": true,       // prohibits unnecessary use of grouping oper.
-    // "strict": xxx,           // requires ES5 strict mode
-    // "trailingcomma": xxx,    // warns about comma NOT placed after last elt
-    "undef": true,              // prohibits use of undeclared variables
-    // "unused": xxx,           // warns about defined but unused variables
-    // "varstmt": xxx,          // prohibits use of `var` statements
+    "undef": true               // prohibits use of undeclared variables
 }
