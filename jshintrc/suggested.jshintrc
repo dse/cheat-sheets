@@ -1,5 +1,5 @@
 /* -*- javascript -*- */
-/*jshint eqeqeq: true */
+/*jshint eqeqeq: true, -W094 */
 {
     // Documentation for all JSHint options: <https://jshint.com/docs/options/>
 
@@ -93,6 +93,4 @@
 
     // "varstmt": xxx,
     //     When set to true, the use of `var` statements are forbidden.
-
-    "dummy": true
 }
