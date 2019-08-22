@@ -1,5 +1,7 @@
 # Git Revisions
 
+[gitrevisions(7)](https://git-scm.com/docs/gitrevisions)
+
 Some Git commands allow you to specify revision parameters that denote
 commits.
 
@@ -204,7 +206,3 @@ spelt out:
            = B ^B^1 ^B^2 ^B^3
            = B ^D ^E ^F          B
     F^! D  = F ^I ^J D           G H D F
-
-## See Also:
-
-gitrevisions(7)
