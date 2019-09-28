@@ -1,5 +1,13 @@
 # Perl Cheat Tips
 
+## Frequently Used Data::Dumper Settings
+
+    local $Data::Dumper::Indent   = 1;
+    local $Data::Dumper::Terse    = 1;
+    local $Data::Dumper::Deepcopy = 1;
+    local $Data::Dumper::Sortkeys = 1;
+    local $Data::Dumper::Useqq    = 1;
+
 ## Best Practices for Working with Locales
 
     #!/usr/bin/env perl
@@ -22,6 +30,29 @@ This also instructs `@ARGV` to be decoded in the user's locale.
 You can effect this behavior by setting `PERL_UNICODE` or running
 `perl -C` with the `A` flag, but it has no runtime equivalent.
 
+## A Reset for I/O
+
+Perl modules performing I/O should ideally include the following in
+order to avoid mucking around with those variables from the caller's
+perspective, and to avoid the caller's values for those variables from
+affecting them.
+
+```
+local $_ = undef;       # $ARG (the default input and pattern-matching space)
+local $" = " ";         # $LIST_SEPARATOR (for print "@array\n";)
+local $ARGV = undef;
+local $, = undef;       # $OUTPUT_FIELD_SEPARATOR
+local $. = undef;       # $INPUT_LINE_NUMBER
+local $/ = "\n";        # $INPUT_RECORD_SEPARATOR
+local $\ = undef;       # $OUTPUT_RECORD_SEPARATOR
+```
+
+Edit as needed.  For example, to slurp an entire file at once:
+
+```
+local $/ = undef;       # $INPUT_RECORD_SEPARATOR
+```
+
 ## A Safer `chomp`
 
 Instead of:
@@ -31,6 +62,11 @@ Instead of:
 run:
 
     s{\R\z}{};
+
+This will safely deal with both `\n` and `\r\n`.
+
+It will also deal with `\r`, the MacOS versions 1 through 9 line
+terminator, but `$/` would also have to be set to `\r`.
 
 ## Beyond the `warnings` and `strict` Pragmata
 
