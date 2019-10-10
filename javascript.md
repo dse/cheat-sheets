@@ -91,7 +91,7 @@
 | `RegExp.input`                  | `RegExp.$_`                           | The whole string against which the pattern was matched    |
 | `RegExp.lastMatch`              | `RegExp['$&']`                        | The entire substring matching the pattern                 |
 | `RegExp.lastParen`              | `RegExp['$+']`                        | The last parenthesized substring match                    |
-| `RegExp.leftContext`            | ``RegExp['$`']``                      | The portion of the string preceding the matched substring |
+| `RegExp.leftContext`            | `` RegExp['$`'] ``                    | The portion of the string preceding the matched substring |
 | `RegExp.rightContext`           | `RegExp["$'"]`                        | The portion of the string following the matched substring |
 | `RegExp.index`                  | This only works in Internet Explorer. |                                                           |
 
@@ -100,15 +100,15 @@
 | `Regexp#test`   | `RegExp#exec`  |
 | `String#search` | `String#match` |
 
-| Instead of...                   | a/k/a...         | Use...                                                                                                                    |
-|:--------------------------------|:-----------------|:--------------------------------------------------------------------------------------------------------------------------|
-| `RegExp.$1` through `RegExp.$9` |                  | `matches[1]` through `matches[9]`                                                                                         |
-| `RegExp.input`                  | `RegExp.$_`      | Keep track of the last successfully matched string yourself. Note that `matches.input` also contains the original string. |
-| `RegExp.lastMatch`              | `RegExp['$&']`   | `matches[0]`                                                                                                              |
-| `RegExp.lastParen`              | `RegExp['$+']`   | `matches[matches.length - 1]`                                                                                             |
-| `RegExp.leftContext`            | ``RegExp['$`']`` | `String(s).substring(0, matches.index)`                                                                                   |
-| `RegExp.rightContext`           | `RegExp["$'"]`   | `String(s).substring(matches.index + matches[0].length)`                                                                  |
-| `RegExp.index`                  |                  | This only works in Internet Explorer. If you come across this, look it up and fix your code!                              |
+| Instead of...                   | a/k/a...           | Use...                                                                                                                    |
+|:--------------------------------|:-------------------|:--------------------------------------------------------------------------------------------------------------------------|
+| `RegExp.$1` through `RegExp.$9` |                    | `matches[1]` through `matches[9]`                                                                                         |
+| `RegExp.input`                  | `RegExp.$_`        | Keep track of the last successfully matched string yourself. Note that `matches.input` also contains the original string. |
+| `RegExp.lastMatch`              | `RegExp['$&']`     | `matches[0]`                                                                                                              |
+| `RegExp.lastParen`              | `RegExp['$+']`     | `matches[matches.length - 1]`                                                                                             |
+| `RegExp.leftContext`            | `` RegExp['$`'] `` | `String(s).substring(0, matches.index)`                                                                                   |
+| `RegExp.rightContext`           | `RegExp["$'"]`     | `String(s).substring(matches.index + matches[0].length)`                                                                  |
+| `RegExp.index`                  |                    | This only works in Internet Explorer. If you come across this, look it up and fix your code!                              |
 
 ### Old example
 
@@ -150,7 +150,7 @@ These are the special replacement patterns:
 |:-------------------|:--------------------------------------------------------------|
 | `$$`               | a `$`                                                         |
 | `$&`               | the matched substring                                         |
-| ``$```             | the portion of the string that precedes the matched substring |
+| `` $` ``           | the portion of the string that precedes the matched substring |
 | `$'`               | the portion of the string that follows the matched substring  |
 | `$1` through `$99` | the *n*th captured parenthesized submatch string              |
 
