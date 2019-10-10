@@ -83,15 +83,17 @@
 
 [RegExp documentation](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp)
 
-| These are deprecated...         | a/k/a...                              |
-|:--------------------------------|:--------------------------------------|
-| `RegExp.$1` through `RegExp.$9` |                                       |
-| `RegExp.input`                  | `RegExp.$_`                           |
-| `RegExp.lastMatch`              | `RegExp['$&']`                        |
-| `RegExp.lastParen`              | `RegExp['$+']`                        |
-| `RegExp.leftContext`            | `RegExp['$``']`                       |
-| `RegExp.rightContext`           | `RegExp["$'"]`                        |
-| `RegExp.index`                  | This only works in Internet Explorer. |
+[My more detailed notes](https://webonastick.com/javascript/regexp/properties/)
+
+| These are deprecated...         | a/k/a...                              | Which is...                                               |
+|:--------------------------------|:--------------------------------------|:----------------------------------------------------------|
+| `RegExp.$1` through `RegExp.$9` |                                       | Captured parenthesized submatch strings                   |
+| `RegExp.input`                  | `RegExp.$_`                           | The whole string against which the pattern was matched    |
+| `RegExp.lastMatch`              | `RegExp['$&']`                        | The entire substring matching the pattern                 |
+| `RegExp.lastParen`              | `RegExp['$+']`                        | The last parenthesized substring match                    |
+| `RegExp.leftContext`            | `RegExp['$``']`                       | The portion of the string preceding the matched substring |
+| `RegExp.rightContext`           | `RegExp["$'"]`                        | The portion of the string following the matched substring |
+| `RegExp.index`                  | This only works in Internet Explorer. |                                                           |
 
 | When using...   | Switch to...   |
 |:----------------|:---------------|
@@ -106,7 +108,7 @@
 | `RegExp.lastParen`              | `RegExp['$+']`  | `matches[matches.length - 1]`                                                                                             |
 | `RegExp.leftContext`            | `RegExp['$``']` | `String(s).substring(0, matches.index)`                                                                                   |
 | `RegExp.rightContext`           | `RegExp["$'"]`  | `String(s).substring(matches.index + matches[0].length)`                                                                  |
-| `RegExp.index`                  |                 | This only works in Internet Explorer.                                                                                     |
+| `RegExp.index`                  |                 | This only works in Internet Explorer. If you come across this, look it up and fix your code!                              |
 
 ### Old example
 
@@ -136,7 +138,7 @@ if (matches) {
 }
 ```
 
-### Notes
+## Special Patterns in `String#replace`
 
 Specifying special replacement patterns in `String#replace` is fine:
 
@@ -150,4 +152,21 @@ These are the special replacement patterns:
 | `$&`               | the matched substring                                         |
 | `$```              | the portion of the string that precedes the matched substring |
 | `$'`               | the portion of the string that follows the matched substring  |
-| `$1` through `$99` | the *n*th parenthesized submatch string                       |
+| `$1` through `$99` | the *n*th captured parenthesized submatch string              |
+
+## Specifying a Replacer Function as the Second Parameter for `String#replace`
+
+    <string>.replace(/(\w+)\s+(\w+)/, function (match, p1, p2, offset, string) {
+        return p2 + ', ' + p1;
+    });
+
+These are the arguments that are passed to the replacer function:
+
+| Argument         | Supplied Value                                                                                                 | Corresponds To  |
+|:-----------------|:---------------------------------------------------------------------------------------------------------------|:----------------|
+| `match`          | The matched substring                                                                                          | `$&`            |
+| `p1`, `p2`, etc. | The captured parenthesized subsmatch string.  As many arguments as the number of parenthesized capture groups. | `$1`, `$2`, ... |
+| `offset`         | The zero-based offset of the matched substring within the whole string being examined                          |                 |
+| `string`         | The whole string being examined                                                                                |                 |
+
+You may use any names for your parameters.
