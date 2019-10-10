@@ -78,3 +78,76 @@
 | 2          | `yield`                       | right-to-left | `yield` ...          |
 |            | `yield*`                      |               | `yield*` ...         |
 | 1 (loose)  | Comma / Sequence              | left-to-right | ... `,` ...          |
+
+## `RegExp.$1`, etc.
+
+[RegExp documentation](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp)
+
+| These are deprecated...         | a/k/a...                              |
+|:--------------------------------|:--------------------------------------|
+| `RegExp.$1` through `RegExp.$9` |                                       |
+| `RegExp.input`                  | `RegExp.$_`                           |
+| `RegExp.lastMatch`              | `RegExp['$&']`                        |
+| `RegExp.lastParen`              | `RegExp['$+']`                        |
+| `RegExp.leftContext`            | `RegExp['$``']`                       |
+| `RegExp.rightContext`           | `RegExp["$'"]`                        |
+| `RegExp.index`                  | This only works in Internet Explorer. |
+
+| When using...   | Switch to...   |
+|:----------------|:---------------|
+| `Regexp#test`   | `RegExp#exec`  |
+| `String#search` | `String#match` |
+
+| Instead of...                   | a/k/a...        | Use...                                                                                                                    |
+|:--------------------------------|:----------------|:--------------------------------------------------------------------------------------------------------------------------|
+| `RegExp.$1` through `RegExp.$9` |                 | `matches[1]` through `matches[9]`                                                                                         |
+| `RegExp.input`                  | `RegExp.$_`     | Keep track of the last successfully matched string yourself. Note that `matches.input` also contains the original string. |
+| `RegExp.lastMatch`              | `RegExp['$&']`  | `matches[0]`                                                                                                              |
+| `RegExp.lastParen`              | `RegExp['$+']`  | `matches[matches.length - 1]`                                                                                             |
+| `RegExp.leftContext`            | `RegExp['$``']` | `String(s).substring(0, matches.index)`                                                                                   |
+| `RegExp.rightContext`           | `RegExp["$'"]`  | `String(s).substring(matches.index + matches[0].length)`                                                                  |
+| `RegExp.index`                  |                 | This only works in Internet Explorer.                                                                                     |
+
+### Old example
+
+```
+var result;
+
+if (/regex/.test(s)) {
+    result = RegExp.$1;
+    // do stuff with RegExp.$1, RegExp.$2, etc.
+} else {
+    // do other stuff
+}
+```
+
+### New example
+
+```
+var matches;
+var result;
+
+matches = /regex/.exec(s);
+if (matches) {
+    result = matches[1];
+    // do stuff with matches[1], matches[2], etc.
+} else {
+    // do other stuff
+}
+```
+
+### Notes
+
+Specifying special replacement patterns in `String#replace` is fine:
+
+    'John Smith'.replace(/(\w+)\s+(\w+)/, '$2, $1') === 'Smith, John'
+
+These are the special replacement patterns:
+
+| Pattern            | Inserts...                                                    |
+|:-------------------|:--------------------------------------------------------------|
+| `$$`               | a `$`                                                         |
+| `$&`               | the matched substring                                         |
+| `$```              | the portion of the string that precedes the matched substring |
+| `$'`               | the portion of the string that follows the matched substring  |
+| `$1` through `$99` | the *n*th parenthesized submatch string                       |
