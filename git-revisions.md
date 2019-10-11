@@ -92,7 +92,7 @@ To refer to a commit object a tag is referring to, instead of the tag:
     <tag>^0
     e.g., v1.5.1^0
 
-To refer to the commit object that is the `<n>`th generation ancesor
+To refer to the commit object that is the `<n>`th generation ancestor
 of the commit object `<rev>`, following only the first parents.
 
     <rev>~<n>
@@ -206,3 +206,16 @@ spelt out:
            = B ^B^1 ^B^2 ^B^3
            = B ^D ^E ^F          B
     F^! D  = F ^I ^J D           G H D F
+
+## .. vs. ...
+
+-   `r1..r2` is the set of commits that are reachable from `r2`,
+    excluding those that are reachable from `r1`.
+
+    It's an alias of the `^r1 r2` set operation.
+
+-   `r1...r2` is the set of commits that are reachable from **either**
+    `r1` **or** r2, but not both.
+
+-   A commit's **reachable set** is the commit itself, and any commits
+    in its ancestry chain.
