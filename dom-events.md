@@ -48,9 +48,14 @@ jQuery's [`ready` handler](https://api.jquery.com/ready/) is
 equivalent to `DOMContentLoaded`, with the following exception:
 
 -   If the browser fires `DOMContentLoaded` before `.ready(handler)`
-    is called, the `handler` function will still be executed.
+    is called, the `handler` function will still be executed.  (See
+    "Execute on `document.DOMContentLoaded` or Immediately", above.)
 
-The currently recommended syntax to register a `ready` event handler:
+-   Something involving Internet Explorer versions 10 and earlier.
+    You probably don't care about those browsers.
+
+The currently recommended syntax to register a `ready` event handler
+is one of the following:
 
 ```
 $(function () {
