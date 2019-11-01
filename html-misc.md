@@ -47,6 +47,20 @@ HTML 5 restrictions are looser:
     -   `\` followed by any character other than hexdigit, LF, CR, or FF
     -   `\:` does not work in IE<8; use `\3a ` instead.
 
+## Examples
+
+These are valid in CSS selectors.
+
+```
+FIXME
+```
+
+These are invalid, and must be escaped.
+
+```
+FIXME
+```
+
 Sources:
 
 -   <https://mathiasbynens.be/notes/css-escapes>
