@@ -1,5 +1,33 @@
 Okay...
 
+## Short Version
+
+1.  #10 Envelope, 9-1/2&Prime; WIDE, 4-1/8&Prime; HIGH
+
+2.  Create Your Document
+
+3.  Print using **System Print Dialog**
+
+4.  Click **Preferences**
+
+5.  Document Size -> #10 Envelope
+
+6.  Print on Paper Size -> #10 Envelope (not Same as Original)
+
+7.  Orientation -> ? (Landscape)
+
+8.  **Bypass/Manual Tray**
+
+9.  **Load envelope** into bypass tray.  (flap unfolded, face down and gum side up, bottom edge first)
+
+10. Click **OK**.
+
+11. Click **Apply**; click **Print**.
+
+12. 🤔🙏
+
+## Long Version
+
 1.  Your document HAS to be the size of a #10 business envelope. It's
     9.5″ W × 4.125″ H in case there's not an option for that and you
     need to do a custom setting. It's horizontal mode, not vertical
@@ -20,11 +48,14 @@ Okay...
     that. It relates to the original file. Change it to #10 business
     envelope.
 
-6.  There should be a setting for Print On Paper Size or something
-    like that. It relates to what you're printing it on.<br>Change it
-    to #10 business envelope.
+6.  There should be a setting for Print on Paper Size or something
+    like that. It relates to what you're printing it on.
 
-7.  Orientation probably needs to be Portrait.  Don't ask why.
+    Change it to #10 business envelope.  Don't leave it on "Same as
+    Original" or whatever.  Trust me.
+
+7.  Note the orientation setting (landscape/portrait) because you may
+    have to change it after your first try.
 
 8.  You probably want to choose Bypass Tray. It might be also called
     Manual tray or something.
@@ -37,7 +68,8 @@ Okay...
 10. Walk back to your computer. You're done with the print preferences
     dialog now. Click OK.
 
-11. You're back in the system print dialog. Click Print.
+11. You're back in the system print dialog. Click Apply, then click
+    Print.
 
 12. THOUGHTS AND PRAYERS LOL
 
