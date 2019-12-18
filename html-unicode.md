@@ -51,8 +51,13 @@ In HTML:
 | `±`       |    U+00B1 | PLUS-MINUS SIGN     |     177 | `&plusmn;` |
 | `≠`       |    U+2260 | NOT EQUAL TO        |    8800 | `&ne;`     |
 
--   Use the MINUS SIGN as a counterpart to the plus sign, and to represent negative numbers.
+-   Use the MINUS SIGN to represent negative numbers.
     -   Example: 5 − 8 + 2 = −1; cf. 5 - 8 + 2 = -1
+-   Also use the MINUS SIGN as a counterpart to the PLUS SIGN for +/−
+    toggles.
+    -   Better yet, consider using FontAwesome for icons that will
+        look consistent across platforms, browsers, and user
+        configurations.
 
 | Character | Codepoint | Name             | Decimal | HTML       |
 |:---------:|----------:|:-----------------|--------:|:----------:|
@@ -69,6 +74,7 @@ In HTML:
 |:---------:|----------:|:-------------|--------:|:---------:|
 | `′`       |    U+2032 | PRIME        |    8242 | `&prime;` |
 | `″`       |    U+2033 | DOUBLE PRIME |    8243 | `&Prime;` |
+| `‴`       |    U+2034 | TRIPLE PRIME |    8244 | `&#8244;` |
 
 -   Use PRIME to represent feet, or minutes.
 -   Use DOUBLE PRIME to represent inches, or seconds.
@@ -100,3 +106,19 @@ In HTML:
 | `¹`       |    U+00B9 | SUPERSCRIPT ONE   |     185 | `&sup1;`   |
 | `²`       |    U+00B2 | SUPERSCRIPT TWO   |     178 | `&sup2;`   |
 | `³`       |    U+00B3 | SUPERSCRIPT THREE |     179 | `&sup3;`   |
+
+## Not to Be Confused...
+
+| Character | Codepoint | Name                        | Decimal | HTML      |
+|:---------:|----------:|:----------------------------|--------:|:---------:|
+| `°`       |    U+00B0 | DEGREE SIGN                 |     176 | `&deg;`   |
+| `⁰`       |    U+2070 | SUPERSCRIPT ZERO            |    8304 | `&#8304;` |
+| `º`       |    U+00BA | MASCULINE ORDINAL INDICATOR |     186 | `&ordm;`  |
+| `˚`       |    U+02DA | RING ABOVE                  |     730 | `&#730;`  |
+| `ᵒ`       |    U+1D52 | MODIFIER LETTER SMALL O     |    7506 | `&#7506;` |
+
+-   The MASCULINE ORDINAL INDICATOR will appear underlined in some fonts.
+
+## Resources
+
+-   [HTML4 entities](https://www.w3.org/TR/html4/sgml/entities.html) are best for backward compatibility.
