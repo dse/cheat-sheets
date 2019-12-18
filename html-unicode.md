@@ -59,6 +59,12 @@ In HTML:
 | ` `       |    U+00A0 | NO-BREAK SPACE   |     160 | `&nbsp;`   |
 | -         |    U+200B | ZERO WIDTH SPACE |    8203 | `&#x200b;` |
 
+-   Use the ZERO WIDTH SPACE in places where you want a possible word
+    break **without** a hyphen, such as potentially long email
+    addresses.  Preferably, insert in any position that's after
+    punctuation and before an alphanumeric.
+    -   Example: `john.&#8203;jacob.&#8203;jingleheimerschmidt@&#8203;example.&#8203;com`
+
 | Character | Codepoint | Name         | Decimal | HTML      |
 |:---------:|----------:|:-------------|--------:|:---------:|
 | `′`       |    U+2032 | PRIME        |    8242 | `&prime;` |
