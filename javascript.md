@@ -1,5 +1,28 @@
 # JavaScript
 
+## `location` object
+
+### Examples
+
+    [1] https://bob:hunter2@example.com:8080/path/to/resource?query=value&query2=value2#hash
+    [2] http://www.google.com/
+
+### Properties
+
+                        [1]                             [2]
+
+    location.href       [entire string]                 [entire string]
+    location.protocol   'https:'                        'http:'
+    location.host       'example.com:8080'              'www.google.com'
+    location.hostname   'example.com'                   'www.google.com'
+    location.port       '8080'                          ''
+    location.pathname   '/path/to/resource'             '/'
+    location.search     '?query=value&query2=value2'    ''
+    location.hash       '#hash'                         ''
+    location.username   'bob'                           ''
+    location.password   'hunter2'                       ''
+    location.origin     'https://example.com:8080'      'http://www.google.com/'
+
 ## “Falsy” Values
 
 -   `undefined`
