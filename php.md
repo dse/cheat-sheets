@@ -1,5 +1,70 @@
 # PHP stuff
 
-## var\_export vs. var\_dump vs. print\_r
+## print\_r vs. var\_dump vs. var\_export
+
+### [print\_r](https://www.php.net/manual/en/function.print-r.php)
+
+```
+Array
+(
+    [a] => apple
+    [b] => banana
+    [c] => Array
+        (
+            [0] => x
+            [1] => y
+            [2] => z
+        )
+)
+```
+
+### [var\_dump](https://www.php.net/manual/en/function.var-dump.php)
+
+```
+array(3) {
+  [0]=>
+  int(1)
+  [1]=>
+  int(2)
+  [2]=>
+  array(3) {
+    [0]=>
+    string(1) "a"
+    [1]=>
+    string(1) "b"
+    [2]=>
+    string(1) "c"
+  }
+}
+```
+
+### [var\_export](https://www.php.net/manual/en/function.var-export.php)
+
+```
+array (
+  0 => 1,
+  1 => 2,
+  2 =>
+  array (
+    0 => 'a',
+    1 => 'b',
+    2 => 'c',
+  ),
+)
+```
 
 ## htmlentities vs. htmlspecialchars
+
+### [htmlentities](https://www.php.net/manual/en/function.htmlentities.php)
+
+Encodes anything that has an entity.
+
+Non-ASCII characters **not** having an entity are left alone.
+
+Does not encode `'` by default.
+
+### [htmlspecialchars](https://www.php.net/manual/en/function.htmlspecialchars.php)
+
+Only encodes `" & < >`.  Does not encode `'` by default.
+
+Does not encode non-ASCII characters.
