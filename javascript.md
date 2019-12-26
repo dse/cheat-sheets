@@ -81,9 +81,9 @@
 |            | Strict Inequality             |               | ... `!==` ...        |
 | 9          | Bitwise AND                   | left-to-right | ... `&` ...          |
 | 8          | Bitwise XOR                   | left-to-right | ... `^` ...          |
-| 7          | Bitwise OR                    | left-to-right | ... `|` ...          |
+| 7          | Bitwise OR                    | left-to-right | ... `\|` ...          |
 | 6          | Logical AND                   | left-to-right | ... `&&` ...         |
-| 5          | Logical OR                    | left-to-right | ... `||` ...         |
+| 5          | Logical OR                    | left-to-right | ... `\|\|` ...         |
 | 4          | Conditional                   | right-to-left | ... `?` ... `:` ...  |
 | 3          | Assignment                    | right-to-left | ... `=` ...          |
 |            |                               |               | ... `+=` ...         |
