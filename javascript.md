@@ -45,7 +45,7 @@
 | 20 (tight) | Grouping                      | n/a           | `(` ... `)`          |
 | 19         | Member Access                 | left-to-right | ... `.` ...          |
 |            | Computed Member Access        | left-to-right | ... `[` ... ]        |
-|            | `new` (with argument list)    | n/a           | new ... `(` ... `)`  |
+|            | `new` (with argument list)    | n/a           | `new` ... `(` ... `)`  |
 |            | Function Call                 | left-to-right | ... `(` ... `)`      |
 | 18         | `new` (without argument list) | right-to-left | `new` ...            |
 | 17         | Postfix Increment             | n/a           | ... `++`             |
