@@ -14,11 +14,15 @@ Okay...
 
 6.  Print on Paper Size -> #10 Envelope (not Same as Original)
 
-7.  Orientation -> ? (Landscape)
+7.  Orientation -> ?
+
+    (in my case: Landscape)
 
 8.  **Bypass/Manual Tray**
 
-9.  **Load envelope** into bypass tray.  (flap unfolded, face down and gum side up, bottom edge first)
+9.  **Load envelope** into bypass tray.
+
+    (in my case: flap unfolded, face down, adhesive up, bottom edge first)
 
 10. Click **OK**.
 
