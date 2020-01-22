@@ -11,8 +11,8 @@
 | `"`       |    U+0022 | QUOTATION MARK    |      34 | `&quot;` |
 
 In HTML:
--   You only need to escape `"` in double-quoted values containing `"`, i.e., `value="&quot;"`.
--   You only need to escape `'` in double-quoted values containing `'`, i.e., `value='&#39;'`.
+-   You only need to escape `"` within `double="quoted"` attribute values, i.e., `value="&quot;"`.
+-   You only need to escape `'` within `single='quoted'` attribute values, i.e., `value='&#39;'`.
 -   You **must** escape `<`, `>`, and `&`.
 
 ## Typographic Symbols

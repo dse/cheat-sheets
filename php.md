@@ -1,5 +1,42 @@
 # PHP stuff
 
+## isset vs. empty
+
+### isset
+
+Returns `true` if a variable is declared, set to a value other than
+`null`, and has not had `unset()` called on it.
+
+### empty
+
+returns `true` if a variable is either:
+
+-   unset
+-   has one of the following empty values:
+    -   `''` (the empty string)
+    -   0 (the integer)
+    -   0.0 (the float)
+    -   `'0'` (the string)
+    -   `null`
+    -   `false`
+    -   `[]` (an empty array)
+
+### "falsy" values
+
+-   `false`
+-   the integers 0 and -0
+-   the floats 0.0 and -0.0
+-   `''` (the empty string)
+-   `'0'` (the string)
+-   `[]` (an empty array)
+-   `null`
+-   an unset variable
+-   a `SimpleXML` object created from an empty tag
+
+Values you might think are falsy but are not:
+
+-   `NaN`
+
 ## print\_r vs. var\_dump vs. var\_export
 
 ### [print\_r](https://www.php.net/manual/en/function.print-r.php)
