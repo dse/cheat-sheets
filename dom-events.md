@@ -16,7 +16,7 @@ dependent resources such as stylesheets and images.
 
 <https://developer.mozilla.org/en-US/docs/Web/API/Window/load_event>
 
-## Execute on `window.load` or Immediately
+## Execute on or after `window.load`
 
 ```
 if (document.readyState === 'complete') {
@@ -26,7 +26,7 @@ if (document.readyState === 'complete') {
 }
 ```
 
-## Execute on `document.DOMContentLoaded` or Immediately
+## Execute on or after `document.DOMContentLoaded`
 
 ```
 if (document.readyState === 'complete' || document.readyState === 'interactive') {
@@ -54,15 +54,16 @@ equivalent to `DOMContentLoaded`, with the following exception:
 -   Something involving Internet Explorer versions 10 and earlier.
     You probably don't care about those browsers.
 
-The currently recommended syntax to register a `ready` event handler
-is one of the following:
+jQuery's currently recommended syntaxes to register a `ready` event
+handler are the following.  The former is preferred, as it will work
+even if `jQuery.noConflict` has been used.
 
 ```
-$(function () {
+jQuery(function ($) {
     /* ... */
 });
 
-jQuery(function ($) {
+$(function () {
     /* ... */
 });
 ```
