@@ -21,7 +21,7 @@ primarily in that I use four spaces instead of two, still with soft
 tabs.  More spaces mean nesting level is more obvious, making matching
 nesting levels easier.
 
-## `location` object
+## The `location` and `Location` Objects
 
 ```
 var anchor = document.createElement('a');
