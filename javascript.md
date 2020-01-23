@@ -23,6 +23,11 @@ nesting levels easier.
 
 ## `location` object
 
+```
+var anchor = document.createElement('a');
+anchor.href = 'https://example.com/';
+```
+
 ### Examples
 
     [1] https://bob:hunter2@example.com:8080/path/to/resource?query=value&query2=value2#hash
