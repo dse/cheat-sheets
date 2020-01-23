@@ -1,5 +1,14 @@
 # JavaScript
 
+This cheat sheet is geared towards ES5 development, but use of
+polyfillable methods from newer JavaScript standards is allowed.
+
+## Style Guides
+
+-   [Airbnb ES5](https://github.com/airbnb/javascript/tree/es5-deprecated/es5)
+
+-   [Airbnb Current](https://github.com/airbnb/javascript)
+
 ## `location` object
 
 ### Examples
@@ -193,3 +202,51 @@ These are the arguments that are passed to the replacer function:
 | `string`         | The whole string being examined                                                                                |                 |
 
 You may use any names for your parameters.
+
+## Arrays vs. Array-Like Objects
+
+JavaScript arrays have special features:
+
+-   As elements are added or removed, the `length` property is automatically updated.
+-   Setting `length` to a smaller value truncates the array.
+-   Arrays inherit the `Array.prototype` methods.
+-   Arrays have a *class* attribute of `Array`.
+
+Occasionally you will come across array-like objects.  They differ
+from arrays in that:
+
+-   The `length` property is not magical as in arrays.
+-   You can not directly invoke array methods on them.
+
+If an object has an integer `length` property and a series of
+integer-indexed properties from `0` through `length - 1`, it is
+effectively an array-like object.
+
+### Examples of Array-Like Objects
+
+-   The `arguments` object provided to every function scope.
+
+-   A `NodeList` object, such as the return value from
+    `document.querySelectorAll()` and many other DOM methods.
+
+    Note that `NodeList` objects have the following methods, which are
+    similar to ones on `Array` objects:
+
+    -   `forEach`
+    -   `entries`
+    -   `keys`
+    -   `values`
+
+### How to Convert Array-Like Objects to Arrays
+
+Use [`Array.from`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/from):
+
+```
+var args = Array.from(arguments);
+```
+
+Old-school method:
+
+```
+var args = Array.prototype.slice.call(arguments);
+```
