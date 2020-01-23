@@ -1,8 +1,8 @@
 # JavaScript
 
-This cheat sheet is geared towards ES5 development, but use of
-polyfillable objects and methods from newer JavaScript standards is
-allowed.
+This cheat sheet is geared towards ES5 development, including support
+for Microsoft Internet Explorer 11.  Use of polyfillable objects and
+methods from newer JavaScript standards is allowed.
 
 Much of this should still be helpful to you if you are using ES6 or
 higher, with or without [Babel](https://babeljs.io/).
