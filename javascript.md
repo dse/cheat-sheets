@@ -2,14 +2,24 @@
 
 This cheat sheet is geared towards ES5 development, but use of
 polyfillable objects and methods from newer JavaScript standards is
-allowed.  I expect you to determine which objects and methods need to
-be polyfilled for your particular use case.
+allowed.
+
+Much of this should still be helpful to you if you are using ES6 or
+higher, with or without [Babel](https://babeljs.io/).
+
+You are expected to determine which objects and methods need to be
+polyfilled for your particular use case.
 
 ## Style Guides
 
 -   [Airbnb ES5](https://github.com/airbnb/javascript/tree/es5-deprecated/es5)
 
 -   [Airbnb Current](https://github.com/airbnb/javascript)
+
+These are great style guides.  I deviate a little from them, but
+primarily in that I use four spaces instead of two, still with soft
+tabs.  More spaces mean nesting level is more obvious, making matching
+nesting levels easier.
 
 ## `location` object
 
