@@ -1,7 +1,9 @@
 # JavaScript
 
 This cheat sheet is geared towards ES5 development, but use of
-polyfillable methods from newer JavaScript standards is allowed.
+polyfillable objects and methods from newer JavaScript standards is
+allowed.  I expect you to determine which objects and methods need to
+be polyfilled for your particular use case.
 
 ## Style Guides
 
