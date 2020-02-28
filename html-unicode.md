@@ -119,6 +119,26 @@ In HTML:
 
 -   The MASCULINE ORDINAL INDICATOR will appear underlined in some fonts.
 
+| Character | Codepoint | Name                        | Decimal | HTML      |
+|:---------:|----------:|:----------------------------|--------:|:---------:|
+
+U+2022 `•` BULLET (HTML &#8226; · &bull;)
+U+2023 `‣` TRIANGULAR BULLET (HTML &#8227;)
+U+2043 `⁃` HYPHEN BULLET (HTML &#8259;)
+U+204C `⁌` BLACK LEFTWARDS BULLET (HTML &#8268;)
+U+204D `⁍` BLACK RIGHTWARDS BULLET (HTML &#8269;)
+U+2219 `∙` BULLET OPERATOR (HTML &#8729;) for use in mathematical notation primarily as a dot product instead of interpunct.
+U+22C5 `⋅` DOT OPERATOR (HTML &#8901;)
+U+25CB `○` WHITE CIRCLE (HTML &#9675;)
+U+25D8 `◘` INVERSE BULLET (HTML &#9688;)
+U+25D9 `◙` INVERSE WHITE CIRCLE (HTML &#9689;)
+U+25E6 `◦` WHITE BULLET (HTML &#9702;)
+U+2619 `☙` REVERSED ROTATED FLORAL HEART BULLET (HTML &#9753;); see Fleuron (typography)
+U+2765 `❥` ROTATED HEAVY BLACK HEART BULLET (HTML &#10085;)
+U+2767 `❧` ROTATED FLORAL HEART BULLET (HTML &#10087;); see Fleuron (typography)
+U+29BE `⦾` CIRCLED WHITE BULLET (HTML &#10686;)
+U+29BF `⦿` CIRCLED BULLET (HTML &#10687;)
+
 ## Resources
 
 -   [HTML4 entities](https://www.w3.org/TR/html4/sgml/entities.html) are best for backward compatibility.
