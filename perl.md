@@ -41,10 +41,13 @@ affecting them.
 local $_ = undef;       # $ARG (the default input and pattern-matching space)
 local $" = " ";         # $LIST_SEPARATOR (for print "@array\n";)
 local $ARGV = undef;
+# how to localize *ARGV and *ARGVOUT, resetting them?
 local $, = undef;       # $OUTPUT_FIELD_SEPARATOR
 local $. = undef;       # $INPUT_LINE_NUMBER
 local $/ = "\n";        # $INPUT_RECORD_SEPARATOR
 local $\ = undef;       # $OUTPUT_RECORD_SEPARATOR
+local $| = 0;               # $OUTPUT_AUTOFLUSH
+local ${^LAST_FH} = undef;  # added in Perl v5.18.0
 ```
 
 Edit as needed.  For example, to slurp an entire file at once:
@@ -52,6 +55,29 @@ Edit as needed.  For example, to slurp an entire file at once:
 ```
 local $/ = undef;       # $INPUT_RECORD_SEPARATOR
 ```
+
+Other variables you may want to temporarily localize:
+
+```
+local @ARGV = ();
+local $; = "\034";      # $SUBSCRIPT_SEPARATOR
+local $a = undef;       # sort
+local $b = undef;       # sort</F
+local @F = ();          # array of fields in autosplit mode
+
+local $^I = undef;      # value of inplace-edit switch (-i)
+local $^W = undef;      # value of warning switch (-w)
+
+local ${^CHILD_ERROR_NATIVE} = 0;
+local $^E = undef;      # $EXTENDED_OS_ERROR
+local $! = 0;           # $ERRNO
+local $? = 0;           # $CHILD_ERROR
+local $@ = '';          # $EVAL_ERROR
+```
+
+Variables related to formats are not included here.
+
+Variables related to the interpreter state are not included here.
 
 ## A Safer `chomp`
 
