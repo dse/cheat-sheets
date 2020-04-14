@@ -46,4 +46,9 @@ package My::Thingy {
     INIT {
         # ...
     }
+
+    sub run {
+        my ($self) = @_;
+        # ...
+    }
 };
