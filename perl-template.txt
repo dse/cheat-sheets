@@ -1,14 +1,14 @@
 #!/usr/bin/env perl
 use warnings;
 use strict;
-use feature 'say';
+use feature qw(say);
 
 #------------------------------------------------------------------------------
 use File::Basename qw(basename);
 our $PROGNAME = basename($0);
 
 #------------------------------------------------------------------------------
-use open IO => ":locale";
+use open IO => qw(:locale);
 use Encode::Locale;
 use Encode qw(decode);
 BEGIN {
@@ -37,6 +37,8 @@ $thingy->run();
 ###############################################################################
 
 package My::Thingy {
+    use feature qw(say);
+
     use File::Basename qw(basename);
     our $PROGNAME; BEGIN { $PROGNAME = basename($0); }
 
