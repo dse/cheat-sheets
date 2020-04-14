@@ -33,6 +33,9 @@ sub usage { print(<<"END"); }
 usage:
     $PROGNAME [<option> ...] <argument> ...
 options:
+    -h, --help
+    -n, --dry-run
+    -v, --verbose
     ...
 END
 
