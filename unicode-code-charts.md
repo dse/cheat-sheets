@@ -205,7 +205,6 @@ http://www.unicode.org/charts/PDF/U2B740.pdf
 http://www.unicode.org/charts/PDF/U2B820.pdf
 http://www.unicode.org/charts/PDF/U2CEB0.pdf
 http://www.unicode.org/charts/PDF/U30000.pdf
-unihan.html
 http://www.unicode.org/charts/PDF/UF900.pdf
 http://www.unicode.org/charts/PDF/U2F800.pdf
 http://www.unicode.org/charts/PDF/U2F00.pdf
@@ -277,7 +276,6 @@ http://www.unicode.org/charts/PDF/U2300.pdf
 http://www.unicode.org/charts/PDF/U2400.pdf
 http://www.unicode.org/charts/PDF/U2300.pdf
 http://www.unicode.org/charts/PDF/U2440.pdf
-#scripts
 http://www.unicode.org/charts/PDF/U0000.pdf
 http://www.unicode.org/charts/PDF/UFF00.pdf
 http://www.unicode.org/charts/PDF/UA830.pdf
@@ -324,7 +322,6 @@ http://www.unicode.org/charts/PDF/U1F680.pdf
 http://www.unicode.org/charts/PDF/U1F700.pdf
 http://www.unicode.org/charts/PDF/U10190.pdf
 http://www.unicode.org/charts/PDF/U20A0.pdf
-#scripts
 http://www.unicode.org/charts/PDF/U0000.pdf
 http://www.unicode.org/charts/PDF/U20A0.pdf
 http://www.unicode.org/charts/PDF/U0080.pdf
