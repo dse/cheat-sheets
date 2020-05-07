@@ -1,325 +1,325 @@
 # Unicode Code Charts
 
--   http://www.unicode.org/charts/PDF/U0000.pdf
--   http://www.unicode.org/charts/PDF/U0080.pdf
--   http://www.unicode.org/charts/PDF/U0100.pdf
--   http://www.unicode.org/charts/PDF/U0180.pdf
--   http://www.unicode.org/charts/PDF/U0250.pdf
--   http://www.unicode.org/charts/PDF/U02B0.pdf
--   http://www.unicode.org/charts/PDF/U0300.pdf
--   http://www.unicode.org/charts/PDF/U0370.pdf
--   http://www.unicode.org/charts/PDF/U0400.pdf
--   http://www.unicode.org/charts/PDF/U0500.pdf
--   http://www.unicode.org/charts/PDF/U0530.pdf
--   http://www.unicode.org/charts/PDF/U0590.pdf
--   http://www.unicode.org/charts/PDF/U0600.pdf
--   http://www.unicode.org/charts/PDF/U0700.pdf
--   http://www.unicode.org/charts/PDF/U0750.pdf
--   http://www.unicode.org/charts/PDF/U0780.pdf
--   http://www.unicode.org/charts/PDF/U07C0.pdf
--   http://www.unicode.org/charts/PDF/U0800.pdf
--   http://www.unicode.org/charts/PDF/U0840.pdf
--   http://www.unicode.org/charts/PDF/U0860.pdf
--   http://www.unicode.org/charts/PDF/U08A0.pdf
--   http://www.unicode.org/charts/PDF/U0900.pdf
--   http://www.unicode.org/charts/PDF/U0980.pdf
--   http://www.unicode.org/charts/PDF/U0A00.pdf
--   http://www.unicode.org/charts/PDF/U0A80.pdf
--   http://www.unicode.org/charts/PDF/U0B00.pdf
--   http://www.unicode.org/charts/PDF/U0B80.pdf
--   http://www.unicode.org/charts/PDF/U0C00.pdf
--   http://www.unicode.org/charts/PDF/U0C80.pdf
--   http://www.unicode.org/charts/PDF/U0D00.pdf
--   http://www.unicode.org/charts/PDF/U0D80.pdf
--   http://www.unicode.org/charts/PDF/U0E00.pdf
--   http://www.unicode.org/charts/PDF/U0E80.pdf
--   http://www.unicode.org/charts/PDF/U0F00.pdf
--   http://www.unicode.org/charts/PDF/U1000.pdf
--   http://www.unicode.org/charts/PDF/U10A0.pdf
--   http://www.unicode.org/charts/PDF/U1100.pdf
--   http://www.unicode.org/charts/PDF/U1200.pdf
--   http://www.unicode.org/charts/PDF/U1380.pdf
--   http://www.unicode.org/charts/PDF/U13A0.pdf
--   http://www.unicode.org/charts/PDF/U1400.pdf
--   http://www.unicode.org/charts/PDF/U1680.pdf
--   http://www.unicode.org/charts/PDF/U16A0.pdf
--   http://www.unicode.org/charts/PDF/U1700.pdf
--   http://www.unicode.org/charts/PDF/U1720.pdf
--   http://www.unicode.org/charts/PDF/U1740.pdf
--   http://www.unicode.org/charts/PDF/U1760.pdf
--   http://www.unicode.org/charts/PDF/U1780.pdf
--   http://www.unicode.org/charts/PDF/U1800.pdf
--   http://www.unicode.org/charts/PDF/U18B0.pdf
--   http://www.unicode.org/charts/PDF/U1900.pdf
--   http://www.unicode.org/charts/PDF/U1950.pdf
--   http://www.unicode.org/charts/PDF/U1980.pdf
--   http://www.unicode.org/charts/PDF/U19E0.pdf
--   http://www.unicode.org/charts/PDF/U1A00.pdf
--   http://www.unicode.org/charts/PDF/U1A20.pdf
--   http://www.unicode.org/charts/PDF/U1AB0.pdf
--   http://www.unicode.org/charts/PDF/U1B00.pdf
--   http://www.unicode.org/charts/PDF/U1B80.pdf
--   http://www.unicode.org/charts/PDF/U1BC0.pdf
--   http://www.unicode.org/charts/PDF/U1C00.pdf
--   http://www.unicode.org/charts/PDF/U1C50.pdf
--   http://www.unicode.org/charts/PDF/U1C80.pdf
--   http://www.unicode.org/charts/PDF/U1C90.pdf
--   http://www.unicode.org/charts/PDF/U1CC0.pdf
--   http://www.unicode.org/charts/PDF/U1CD0.pdf
--   http://www.unicode.org/charts/PDF/U1D00.pdf
--   http://www.unicode.org/charts/PDF/U1D80.pdf
--   http://www.unicode.org/charts/PDF/U1DC0.pdf
--   http://www.unicode.org/charts/PDF/U1E00.pdf
--   http://www.unicode.org/charts/PDF/U1F00.pdf
--   http://www.unicode.org/charts/PDF/U2000.pdf
--   http://www.unicode.org/charts/PDF/U2070.pdf
--   http://www.unicode.org/charts/PDF/U20A0.pdf
--   http://www.unicode.org/charts/PDF/U20D0.pdf
--   http://www.unicode.org/charts/PDF/U2100.pdf
--   http://www.unicode.org/charts/PDF/U2150.pdf
--   http://www.unicode.org/charts/PDF/U2190.pdf
--   http://www.unicode.org/charts/PDF/U2200.pdf
--   http://www.unicode.org/charts/PDF/U2300.pdf
--   http://www.unicode.org/charts/PDF/U2400.pdf
--   http://www.unicode.org/charts/PDF/U2440.pdf
--   http://www.unicode.org/charts/PDF/U2460.pdf
--   http://www.unicode.org/charts/PDF/U2500.pdf
--   http://www.unicode.org/charts/PDF/U2580.pdf
--   http://www.unicode.org/charts/PDF/U25A0.pdf
--   http://www.unicode.org/charts/PDF/U2600.pdf
--   http://www.unicode.org/charts/PDF/U2700.pdf
--   http://www.unicode.org/charts/PDF/U27C0.pdf
--   http://www.unicode.org/charts/PDF/U27F0.pdf
--   http://www.unicode.org/charts/PDF/U2800.pdf
--   http://www.unicode.org/charts/PDF/U2900.pdf
--   http://www.unicode.org/charts/PDF/U2980.pdf
--   http://www.unicode.org/charts/PDF/U2A00.pdf
--   http://www.unicode.org/charts/PDF/U2B00.pdf
--   http://www.unicode.org/charts/PDF/U2C00.pdf
--   http://www.unicode.org/charts/PDF/U2C60.pdf
--   http://www.unicode.org/charts/PDF/U2C80.pdf
--   http://www.unicode.org/charts/PDF/U2D00.pdf
--   http://www.unicode.org/charts/PDF/U2D30.pdf
--   http://www.unicode.org/charts/PDF/U2D80.pdf
--   http://www.unicode.org/charts/PDF/U2DE0.pdf
--   http://www.unicode.org/charts/PDF/U2E00.pdf
--   http://www.unicode.org/charts/PDF/U2E80.pdf
--   http://www.unicode.org/charts/PDF/U2F00.pdf
--   http://www.unicode.org/charts/PDF/U2FF0.pdf
--   http://www.unicode.org/charts/PDF/U3000.pdf
--   http://www.unicode.org/charts/PDF/U3040.pdf
--   http://www.unicode.org/charts/PDF/U30A0.pdf
--   http://www.unicode.org/charts/PDF/U3100.pdf
--   http://www.unicode.org/charts/PDF/U3130.pdf
--   http://www.unicode.org/charts/PDF/U3190.pdf
--   http://www.unicode.org/charts/PDF/U31A0.pdf
--   http://www.unicode.org/charts/PDF/U31C0.pdf
--   http://www.unicode.org/charts/PDF/U31F0.pdf
--   http://www.unicode.org/charts/PDF/U3200.pdf
--   http://www.unicode.org/charts/PDF/U3300.pdf
--   http://www.unicode.org/charts/PDF/U3400.pdf
--   http://www.unicode.org/charts/PDF/U4DC0.pdf
--   http://www.unicode.org/charts/PDF/U4E00.pdf
--   http://www.unicode.org/charts/PDF/UA000.pdf
--   http://www.unicode.org/charts/PDF/UA490.pdf
--   http://www.unicode.org/charts/PDF/UA4D0.pdf
--   http://www.unicode.org/charts/PDF/UA500.pdf
--   http://www.unicode.org/charts/PDF/UA640.pdf
--   http://www.unicode.org/charts/PDF/UA6A0.pdf
--   http://www.unicode.org/charts/PDF/UA700.pdf
--   http://www.unicode.org/charts/PDF/UA720.pdf
--   http://www.unicode.org/charts/PDF/UA800.pdf
--   http://www.unicode.org/charts/PDF/UA830.pdf
--   http://www.unicode.org/charts/PDF/UA840.pdf
--   http://www.unicode.org/charts/PDF/UA880.pdf
--   http://www.unicode.org/charts/PDF/UA8E0.pdf
--   http://www.unicode.org/charts/PDF/UA900.pdf
--   http://www.unicode.org/charts/PDF/UA930.pdf
--   http://www.unicode.org/charts/PDF/UA960.pdf
--   http://www.unicode.org/charts/PDF/UA980.pdf
--   http://www.unicode.org/charts/PDF/UA9E0.pdf
--   http://www.unicode.org/charts/PDF/UAA00.pdf
--   http://www.unicode.org/charts/PDF/UAA60.pdf
--   http://www.unicode.org/charts/PDF/UAA80.pdf
--   http://www.unicode.org/charts/PDF/UAAE0.pdf
--   http://www.unicode.org/charts/PDF/UAB00.pdf
--   http://www.unicode.org/charts/PDF/UAB30.pdf
--   http://www.unicode.org/charts/PDF/UAB70.pdf
--   http://www.unicode.org/charts/PDF/UABC0.pdf
--   http://www.unicode.org/charts/PDF/UAC00.pdf
--   http://www.unicode.org/charts/PDF/UD7B0.pdf
--   http://www.unicode.org/charts/PDF/UD800.pdf
--   http://www.unicode.org/charts/PDF/UDC00.pdf
--   http://www.unicode.org/charts/PDF/UE000.pdf
--   http://www.unicode.org/charts/PDF/UF900.pdf
--   http://www.unicode.org/charts/PDF/UFB00.pdf
--   http://www.unicode.org/charts/PDF/UFB50.pdf
--   http://www.unicode.org/charts/PDF/UFE00.pdf
--   http://www.unicode.org/charts/PDF/UFE10.pdf
--   http://www.unicode.org/charts/PDF/UFE20.pdf
--   http://www.unicode.org/charts/PDF/UFE30.pdf
--   http://www.unicode.org/charts/PDF/UFE50.pdf
--   http://www.unicode.org/charts/PDF/UFE70.pdf
--   http://www.unicode.org/charts/PDF/UFF00.pdf
--   http://www.unicode.org/charts/PDF/UFFF0.pdf
--   http://www.unicode.org/charts/PDF/U10000.pdf
--   http://www.unicode.org/charts/PDF/U10080.pdf
--   http://www.unicode.org/charts/PDF/U10100.pdf
--   http://www.unicode.org/charts/PDF/U10140.pdf
--   http://www.unicode.org/charts/PDF/U10190.pdf
--   http://www.unicode.org/charts/PDF/U101D0.pdf
--   http://www.unicode.org/charts/PDF/U10280.pdf
--   http://www.unicode.org/charts/PDF/U102A0.pdf
--   http://www.unicode.org/charts/PDF/U102E0.pdf
--   http://www.unicode.org/charts/PDF/U10300.pdf
--   http://www.unicode.org/charts/PDF/U10330.pdf
--   http://www.unicode.org/charts/PDF/U10350.pdf
--   http://www.unicode.org/charts/PDF/U10380.pdf
--   http://www.unicode.org/charts/PDF/U103A0.pdf
--   http://www.unicode.org/charts/PDF/U10400.pdf
--   http://www.unicode.org/charts/PDF/U10450.pdf
--   http://www.unicode.org/charts/PDF/U10480.pdf
--   http://www.unicode.org/charts/PDF/U104B0.pdf
--   http://www.unicode.org/charts/PDF/U10500.pdf
--   http://www.unicode.org/charts/PDF/U10530.pdf
--   http://www.unicode.org/charts/PDF/U10600.pdf
--   http://www.unicode.org/charts/PDF/U10800.pdf
--   http://www.unicode.org/charts/PDF/U10840.pdf
--   http://www.unicode.org/charts/PDF/U10860.pdf
--   http://www.unicode.org/charts/PDF/U10880.pdf
--   http://www.unicode.org/charts/PDF/U108E0.pdf
--   http://www.unicode.org/charts/PDF/U10900.pdf
--   http://www.unicode.org/charts/PDF/U10920.pdf
--   http://www.unicode.org/charts/PDF/U10980.pdf
--   http://www.unicode.org/charts/PDF/U109A0.pdf
--   http://www.unicode.org/charts/PDF/U10A00.pdf
--   http://www.unicode.org/charts/PDF/U10A60.pdf
--   http://www.unicode.org/charts/PDF/U10A80.pdf
--   http://www.unicode.org/charts/PDF/U10AC0.pdf
--   http://www.unicode.org/charts/PDF/U10B00.pdf
--   http://www.unicode.org/charts/PDF/U10B40.pdf
--   http://www.unicode.org/charts/PDF/U10B60.pdf
--   http://www.unicode.org/charts/PDF/U10B80.pdf
--   http://www.unicode.org/charts/PDF/U10C00.pdf
--   http://www.unicode.org/charts/PDF/U10C80.pdf
--   http://www.unicode.org/charts/PDF/U10D00.pdf
--   http://www.unicode.org/charts/PDF/U10E60.pdf
--   http://www.unicode.org/charts/PDF/U10E80.pdf
--   http://www.unicode.org/charts/PDF/U10F00.pdf
--   http://www.unicode.org/charts/PDF/U10F30.pdf
--   http://www.unicode.org/charts/PDF/U10FB0.pdf
--   http://www.unicode.org/charts/PDF/U10FE0.pdf
--   http://www.unicode.org/charts/PDF/U11000.pdf
--   http://www.unicode.org/charts/PDF/U11080.pdf
--   http://www.unicode.org/charts/PDF/U110D0.pdf
--   http://www.unicode.org/charts/PDF/U11100.pdf
--   http://www.unicode.org/charts/PDF/U11150.pdf
--   http://www.unicode.org/charts/PDF/U11180.pdf
--   http://www.unicode.org/charts/PDF/U111E0.pdf
--   http://www.unicode.org/charts/PDF/U11200.pdf
--   http://www.unicode.org/charts/PDF/U11280.pdf
--   http://www.unicode.org/charts/PDF/U112B0.pdf
--   http://www.unicode.org/charts/PDF/U11300.pdf
--   http://www.unicode.org/charts/PDF/U11400.pdf
--   http://www.unicode.org/charts/PDF/U11480.pdf
--   http://www.unicode.org/charts/PDF/U11580.pdf
--   http://www.unicode.org/charts/PDF/U11600.pdf
--   http://www.unicode.org/charts/PDF/U11660.pdf
--   http://www.unicode.org/charts/PDF/U11680.pdf
--   http://www.unicode.org/charts/PDF/U11700.pdf
--   http://www.unicode.org/charts/PDF/U11800.pdf
--   http://www.unicode.org/charts/PDF/U118A0.pdf
--   http://www.unicode.org/charts/PDF/U11900.pdf
--   http://www.unicode.org/charts/PDF/U119A0.pdf
--   http://www.unicode.org/charts/PDF/U11A00.pdf
--   http://www.unicode.org/charts/PDF/U11A50.pdf
--   http://www.unicode.org/charts/PDF/U11AC0.pdf
--   http://www.unicode.org/charts/PDF/U11C00.pdf
--   http://www.unicode.org/charts/PDF/U11C70.pdf
--   http://www.unicode.org/charts/PDF/U11D00.pdf
--   http://www.unicode.org/charts/PDF/U11D60.pdf
--   http://www.unicode.org/charts/PDF/U11EE0.pdf
--   http://www.unicode.org/charts/PDF/U11FB0.pdf
--   http://www.unicode.org/charts/PDF/U11FC0.pdf
--   http://www.unicode.org/charts/PDF/U12000.pdf
--   http://www.unicode.org/charts/PDF/U12400.pdf
--   http://www.unicode.org/charts/PDF/U12480.pdf
--   http://www.unicode.org/charts/PDF/U13000.pdf
--   http://www.unicode.org/charts/PDF/U13430.pdf
--   http://www.unicode.org/charts/PDF/U14400.pdf
--   http://www.unicode.org/charts/PDF/U16800.pdf
--   http://www.unicode.org/charts/PDF/U16A40.pdf
--   http://www.unicode.org/charts/PDF/U16AD0.pdf
--   http://www.unicode.org/charts/PDF/U16B00.pdf
--   http://www.unicode.org/charts/PDF/U16E40.pdf
--   http://www.unicode.org/charts/PDF/U16F00.pdf
--   http://www.unicode.org/charts/PDF/U16FE0.pdf
--   http://www.unicode.org/charts/PDF/U17000.pdf
--   http://www.unicode.org/charts/PDF/U18800.pdf
--   http://www.unicode.org/charts/PDF/U18B00.pdf
--   http://www.unicode.org/charts/PDF/U18D00.pdf
--   http://www.unicode.org/charts/PDF/U1B000.pdf
--   http://www.unicode.org/charts/PDF/U1B100.pdf
--   http://www.unicode.org/charts/PDF/U1B130.pdf
--   http://www.unicode.org/charts/PDF/U1B170.pdf
--   http://www.unicode.org/charts/PDF/U1BC00.pdf
--   http://www.unicode.org/charts/PDF/U1BCA0.pdf
--   http://www.unicode.org/charts/PDF/U1D000.pdf
--   http://www.unicode.org/charts/PDF/U1D100.pdf
--   http://www.unicode.org/charts/PDF/U1D200.pdf
--   http://www.unicode.org/charts/PDF/U1D2E0.pdf
--   http://www.unicode.org/charts/PDF/U1D300.pdf
--   http://www.unicode.org/charts/PDF/U1D360.pdf
--   http://www.unicode.org/charts/PDF/U1D400.pdf
--   http://www.unicode.org/charts/PDF/U1D800.pdf
--   http://www.unicode.org/charts/PDF/U1E000.pdf
--   http://www.unicode.org/charts/PDF/U1E100.pdf
--   http://www.unicode.org/charts/PDF/U1E2C0.pdf
--   http://www.unicode.org/charts/PDF/U1E800.pdf
--   http://www.unicode.org/charts/PDF/U1E900.pdf
--   http://www.unicode.org/charts/PDF/U1EC70.pdf
--   http://www.unicode.org/charts/PDF/U1ED00.pdf
--   http://www.unicode.org/charts/PDF/U1EE00.pdf
--   http://www.unicode.org/charts/PDF/U1F000.pdf
--   http://www.unicode.org/charts/PDF/U1F030.pdf
--   http://www.unicode.org/charts/PDF/U1F0A0.pdf
--   http://www.unicode.org/charts/PDF/U1F100.pdf
--   http://www.unicode.org/charts/PDF/U1F200.pdf
--   http://www.unicode.org/charts/PDF/U1F300.pdf
--   http://www.unicode.org/charts/PDF/U1F600.pdf
--   http://www.unicode.org/charts/PDF/U1F650.pdf
--   http://www.unicode.org/charts/PDF/U1F680.pdf
--   http://www.unicode.org/charts/PDF/U1F700.pdf
--   http://www.unicode.org/charts/PDF/U1F780.pdf
--   http://www.unicode.org/charts/PDF/U1F800.pdf
--   http://www.unicode.org/charts/PDF/U1F900.pdf
--   http://www.unicode.org/charts/PDF/U1FA00.pdf
--   http://www.unicode.org/charts/PDF/U1FA70.pdf
--   http://www.unicode.org/charts/PDF/U1FB00.pdf
--   http://www.unicode.org/charts/PDF/U1FF80.pdf
--   http://www.unicode.org/charts/PDF/U20000.pdf
--   http://www.unicode.org/charts/PDF/U2A700.pdf
--   http://www.unicode.org/charts/PDF/U2B740.pdf
--   http://www.unicode.org/charts/PDF/U2B820.pdf
--   http://www.unicode.org/charts/PDF/U2CEB0.pdf
--   http://www.unicode.org/charts/PDF/U2F800.pdf
--   http://www.unicode.org/charts/PDF/U2FF80.pdf
--   http://www.unicode.org/charts/PDF/U30000.pdf
--   http://www.unicode.org/charts/PDF/U3FF80.pdf
--   http://www.unicode.org/charts/PDF/U4FF80.pdf
--   http://www.unicode.org/charts/PDF/U5FF80.pdf
--   http://www.unicode.org/charts/PDF/U6FF80.pdf
--   http://www.unicode.org/charts/PDF/U7FF80.pdf
--   http://www.unicode.org/charts/PDF/U8FF80.pdf
--   http://www.unicode.org/charts/PDF/U9FF80.pdf
--   http://www.unicode.org/charts/PDF/UAFF80.pdf
--   http://www.unicode.org/charts/PDF/UBFF80.pdf
--   http://www.unicode.org/charts/PDF/UCFF80.pdf
--   http://www.unicode.org/charts/PDF/UDFF80.pdf
--   http://www.unicode.org/charts/PDF/UE0000.pdf
--   http://www.unicode.org/charts/PDF/UE0100.pdf
--   http://www.unicode.org/charts/PDF/UEFF80.pdf
--   http://www.unicode.org/charts/PDF/UF0000.pdf
--   http://www.unicode.org/charts/PDF/UFFF80.pdf
--   http://www.unicode.org/charts/PDF/U100000.pdf
--   http://www.unicode.org/charts/PDF/U10FF80.pdf
+-   U+0000 [Basic Latin](http://www.unicode.org/charts/PDF/U0000.pdf)
+-   U+0080 [Latin-1 Supplement](http://www.unicode.org/charts/PDF/U0080.pdf)
+-   U+0100 [Latin Extended-A](http://www.unicode.org/charts/PDF/U0100.pdf)
+-   U+0180 [Latin Extended-B](http://www.unicode.org/charts/PDF/U0180.pdf)
+-   U+0250 [IPA Extensions](http://www.unicode.org/charts/PDF/U0250.pdf)
+-   U+02B0 [Spacing Modifier Letters](http://www.unicode.org/charts/PDF/U02B0.pdf)
+-   U+0300 [Combining Diacritical Marks](http://www.unicode.org/charts/PDF/U0300.pdf)
+-   U+0370 [Greek and Coptic](http://www.unicode.org/charts/PDF/U0370.pdf)
+-   U+0400 [Cyrillic](http://www.unicode.org/charts/PDF/U0400.pdf)
+-   U+0500 [Cyrillic Supplement](http://www.unicode.org/charts/PDF/U0500.pdf)
+-   U+0530 [Armenian](http://www.unicode.org/charts/PDF/U0530.pdf)
+-   U+0590 [Hebrew](http://www.unicode.org/charts/PDF/U0590.pdf)
+-   U+0600 [Arabic](http://www.unicode.org/charts/PDF/U0600.pdf)
+-   U+0700 [Syriac](http://www.unicode.org/charts/PDF/U0700.pdf)
+-   U+0750 [Arabic Supplement](http://www.unicode.org/charts/PDF/U0750.pdf)
+-   U+0780 [Thaana](http://www.unicode.org/charts/PDF/U0780.pdf)
+-   U+07C0 [NKo](http://www.unicode.org/charts/PDF/U07C0.pdf)
+-   U+0800 [Samaritan](http://www.unicode.org/charts/PDF/U0800.pdf)
+-   U+0840 [Mandaic](http://www.unicode.org/charts/PDF/U0840.pdf)
+-   U+0860 [Syriac Supplement](http://www.unicode.org/charts/PDF/U0860.pdf)
+-   U+08A0 [Arabic Extended-A](http://www.unicode.org/charts/PDF/U08A0.pdf)
+-   U+0900 [Devanagari](http://www.unicode.org/charts/PDF/U0900.pdf)
+-   U+0980 [Bengali](http://www.unicode.org/charts/PDF/U0980.pdf)
+-   U+0A00 [Gurmukhi](http://www.unicode.org/charts/PDF/U0A00.pdf)
+-   U+0A80 [Gujarati](http://www.unicode.org/charts/PDF/U0A80.pdf)
+-   U+0B00 [Oriya](http://www.unicode.org/charts/PDF/U0B00.pdf)
+-   U+0B80 [Tamil](http://www.unicode.org/charts/PDF/U0B80.pdf)
+-   U+0C00 [Telugu](http://www.unicode.org/charts/PDF/U0C00.pdf)
+-   U+0C80 [Kannada](http://www.unicode.org/charts/PDF/U0C80.pdf)
+-   U+0D00 [Malayalam](http://www.unicode.org/charts/PDF/U0D00.pdf)
+-   U+0D80 [Sinhala](http://www.unicode.org/charts/PDF/U0D80.pdf)
+-   U+0E00 [Thai](http://www.unicode.org/charts/PDF/U0E00.pdf)
+-   U+0E80 [Lao](http://www.unicode.org/charts/PDF/U0E80.pdf)
+-   U+0F00 [Tibetan](http://www.unicode.org/charts/PDF/U0F00.pdf)
+-   U+1000 [Myanmar](http://www.unicode.org/charts/PDF/U1000.pdf)
+-   U+10A0 [Georgian](http://www.unicode.org/charts/PDF/U10A0.pdf)
+-   U+1100 [Hangul Jamo](http://www.unicode.org/charts/PDF/U1100.pdf)
+-   U+1200 [Ethiopic](http://www.unicode.org/charts/PDF/U1200.pdf)
+-   U+1380 [Ethiopic Supplement](http://www.unicode.org/charts/PDF/U1380.pdf)
+-   U+13A0 [Cherokee](http://www.unicode.org/charts/PDF/U13A0.pdf)
+-   U+1400 [Unified Canadian Aboriginal Syllabics](http://www.unicode.org/charts/PDF/U1400.pdf)
+-   U+1680 [Ogham](http://www.unicode.org/charts/PDF/U1680.pdf)
+-   U+16A0 [Runic](http://www.unicode.org/charts/PDF/U16A0.pdf)
+-   U+1700 [Tagalog](http://www.unicode.org/charts/PDF/U1700.pdf)
+-   U+1720 [Hanunoo](http://www.unicode.org/charts/PDF/U1720.pdf)
+-   U+1740 [Buhid](http://www.unicode.org/charts/PDF/U1740.pdf)
+-   U+1760 [Tagbanwa](http://www.unicode.org/charts/PDF/U1760.pdf)
+-   U+1780 [Khmer](http://www.unicode.org/charts/PDF/U1780.pdf)
+-   U+1800 [Mongolian](http://www.unicode.org/charts/PDF/U1800.pdf)
+-   U+18B0 [Unified Canadian Aboriginal Syllabics Extended](http://www.unicode.org/charts/PDF/U18B0.pdf)
+-   U+1900 [Limbu](http://www.unicode.org/charts/PDF/U1900.pdf)
+-   U+1950 [Tai Le](http://www.unicode.org/charts/PDF/U1950.pdf)
+-   U+1980 [New Tai Lue](http://www.unicode.org/charts/PDF/U1980.pdf)
+-   U+19E0 [Khmer Symbols](http://www.unicode.org/charts/PDF/U19E0.pdf)
+-   U+1A00 [Buginese](http://www.unicode.org/charts/PDF/U1A00.pdf)
+-   U+1A20 [Tai Tham](http://www.unicode.org/charts/PDF/U1A20.pdf)
+-   U+1AB0 [Combining Diacritical Marks Extended](http://www.unicode.org/charts/PDF/U1AB0.pdf)
+-   U+1B00 [Balinese](http://www.unicode.org/charts/PDF/U1B00.pdf)
+-   U+1B80 [Sundanese](http://www.unicode.org/charts/PDF/U1B80.pdf)
+-   U+1BC0 [Batak](http://www.unicode.org/charts/PDF/U1BC0.pdf)
+-   U+1C00 [Lepcha](http://www.unicode.org/charts/PDF/U1C00.pdf)
+-   U+1C50 [Ol Chiki](http://www.unicode.org/charts/PDF/U1C50.pdf)
+-   U+1C80 [Cyrillic Extended-C](http://www.unicode.org/charts/PDF/U1C80.pdf)
+-   U+1C90 [Georgian Extended](http://www.unicode.org/charts/PDF/U1C90.pdf)
+-   U+1CC0 [Sundanese Supplement](http://www.unicode.org/charts/PDF/U1CC0.pdf)
+-   U+1CD0 [Vedic Extensions](http://www.unicode.org/charts/PDF/U1CD0.pdf)
+-   U+1D00 [Phonetic Extensions](http://www.unicode.org/charts/PDF/U1D00.pdf)
+-   U+1D80 [Phonetic Extensions Supplement](http://www.unicode.org/charts/PDF/U1D80.pdf)
+-   U+1DC0 [Combining Diacritical Marks Supplement](http://www.unicode.org/charts/PDF/U1DC0.pdf)
+-   U+1E00 [Latin Extended Additional](http://www.unicode.org/charts/PDF/U1E00.pdf)
+-   U+1F00 [Greek Extended](http://www.unicode.org/charts/PDF/U1F00.pdf)
+-   U+2000 [General Punctuation](http://www.unicode.org/charts/PDF/U2000.pdf)
+-   U+2070 [Superscripts and Subscripts](http://www.unicode.org/charts/PDF/U2070.pdf)
+-   U+20A0 [Currency Symbols](http://www.unicode.org/charts/PDF/U20A0.pdf)
+-   U+20D0 [Combining Diacritical Marks for Symbols](http://www.unicode.org/charts/PDF/U20D0.pdf)
+-   U+2100 [Letterlike Symbols](http://www.unicode.org/charts/PDF/U2100.pdf)
+-   U+2150 [Number Forms](http://www.unicode.org/charts/PDF/U2150.pdf)
+-   U+2190 [Arrows](http://www.unicode.org/charts/PDF/U2190.pdf)
+-   U+2200 [Mathematical Operators](http://www.unicode.org/charts/PDF/U2200.pdf)
+-   U+2300 [Miscellaneous Technical](http://www.unicode.org/charts/PDF/U2300.pdf)
+-   U+2400 [Control Pictures](http://www.unicode.org/charts/PDF/U2400.pdf)
+-   U+2440 [Optical Character Recognition](http://www.unicode.org/charts/PDF/U2440.pdf)
+-   U+2460 [Enclosed Alphanumerics](http://www.unicode.org/charts/PDF/U2460.pdf)
+-   U+2500 [Box Drawing](http://www.unicode.org/charts/PDF/U2500.pdf)
+-   U+2580 [Block Elements](http://www.unicode.org/charts/PDF/U2580.pdf)
+-   U+25A0 [Geometric Shapes](http://www.unicode.org/charts/PDF/U25A0.pdf)
+-   U+2600 [Miscellaneous Symbols](http://www.unicode.org/charts/PDF/U2600.pdf)
+-   U+2700 [Dingbats](http://www.unicode.org/charts/PDF/U2700.pdf)
+-   U+27C0 [Miscellaneous Mathematical Symbols-A](http://www.unicode.org/charts/PDF/U27C0.pdf)
+-   U+27F0 [Supplemental Arrows-A](http://www.unicode.org/charts/PDF/U27F0.pdf)
+-   U+2800 [Braille Patterns](http://www.unicode.org/charts/PDF/U2800.pdf)
+-   U+2900 [Supplemental Arrows-B](http://www.unicode.org/charts/PDF/U2900.pdf)
+-   U+2980 [Miscellaneous Mathematical Symbols-B](http://www.unicode.org/charts/PDF/U2980.pdf)
+-   U+2A00 [Supplemental Mathematical Operators](http://www.unicode.org/charts/PDF/U2A00.pdf)
+-   U+2B00 [Miscellaneous Symbols and Arrows](http://www.unicode.org/charts/PDF/U2B00.pdf)
+-   U+2C00 [Glagolitic](http://www.unicode.org/charts/PDF/U2C00.pdf)
+-   U+2C60 [Latin Extended-C](http://www.unicode.org/charts/PDF/U2C60.pdf)
+-   U+2C80 [Coptic](http://www.unicode.org/charts/PDF/U2C80.pdf)
+-   U+2D00 [Georgian Supplement](http://www.unicode.org/charts/PDF/U2D00.pdf)
+-   U+2D30 [Tifinagh](http://www.unicode.org/charts/PDF/U2D30.pdf)
+-   U+2D80 [Ethiopic Extended](http://www.unicode.org/charts/PDF/U2D80.pdf)
+-   U+2DE0 [Cyrillic Extended-A](http://www.unicode.org/charts/PDF/U2DE0.pdf)
+-   U+2E00 [Supplemental Punctuation](http://www.unicode.org/charts/PDF/U2E00.pdf)
+-   U+2E80 [CJK Radicals Supplement](http://www.unicode.org/charts/PDF/U2E80.pdf)
+-   U+2F00 [Kangxi Radicals](http://www.unicode.org/charts/PDF/U2F00.pdf)
+-   U+2FF0 [Ideographic Description Characters](http://www.unicode.org/charts/PDF/U2FF0.pdf)
+-   U+3000 [CJK Symbols and Punctuation](http://www.unicode.org/charts/PDF/U3000.pdf)
+-   U+3040 [Hiragana](http://www.unicode.org/charts/PDF/U3040.pdf)
+-   U+30A0 [Katakana](http://www.unicode.org/charts/PDF/U30A0.pdf)
+-   U+3100 [Bopomofo](http://www.unicode.org/charts/PDF/U3100.pdf)
+-   U+3130 [Hangul Compatibility Jamo](http://www.unicode.org/charts/PDF/U3130.pdf)
+-   U+3190 [Kanbun](http://www.unicode.org/charts/PDF/U3190.pdf)
+-   U+31A0 [Bopomofo Extended](http://www.unicode.org/charts/PDF/U31A0.pdf)
+-   U+31C0 [CJK Strokes](http://www.unicode.org/charts/PDF/U31C0.pdf)
+-   U+31F0 [Katakana Phonetic Extensions](http://www.unicode.org/charts/PDF/U31F0.pdf)
+-   U+3200 [Enclosed CJK Letters and Months](http://www.unicode.org/charts/PDF/U3200.pdf)
+-   U+3300 [CJK Compatibility](http://www.unicode.org/charts/PDF/U3300.pdf)
+-   U+3400 [CJK Unified Ideographs Extension A](http://www.unicode.org/charts/PDF/U3400.pdf)
+-   U+4DC0 [Yijing Hexagram Symbols](http://www.unicode.org/charts/PDF/U4DC0.pdf)
+-   U+4E00 [CJK Unified Ideographs](http://www.unicode.org/charts/PDF/U4E00.pdf)
+-   U+A000 [Yi Syllables](http://www.unicode.org/charts/PDF/UA000.pdf)
+-   U+A490 [Yi Radicals](http://www.unicode.org/charts/PDF/UA490.pdf)
+-   U+A4D0 [Lisu](http://www.unicode.org/charts/PDF/UA4D0.pdf)
+-   U+A500 [Vai](http://www.unicode.org/charts/PDF/UA500.pdf)
+-   U+A640 [Cyrillic Extended-B](http://www.unicode.org/charts/PDF/UA640.pdf)
+-   U+A6A0 [Bamum](http://www.unicode.org/charts/PDF/UA6A0.pdf)
+-   U+A700 [Modifier Tone Letters](http://www.unicode.org/charts/PDF/UA700.pdf)
+-   U+A720 [Latin Extended-D](http://www.unicode.org/charts/PDF/UA720.pdf)
+-   U+A800 [Syloti Nagri](http://www.unicode.org/charts/PDF/UA800.pdf)
+-   U+A830 [Common Indic Number Forms](http://www.unicode.org/charts/PDF/UA830.pdf)
+-   U+A840 [Phags-pa](http://www.unicode.org/charts/PDF/UA840.pdf)
+-   U+A880 [Saurashtra](http://www.unicode.org/charts/PDF/UA880.pdf)
+-   U+A8E0 [Devanagari Extended](http://www.unicode.org/charts/PDF/UA8E0.pdf)
+-   U+A900 [Kayah Li](http://www.unicode.org/charts/PDF/UA900.pdf)
+-   U+A930 [Rejang](http://www.unicode.org/charts/PDF/UA930.pdf)
+-   U+A960 [Hangul Jamo Extended-A](http://www.unicode.org/charts/PDF/UA960.pdf)
+-   U+A980 [Javanese](http://www.unicode.org/charts/PDF/UA980.pdf)
+-   U+A9E0 [Myanmar Extended-B](http://www.unicode.org/charts/PDF/UA9E0.pdf)
+-   U+AA00 [Cham](http://www.unicode.org/charts/PDF/UAA00.pdf)
+-   U+AA60 [Myanmar Extended-A](http://www.unicode.org/charts/PDF/UAA60.pdf)
+-   U+AA80 [Tai Viet](http://www.unicode.org/charts/PDF/UAA80.pdf)
+-   U+AAE0 [Meetei Mayek Extensions](http://www.unicode.org/charts/PDF/UAAE0.pdf)
+-   U+AB00 [Ethiopic Extended-A](http://www.unicode.org/charts/PDF/UAB00.pdf)
+-   U+AB30 [Latin Extended-E](http://www.unicode.org/charts/PDF/UAB30.pdf)
+-   U+AB70 [Cherokee Supplement](http://www.unicode.org/charts/PDF/UAB70.pdf)
+-   U+ABC0 [Meetei Mayek](http://www.unicode.org/charts/PDF/UABC0.pdf)
+-   U+AC00 [Hangul Syllables](http://www.unicode.org/charts/PDF/UAC00.pdf)
+-   U+D7B0 [Hangul Jamo Extended-B](http://www.unicode.org/charts/PDF/UD7B0.pdf)
+-   U+D800 [High Surrogates](http://www.unicode.org/charts/PDF/UD800.pdf)
+-   U+DC00 [Low Surrogates](http://www.unicode.org/charts/PDF/UDC00.pdf)
+-   U+E000 [Private Use Area](http://www.unicode.org/charts/PDF/UE000.pdf)
+-   U+F900 [CJK Compatibility Ideographs](http://www.unicode.org/charts/PDF/UF900.pdf)
+-   U+FB00 [Alphabetic Presentation Forms](http://www.unicode.org/charts/PDF/UFB00.pdf)
+-   U+FB50 [Arabic Presentation Forms-A](http://www.unicode.org/charts/PDF/UFB50.pdf)
+-   U+FE00 [Variation Selectors](http://www.unicode.org/charts/PDF/UFE00.pdf)
+-   U+FE10 [Vertical Forms](http://www.unicode.org/charts/PDF/UFE10.pdf)
+-   U+FE20 [Combining Half Marks](http://www.unicode.org/charts/PDF/UFE20.pdf)
+-   U+FE30 [CJK Compatibility Forms](http://www.unicode.org/charts/PDF/UFE30.pdf)
+-   U+FE50 [Small Form Variants](http://www.unicode.org/charts/PDF/UFE50.pdf)
+-   U+FE70 [Arabic Presentation Forms-B](http://www.unicode.org/charts/PDF/UFE70.pdf)
+-   U+FF00 [Halfwidth and Fullwidth Forms](http://www.unicode.org/charts/PDF/UFF00.pdf)
+-   U+FFF0 [Specials](http://www.unicode.org/charts/PDF/UFFF0.pdf)
+-   U+10000 [Linear B Syllabary](http://www.unicode.org/charts/PDF/U10000.pdf)
+-   U+10080 [Linear B Ideograms](http://www.unicode.org/charts/PDF/U10080.pdf)
+-   U+10100 [Aegean Numbers](http://www.unicode.org/charts/PDF/U10100.pdf)
+-   U+10140 [Ancient Greek Numbers](http://www.unicode.org/charts/PDF/U10140.pdf)
+-   U+10190 [Ancient Symbols](http://www.unicode.org/charts/PDF/U10190.pdf)
+-   U+101D0 [Phaistos Disc](http://www.unicode.org/charts/PDF/U101D0.pdf)
+-   U+10280 [Lycian](http://www.unicode.org/charts/PDF/U10280.pdf)
+-   U+102A0 [Carian](http://www.unicode.org/charts/PDF/U102A0.pdf)
+-   U+102E0 [Coptic Epact Numbers](http://www.unicode.org/charts/PDF/U102E0.pdf)
+-   U+10300 [Old Italic](http://www.unicode.org/charts/PDF/U10300.pdf)
+-   U+10330 [Gothic](http://www.unicode.org/charts/PDF/U10330.pdf)
+-   U+10350 [Old Permic](http://www.unicode.org/charts/PDF/U10350.pdf)
+-   U+10380 [Ugaritic](http://www.unicode.org/charts/PDF/U10380.pdf)
+-   U+103A0 [Old Persian](http://www.unicode.org/charts/PDF/U103A0.pdf)
+-   U+10400 [Deseret](http://www.unicode.org/charts/PDF/U10400.pdf)
+-   U+10450 [Shavian](http://www.unicode.org/charts/PDF/U10450.pdf)
+-   U+10480 [Osmanya](http://www.unicode.org/charts/PDF/U10480.pdf)
+-   U+104B0 [Osage](http://www.unicode.org/charts/PDF/U104B0.pdf)
+-   U+10500 [Elbasan](http://www.unicode.org/charts/PDF/U10500.pdf)
+-   U+10530 [Caucasian Albanian](http://www.unicode.org/charts/PDF/U10530.pdf)
+-   U+10600 [Linear A](http://www.unicode.org/charts/PDF/U10600.pdf)
+-   U+10800 [Cypriot Syllabary](http://www.unicode.org/charts/PDF/U10800.pdf)
+-   U+10840 [Imperial Aramaic](http://www.unicode.org/charts/PDF/U10840.pdf)
+-   U+10860 [Palmyrene](http://www.unicode.org/charts/PDF/U10860.pdf)
+-   U+10880 [Nabataean](http://www.unicode.org/charts/PDF/U10880.pdf)
+-   U+108E0 [Hatran](http://www.unicode.org/charts/PDF/U108E0.pdf)
+-   U+10900 [Phoenician](http://www.unicode.org/charts/PDF/U10900.pdf)
+-   U+10920 [Lydian](http://www.unicode.org/charts/PDF/U10920.pdf)
+-   U+10980 [Meroitic Hieroglyphs](http://www.unicode.org/charts/PDF/U10980.pdf)
+-   U+109A0 [Meroitic Cursive](http://www.unicode.org/charts/PDF/U109A0.pdf)
+-   U+10A00 [Kharoshthi](http://www.unicode.org/charts/PDF/U10A00.pdf)
+-   U+10A60 [Old South Arabian](http://www.unicode.org/charts/PDF/U10A60.pdf)
+-   U+10A80 [Old North Arabian](http://www.unicode.org/charts/PDF/U10A80.pdf)
+-   U+10AC0 [Manichaean](http://www.unicode.org/charts/PDF/U10AC0.pdf)
+-   U+10B00 [Avestan](http://www.unicode.org/charts/PDF/U10B00.pdf)
+-   U+10B40 [Inscriptional Parthian](http://www.unicode.org/charts/PDF/U10B40.pdf)
+-   U+10B60 [Inscriptional Pahlavi](http://www.unicode.org/charts/PDF/U10B60.pdf)
+-   U+10B80 [Psalter Pahlavi](http://www.unicode.org/charts/PDF/U10B80.pdf)
+-   U+10C00 [Old Turkic](http://www.unicode.org/charts/PDF/U10C00.pdf)
+-   U+10C80 [Old Hungarian](http://www.unicode.org/charts/PDF/U10C80.pdf)
+-   U+10D00 [Hanifi Rohingya](http://www.unicode.org/charts/PDF/U10D00.pdf)
+-   U+10E60 [Rumi Numeral Symbols](http://www.unicode.org/charts/PDF/U10E60.pdf)
+-   U+10E80 [No_Block](http://www.unicode.org/charts/PDF/U10E80.pdf)
+-   U+10F00 [Old Sogdian](http://www.unicode.org/charts/PDF/U10F00.pdf)
+-   U+10F30 [Sogdian](http://www.unicode.org/charts/PDF/U10F30.pdf)
+-   U+10FB0 [No_Block](http://www.unicode.org/charts/PDF/U10FB0.pdf)
+-   U+10FE0 [Elymaic](http://www.unicode.org/charts/PDF/U10FE0.pdf)
+-   U+11000 [Brahmi](http://www.unicode.org/charts/PDF/U11000.pdf)
+-   U+11080 [Kaithi](http://www.unicode.org/charts/PDF/U11080.pdf)
+-   U+110D0 [Sora Sompeng](http://www.unicode.org/charts/PDF/U110D0.pdf)
+-   U+11100 [Chakma](http://www.unicode.org/charts/PDF/U11100.pdf)
+-   U+11150 [Mahajani](http://www.unicode.org/charts/PDF/U11150.pdf)
+-   U+11180 [Sharada](http://www.unicode.org/charts/PDF/U11180.pdf)
+-   U+111E0 [Sinhala Archaic Numbers](http://www.unicode.org/charts/PDF/U111E0.pdf)
+-   U+11200 [Khojki](http://www.unicode.org/charts/PDF/U11200.pdf)
+-   U+11280 [Multani](http://www.unicode.org/charts/PDF/U11280.pdf)
+-   U+112B0 [Khudawadi](http://www.unicode.org/charts/PDF/U112B0.pdf)
+-   U+11300 [Grantha](http://www.unicode.org/charts/PDF/U11300.pdf)
+-   U+11400 [Newa](http://www.unicode.org/charts/PDF/U11400.pdf)
+-   U+11480 [Tirhuta](http://www.unicode.org/charts/PDF/U11480.pdf)
+-   U+11580 [Siddham](http://www.unicode.org/charts/PDF/U11580.pdf)
+-   U+11600 [Modi](http://www.unicode.org/charts/PDF/U11600.pdf)
+-   U+11660 [Mongolian Supplement](http://www.unicode.org/charts/PDF/U11660.pdf)
+-   U+11680 [Takri](http://www.unicode.org/charts/PDF/U11680.pdf)
+-   U+11700 [Ahom](http://www.unicode.org/charts/PDF/U11700.pdf)
+-   U+11800 [Dogra](http://www.unicode.org/charts/PDF/U11800.pdf)
+-   U+118A0 [Warang Citi](http://www.unicode.org/charts/PDF/U118A0.pdf)
+-   U+11900 [No_Block](http://www.unicode.org/charts/PDF/U11900.pdf)
+-   U+119A0 [Nandinagari](http://www.unicode.org/charts/PDF/U119A0.pdf)
+-   U+11A00 [Zanabazar Square](http://www.unicode.org/charts/PDF/U11A00.pdf)
+-   U+11A50 [Soyombo](http://www.unicode.org/charts/PDF/U11A50.pdf)
+-   U+11AC0 [Pau Cin Hau](http://www.unicode.org/charts/PDF/U11AC0.pdf)
+-   U+11C00 [Bhaiksuki](http://www.unicode.org/charts/PDF/U11C00.pdf)
+-   U+11C70 [Marchen](http://www.unicode.org/charts/PDF/U11C70.pdf)
+-   U+11D00 [Masaram Gondi](http://www.unicode.org/charts/PDF/U11D00.pdf)
+-   U+11D60 [Gunjala Gondi](http://www.unicode.org/charts/PDF/U11D60.pdf)
+-   U+11EE0 [Makasar](http://www.unicode.org/charts/PDF/U11EE0.pdf)
+-   U+11FB0 [No_Block](http://www.unicode.org/charts/PDF/U11FB0.pdf)
+-   U+11FC0 [Tamil Supplement](http://www.unicode.org/charts/PDF/U11FC0.pdf)
+-   U+12000 [Cuneiform](http://www.unicode.org/charts/PDF/U12000.pdf)
+-   U+12400 [Cuneiform Numbers and Punctuation](http://www.unicode.org/charts/PDF/U12400.pdf)
+-   U+12480 [Early Dynastic Cuneiform](http://www.unicode.org/charts/PDF/U12480.pdf)
+-   U+13000 [Egyptian Hieroglyphs](http://www.unicode.org/charts/PDF/U13000.pdf)
+-   U+13430 [Egyptian Hieroglyph Format Controls](http://www.unicode.org/charts/PDF/U13430.pdf)
+-   U+14400 [Anatolian Hieroglyphs](http://www.unicode.org/charts/PDF/U14400.pdf)
+-   U+16800 [Bamum Supplement](http://www.unicode.org/charts/PDF/U16800.pdf)
+-   U+16A40 [Mro](http://www.unicode.org/charts/PDF/U16A40.pdf)
+-   U+16AD0 [Bassa Vah](http://www.unicode.org/charts/PDF/U16AD0.pdf)
+-   U+16B00 [Pahawh Hmong](http://www.unicode.org/charts/PDF/U16B00.pdf)
+-   U+16E40 [Medefaidrin](http://www.unicode.org/charts/PDF/U16E40.pdf)
+-   U+16F00 [Miao](http://www.unicode.org/charts/PDF/U16F00.pdf)
+-   U+16FE0 [Ideographic Symbols and Punctuation](http://www.unicode.org/charts/PDF/U16FE0.pdf)
+-   U+17000 [Tangut](http://www.unicode.org/charts/PDF/U17000.pdf)
+-   U+18800 [Tangut Components](http://www.unicode.org/charts/PDF/U18800.pdf)
+-   U+18B00 [No_Block](http://www.unicode.org/charts/PDF/U18B00.pdf)
+-   U+18D00 [No_Block](http://www.unicode.org/charts/PDF/U18D00.pdf)
+-   U+1B000 [Kana Supplement](http://www.unicode.org/charts/PDF/U1B000.pdf)
+-   U+1B100 [Kana Extended-A](http://www.unicode.org/charts/PDF/U1B100.pdf)
+-   U+1B130 [Small Kana Extension](http://www.unicode.org/charts/PDF/U1B130.pdf)
+-   U+1B170 [Nushu](http://www.unicode.org/charts/PDF/U1B170.pdf)
+-   U+1BC00 [Duployan](http://www.unicode.org/charts/PDF/U1BC00.pdf)
+-   U+1BCA0 [Shorthand Format Controls](http://www.unicode.org/charts/PDF/U1BCA0.pdf)
+-   U+1D000 [Byzantine Musical Symbols](http://www.unicode.org/charts/PDF/U1D000.pdf)
+-   U+1D100 [Musical Symbols](http://www.unicode.org/charts/PDF/U1D100.pdf)
+-   U+1D200 [Ancient Greek Musical Notation](http://www.unicode.org/charts/PDF/U1D200.pdf)
+-   U+1D2E0 [Mayan Numerals](http://www.unicode.org/charts/PDF/U1D2E0.pdf)
+-   U+1D300 [Tai Xuan Jing Symbols](http://www.unicode.org/charts/PDF/U1D300.pdf)
+-   U+1D360 [Counting Rod Numerals](http://www.unicode.org/charts/PDF/U1D360.pdf)
+-   U+1D400 [Mathematical Alphanumeric Symbols](http://www.unicode.org/charts/PDF/U1D400.pdf)
+-   U+1D800 [Sutton SignWriting](http://www.unicode.org/charts/PDF/U1D800.pdf)
+-   U+1E000 [Glagolitic Supplement](http://www.unicode.org/charts/PDF/U1E000.pdf)
+-   U+1E100 [Nyiakeng Puachue Hmong](http://www.unicode.org/charts/PDF/U1E100.pdf)
+-   U+1E2C0 [Wancho](http://www.unicode.org/charts/PDF/U1E2C0.pdf)
+-   U+1E800 [Mende Kikakui](http://www.unicode.org/charts/PDF/U1E800.pdf)
+-   U+1E900 [Adlam](http://www.unicode.org/charts/PDF/U1E900.pdf)
+-   U+1EC70 [Indic Siyaq Numbers](http://www.unicode.org/charts/PDF/U1EC70.pdf)
+-   U+1ED00 [Ottoman Siyaq Numbers](http://www.unicode.org/charts/PDF/U1ED00.pdf)
+-   U+1EE00 [Arabic Mathematical Alphabetic Symbols](http://www.unicode.org/charts/PDF/U1EE00.pdf)
+-   U+1F000 [Mahjong Tiles](http://www.unicode.org/charts/PDF/U1F000.pdf)
+-   U+1F030 [Domino Tiles](http://www.unicode.org/charts/PDF/U1F030.pdf)
+-   U+1F0A0 [Playing Cards](http://www.unicode.org/charts/PDF/U1F0A0.pdf)
+-   U+1F100 [Enclosed Alphanumeric Supplement](http://www.unicode.org/charts/PDF/U1F100.pdf)
+-   U+1F200 [Enclosed Ideographic Supplement](http://www.unicode.org/charts/PDF/U1F200.pdf)
+-   U+1F300 [Miscellaneous Symbols and Pictographs](http://www.unicode.org/charts/PDF/U1F300.pdf)
+-   U+1F600 [Emoticons](http://www.unicode.org/charts/PDF/U1F600.pdf)
+-   U+1F650 [Ornamental Dingbats](http://www.unicode.org/charts/PDF/U1F650.pdf)
+-   U+1F680 [Transport and Map Symbols](http://www.unicode.org/charts/PDF/U1F680.pdf)
+-   U+1F700 [Alchemical Symbols](http://www.unicode.org/charts/PDF/U1F700.pdf)
+-   U+1F780 [Geometric Shapes Extended](http://www.unicode.org/charts/PDF/U1F780.pdf)
+-   U+1F800 [Supplemental Arrows-C](http://www.unicode.org/charts/PDF/U1F800.pdf)
+-   U+1F900 [Supplemental Symbols and Pictographs](http://www.unicode.org/charts/PDF/U1F900.pdf)
+-   U+1FA00 [Chess Symbols](http://www.unicode.org/charts/PDF/U1FA00.pdf)
+-   U+1FA70 [Symbols and Pictographs Extended-A](http://www.unicode.org/charts/PDF/U1FA70.pdf)
+-   U+1FB00 [No_Block](http://www.unicode.org/charts/PDF/U1FB00.pdf)
+-   U+1FF80 [No_Block](http://www.unicode.org/charts/PDF/U1FF80.pdf)
+-   U+20000 [CJK Unified Ideographs Extension B](http://www.unicode.org/charts/PDF/U20000.pdf)
+-   U+2A700 [CJK Unified Ideographs Extension C](http://www.unicode.org/charts/PDF/U2A700.pdf)
+-   U+2B740 [CJK Unified Ideographs Extension D](http://www.unicode.org/charts/PDF/U2B740.pdf)
+-   U+2B820 [CJK Unified Ideographs Extension E](http://www.unicode.org/charts/PDF/U2B820.pdf)
+-   U+2CEB0 [CJK Unified Ideographs Extension F](http://www.unicode.org/charts/PDF/U2CEB0.pdf)
+-   U+2F800 [CJK Compatibility Ideographs Supplement](http://www.unicode.org/charts/PDF/U2F800.pdf)
+-   U+2FF80 [No_Block](http://www.unicode.org/charts/PDF/U2FF80.pdf)
+-   U+30000 [No_Block](http://www.unicode.org/charts/PDF/U30000.pdf)
+-   U+3FF80 [No_Block](http://www.unicode.org/charts/PDF/U3FF80.pdf)
+-   U+4FF80 [No_Block](http://www.unicode.org/charts/PDF/U4FF80.pdf)
+-   U+5FF80 [No_Block](http://www.unicode.org/charts/PDF/U5FF80.pdf)
+-   U+6FF80 [No_Block](http://www.unicode.org/charts/PDF/U6FF80.pdf)
+-   U+7FF80 [No_Block](http://www.unicode.org/charts/PDF/U7FF80.pdf)
+-   U+8FF80 [No_Block](http://www.unicode.org/charts/PDF/U8FF80.pdf)
+-   U+9FF80 [No_Block](http://www.unicode.org/charts/PDF/U9FF80.pdf)
+-   U+AFF80 [No_Block](http://www.unicode.org/charts/PDF/UAFF80.pdf)
+-   U+BFF80 [No_Block](http://www.unicode.org/charts/PDF/UBFF80.pdf)
+-   U+CFF80 [No_Block](http://www.unicode.org/charts/PDF/UCFF80.pdf)
+-   U+DFF80 [No_Block](http://www.unicode.org/charts/PDF/UDFF80.pdf)
+-   U+E0000 [Tags](http://www.unicode.org/charts/PDF/UE0000.pdf)
+-   U+E0100 [Variation Selectors Supplement](http://www.unicode.org/charts/PDF/UE0100.pdf)
+-   U+EFF80 [No_Block](http://www.unicode.org/charts/PDF/UEFF80.pdf)
+-   U+F0000 [Supplementary Private Use Area-A](http://www.unicode.org/charts/PDF/UF0000.pdf)
+-   U+FFF80 [Supplementary Private Use Area-A](http://www.unicode.org/charts/PDF/UFFF80.pdf)
+-   U+100000 [Supplementary Private Use Area-B](http://www.unicode.org/charts/PDF/U100000.pdf)
+-   U+10FF80 [Supplementary Private Use Area-B](http://www.unicode.org/charts/PDF/U10FF80.pdf)
