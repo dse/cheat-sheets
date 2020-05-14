@@ -103,6 +103,21 @@ terminator, but `$/` would also have to be set to `\r`.
 
 -   [`use common::sense;`](https://metacpan.org/pod/common::sense)
 
+What this provides:
+
+```
+use utf8;
+use strict qw(vars subs);
+use feature qw(say state switch);
+use feature qw(unicode_strings unicode_eval current_sub fc evalbytes);
+no feature qw(array_base);
+no warnings;
+use warnings qw(FATAL closed threads internal debugging pack
+                prototype inplace io pipe unpack malloc glob
+                digit printf layer reserved taint closure semicolon);
+no warnings qw(exec newline unopened);
+```
+
 ## To Enable Modern Features
 
 -   [`use Modern::Perl;`](https://metacpan.org/pod/Modern::Perl)
@@ -121,6 +136,7 @@ terminator, but `$/` would also have to be set to `\r`.
 
 ## Resources
 
+-   [perlmodlib(3)](https://perldoc.perl.org/perlmodlib.html)
 -   [Mishin's Perl Cheat Sheet](https://www.cheatography.com/mishin/cheat-sheets/perlcheat/)
 
 ## Awesome Perls and Perl Awesomes
