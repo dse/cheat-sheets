@@ -124,10 +124,29 @@ use feature qw(evalbytes);
 no feature qw(array_base);
     # disable non-zero array index bases
 no warnings;
-use warnings qw(FATAL closed threads internal debugging pack
-                prototype inplace io pipe unpack malloc glob
-                digit printf layer reserved taint closure semicolon);
-no warnings qw(exec newline unopened);
+use warnings qw(FATAL
+                closed
+                threads
+                internal
+                debugging
+                pack
+                prototype
+                inplace
+                io
+                pipe
+                unpack
+                malloc
+                glob
+                digit
+                printf
+                layer
+                reserved
+                taint
+                closure
+                semicolon);
+no warnings qw(exec
+               newline
+               unopened);
 ```
 
 ## To Enable Modern Features
