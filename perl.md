@@ -124,29 +124,28 @@ use feature qw(evalbytes);
 no feature qw(array_base);
     # disable non-zero array index bases
 no warnings;
-use warnings qw(FATAL
-                closed
-                threads
-                internal
-                debugging
-                pack
-                prototype
-                inplace
-                io
-                pipe
-                unpack
-                malloc
-                glob
-                digit
-                printf
-                layer
-                reserved
-                taint
-                closure
-                semicolon);
-no warnings qw(exec
-               newline
-               unopened);
+use warnings qw(FATAL);
+use warnings qw(closure);
+use warnings qw(debugging);
+use warnings qw(digit);
+use warnings qw(glob);
+use warnings qw(inplace);
+use warnings qw(internal);
+use warnings qw(io);
+    # closed, layer, pipe, and syscalls only.
+    # exec, newline, and unopened warnings disabled later.
+use warnings qw(malloc);
+use warnings qw(pack);
+use warnings qw(printf);
+use warnings qw(prototype);
+use warnings qw(reserved);
+use warnings qw(semicolon);
+use warnings qw(taint);
+use warnings qw(threads);
+use warnings qw(unpack);
+no warnings qw(exec);
+no warnings qw(newline);
+no warnings qw(unopened);
 ```
 
 ## To Enable Modern Features
