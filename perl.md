@@ -15,12 +15,17 @@
     use strict;
     use v5.8.1;                     # or higher
 
+    #--------------------------------------------------------------------------
+    # interpret i/o in locale
     use open qw(:locale);
     use Encode::Locale;
+
+    # interpret args in locale
     use Encode qw(decode);
     BEGIN {
         @ARGV = map { decode('locale', $_, Encode::FB_CROAK) } @ARGV;
     }
+    #--------------------------------------------------------------------------
 
 This instructs all filehandles to decode when reading, and encode when
 writing, in the user's locale.
@@ -117,3 +122,11 @@ terminator, but `$/` would also have to be set to `\r`.
 ## Resources
 
 -   [Mishin's Perl Cheat Sheet](https://www.cheatography.com/mishin/cheat-sheets/perlcheat/)
+
+## Awesome Perls and Perl Awesomes
+
+-   [hachiojipm](https://github.com/hachiojipm/awesome-perl)
+-   [uhub](https://github.com/uhub/awesome-perl)
+-   [oalders](https://github.com/oalders/awesome-perl)
+-   [awesome-programming.com](https://perl.awesome-programming.com/)
+-   [nk23x](https://gitlab.com/nk23x/awesome-perl)
