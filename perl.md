@@ -107,10 +107,22 @@ What this provides:
 
 ```
 use utf8;
+    # allows UTF-8 in source code
 use strict qw(vars subs);
+    # does not include strict refs
 use feature qw(say state switch);
-use feature qw(unicode_strings unicode_eval current_sub fc evalbytes);
+use feature qw(unicode_strings);
+    # use Unicode rules in all sting operations executed in its scope
+use feature qw(unicode_eval);
+    # fix plain string `eval` to work better in unicode
+use feature qw(current_sub);
+    # provides `__SUB__` token returning reference to current subroutine
+use feature qw(fc);
+    # enables `fc`, which implements Unicode casefolding
+use feature qw(evalbytes);
+    # like `eval` but always parses strings of independent bytes
 no feature qw(array_base);
+    # disable non-zero array index bases
 no warnings;
 use warnings qw(FATAL closed threads internal debugging pack
                 prototype inplace io pipe unpack malloc glob
