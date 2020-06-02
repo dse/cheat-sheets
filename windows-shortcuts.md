@@ -1,6 +1,6 @@
 # Windows Shortcuts
 
--   To open the Emoji panel (US only):
+-   To open the Emoji panel (US only): (Unicode)
     -   `Win+.` or `Win+;`
 
 -   To open Explorer:
