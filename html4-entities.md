@@ -4,107 +4,107 @@ Control characters not listed.
 
 | Character | Codepoint | Hex    | Name                                       | Entity       |
 |:----------|----------:|-------:|:-------------------------------------------|:-------------|
-| `"`       |        34 | U+0022 | QUOTATION MARK                             | `&quot`      |
-| `&`       |        38 | U+0026 | AMPERSAND                                  | `&amp`       |
-| `'`       |        39 | U+0027 | APOSTROPHE                                 | `&apos`      |
-| `<`       |        60 | U+003C | LESS-THAN SIGN                             | `&lt`        |
-| `>`       |        62 | U+003E | GREATER-THAN SIGN                          | `&gt`        |
-| ` `       |       160 | U+00A0 | NO-BREAK SPACE                             | `&nbsp`      |
-| `¡`       |       161 | U+00A1 | INVERTED EXCLAMATION MARK                  | `&iexcl`     |
-| `¢`       |       162 | U+00A2 | CENT SIGN                                  | `&cent`      |
-| `£`       |       163 | U+00A3 | POUND SIGN                                 | `&pound`     |
-| `¤`       |       164 | U+00A4 | CURRENCY SIGN                              | `&curren`    |
-| `¥`       |       165 | U+00A5 | YEN SIGN                                   | `&yen`       |
-| `¦`       |       166 | U+00A6 | BROKEN BAR                                 | `&brvbar`    |
-| `§`       |       167 | U+00A7 | SECTION SIGN                               | `&sect`      |
-| `¨`       |       168 | U+00A8 | DIAERESIS                                  | `&uml`       |
-| `©`       |       169 | U+00A9 | COPYRIGHT SIGN                             | `&copy`      |
-| `ª`       |       170 | U+00AA | FEMININE ORDINAL INDICATOR                 | `&ordf`      |
-| `«`       |       171 | U+00AB | LEFT-POINTING DOUBLE ANGLE QUOTATION MARK  | `&laquo`     |
-| `¬`       |       172 | U+00AC | NOT SIGN                                   | `&not`       |
-| `­`       |       173 | U+00AD | SOFT HYPHEN                                | `&shy`       |
-| `®`       |       174 | U+00AE | REGISTERED SIGN                            | `&reg`       |
-| `¯`       |       175 | U+00AF | MACRON                                     | `&macr`      |
-| `°`       |       176 | U+00B0 | DEGREE SIGN                                | `&deg`       |
-| `±`       |       177 | U+00B1 | PLUS-MINUS SIGN                            | `&plusmn`    |
-| `²`       |       178 | U+00B2 | SUPERSCRIPT TWO                            | `&sup2`      |
-| `³`       |       179 | U+00B3 | SUPERSCRIPT THREE                          | `&sup3`      |
-| `´`       |       180 | U+00B4 | ACUTE ACCENT                               | `&acute`     |
-| `µ`       |       181 | U+00B5 | MICRO SIGN                                 | `&micro`     |
-| `¶`       |       182 | U+00B6 | PILCROW SIGN                               | `&para`      |
-| `·`       |       183 | U+00B7 | MIDDLE DOT                                 | `&middot`    |
-| `¸`       |       184 | U+00B8 | CEDILLA                                    | `&cedil`     |
-| `¹`       |       185 | U+00B9 | SUPERSCRIPT ONE                            | `&sup1`      |
-| `º`       |       186 | U+00BA | MASCULINE ORDINAL INDICATOR                | `&ordm`      |
-| `»`       |       187 | U+00BB | RIGHT-POINTING DOUBLE ANGLE QUOTATION MARK | `&raquo`     |
-| `¼`       |       188 | U+00BC | VULGAR FRACTION ONE QUARTER                | `&frac14`    |
-| `½`       |       189 | U+00BD | VULGAR FRACTION ONE HALF                   | `&frac12`    |
-| `¾`       |       190 | U+00BE | VULGAR FRACTION THREE QUARTERS             | `&frac34`    |
-| `¿`       |       191 | U+00BF | INVERTED QUESTION MARK                     | `&iquest`    |
-| `À`       |       192 | U+00C0 | LATIN CAPITAL LETTER A WITH GRAVE          | `&Agrave`    |
-| `Á`       |       193 | U+00C1 | LATIN CAPITAL LETTER A WITH ACUTE          | `&Aacute`    |
-| `Â`       |       194 | U+00C2 | LATIN CAPITAL LETTER A WITH CIRCUMFLEX     | `&Acirc`     |
-| `Ã`       |       195 | U+00C3 | LATIN CAPITAL LETTER A WITH TILDE          | `&Atilde`    |
-| `Ä`       |       196 | U+00C4 | LATIN CAPITAL LETTER A WITH DIAERESIS      | `&Auml`      |
-| `Å`       |       197 | U+00C5 | LATIN CAPITAL LETTER A WITH RING ABOVE     | `&Aring`     |
-| `Æ`       |       198 | U+00C6 | LATIN CAPITAL LETTER AE                    | `&AElig`     |
-| `Ç`       |       199 | U+00C7 | LATIN CAPITAL LETTER C WITH CEDILLA        | `&Ccedil`    |
-| `È`       |       200 | U+00C8 | LATIN CAPITAL LETTER E WITH GRAVE          | `&Egrave`    |
-| `É`       |       201 | U+00C9 | LATIN CAPITAL LETTER E WITH ACUTE          | `&Eacute`    |
-| `Ê`       |       202 | U+00CA | LATIN CAPITAL LETTER E WITH CIRCUMFLEX     | `&Ecirc`     |
-| `Ë`       |       203 | U+00CB | LATIN CAPITAL LETTER E WITH DIAERESIS      | `&Euml`      |
-| `Ì`       |       204 | U+00CC | LATIN CAPITAL LETTER I WITH GRAVE          | `&Igrave`    |
-| `Í`       |       205 | U+00CD | LATIN CAPITAL LETTER I WITH ACUTE          | `&Iacute`    |
-| `Î`       |       206 | U+00CE | LATIN CAPITAL LETTER I WITH CIRCUMFLEX     | `&Icirc`     |
-| `Ï`       |       207 | U+00CF | LATIN CAPITAL LETTER I WITH DIAERESIS      | `&Iuml`      |
-| `Ð`       |       208 | U+00D0 | LATIN CAPITAL LETTER ETH                   | `&ETH`       |
-| `Ñ`       |       209 | U+00D1 | LATIN CAPITAL LETTER N WITH TILDE          | `&Ntilde`    |
-| `Ò`       |       210 | U+00D2 | LATIN CAPITAL LETTER O WITH GRAVE          | `&Ograve`    |
-| `Ó`       |       211 | U+00D3 | LATIN CAPITAL LETTER O WITH ACUTE          | `&Oacute`    |
-| `Ô`       |       212 | U+00D4 | LATIN CAPITAL LETTER O WITH CIRCUMFLEX     | `&Ocirc`     |
-| `Õ`       |       213 | U+00D5 | LATIN CAPITAL LETTER O WITH TILDE          | `&Otilde`    |
-| `Ö`       |       214 | U+00D6 | LATIN CAPITAL LETTER O WITH DIAERESIS      | `&Ouml`      |
-| `×`       |       215 | U+00D7 | MULTIPLICATION SIGN                        | `&times`     |
-| `Ø`       |       216 | U+00D8 | LATIN CAPITAL LETTER O WITH STROKE         | `&Oslash`    |
-| `Ù`       |       217 | U+00D9 | LATIN CAPITAL LETTER U WITH GRAVE          | `&Ugrave`    |
-| `Ú`       |       218 | U+00DA | LATIN CAPITAL LETTER U WITH ACUTE          | `&Uacute`    |
-| `Û`       |       219 | U+00DB | LATIN CAPITAL LETTER U WITH CIRCUMFLEX     | `&Ucirc`     |
-| `Ü`       |       220 | U+00DC | LATIN CAPITAL LETTER U WITH DIAERESIS      | `&Uuml`      |
-| `Ý`       |       221 | U+00DD | LATIN CAPITAL LETTER Y WITH ACUTE          | `&Yacute`    |
-| `Þ`       |       222 | U+00DE | LATIN CAPITAL LETTER THORN                 | `&THORN`     |
-| `ß`       |       223 | U+00DF | LATIN SMALL LETTER SHARP S                 | `&szlig`     |
-| `à`       |       224 | U+00E0 | LATIN SMALL LETTER A WITH GRAVE            | `&agrave`    |
-| `á`       |       225 | U+00E1 | LATIN SMALL LETTER A WITH ACUTE            | `&aacute`    |
-| `â`       |       226 | U+00E2 | LATIN SMALL LETTER A WITH CIRCUMFLEX       | `&acirc`     |
-| `ã`       |       227 | U+00E3 | LATIN SMALL LETTER A WITH TILDE            | `&atilde`    |
-| `ä`       |       228 | U+00E4 | LATIN SMALL LETTER A WITH DIAERESIS        | `&auml`      |
-| `å`       |       229 | U+00E5 | LATIN SMALL LETTER A WITH RING ABOVE       | `&aring`     |
-| `æ`       |       230 | U+00E6 | LATIN SMALL LETTER AE                      | `&aelig`     |
-| `ç`       |       231 | U+00E7 | LATIN SMALL LETTER C WITH CEDILLA          | `&ccedil`    |
-| `è`       |       232 | U+00E8 | LATIN SMALL LETTER E WITH GRAVE            | `&egrave`    |
-| `é`       |       233 | U+00E9 | LATIN SMALL LETTER E WITH ACUTE            | `&eacute`    |
-| `ê`       |       234 | U+00EA | LATIN SMALL LETTER E WITH CIRCUMFLEX       | `&ecirc`     |
-| `ë`       |       235 | U+00EB | LATIN SMALL LETTER E WITH DIAERESIS        | `&euml`      |
-| `ì`       |       236 | U+00EC | LATIN SMALL LETTER I WITH GRAVE            | `&igrave`    |
-| `í`       |       237 | U+00ED | LATIN SMALL LETTER I WITH ACUTE            | `&iacute`    |
-| `î`       |       238 | U+00EE | LATIN SMALL LETTER I WITH CIRCUMFLEX       | `&icirc`     |
-| `ï`       |       239 | U+00EF | LATIN SMALL LETTER I WITH DIAERESIS        | `&iuml`      |
-| `ð`       |       240 | U+00F0 | LATIN SMALL LETTER ETH                     | `&eth`       |
-| `ñ`       |       241 | U+00F1 | LATIN SMALL LETTER N WITH TILDE            | `&ntilde`    |
-| `ò`       |       242 | U+00F2 | LATIN SMALL LETTER O WITH GRAVE            | `&ograve`    |
-| `ó`       |       243 | U+00F3 | LATIN SMALL LETTER O WITH ACUTE            | `&oacute`    |
-| `ô`       |       244 | U+00F4 | LATIN SMALL LETTER O WITH CIRCUMFLEX       | `&ocirc`     |
-| `õ`       |       245 | U+00F5 | LATIN SMALL LETTER O WITH TILDE            | `&otilde`    |
-| `ö`       |       246 | U+00F6 | LATIN SMALL LETTER O WITH DIAERESIS        | `&ouml`      |
-| `÷`       |       247 | U+00F7 | DIVISION SIGN                              | `&divide`    |
-| `ø`       |       248 | U+00F8 | LATIN SMALL LETTER O WITH STROKE           | `&oslash`    |
-| `ù`       |       249 | U+00F9 | LATIN SMALL LETTER U WITH GRAVE            | `&ugrave`    |
-| `ú`       |       250 | U+00FA | LATIN SMALL LETTER U WITH ACUTE            | `&uacute`    |
-| `û`       |       251 | U+00FB | LATIN SMALL LETTER U WITH CIRCUMFLEX       | `&ucirc`     |
-| `ü`       |       252 | U+00FC | LATIN SMALL LETTER U WITH DIAERESIS        | `&uuml`      |
-| `ý`       |       253 | U+00FD | LATIN SMALL LETTER Y WITH ACUTE            | `&yacute`    |
-| `þ`       |       254 | U+00FE | LATIN SMALL LETTER THORN                   | `&thorn`     |
-| `ÿ`       |       255 | U+00FF | LATIN SMALL LETTER Y WITH DIAERESIS        | `&yuml`      |
+| `"`       |        34 | U+0022 | QUOTATION MARK                             | `&quot;`     |
+| `&`       |        38 | U+0026 | AMPERSAND                                  | `&amp;`      |
+| `'`       |        39 | U+0027 | APOSTROPHE                                 | `&apos;`     |
+| `<`       |        60 | U+003C | LESS-THAN SIGN                             | `&lt;`       |
+| `>`       |        62 | U+003E | GREATER-THAN SIGN                          | `&gt;`       |
+| ` `       |       160 | U+00A0 | NO-BREAK SPACE                             | `&nbsp;`     |
+| `¡`       |       161 | U+00A1 | INVERTED EXCLAMATION MARK                  | `&iexcl;`    |
+| `¢`       |       162 | U+00A2 | CENT SIGN                                  | `&cent;`     |
+| `£`       |       163 | U+00A3 | POUND SIGN                                 | `&pound;`    |
+| `¤`       |       164 | U+00A4 | CURRENCY SIGN                              | `&curren;`   |
+| `¥`       |       165 | U+00A5 | YEN SIGN                                   | `&yen;`      |
+| `¦`       |       166 | U+00A6 | BROKEN BAR                                 | `&brvbar;`   |
+| `§`       |       167 | U+00A7 | SECTION SIGN                               | `&sect;`     |
+| `¨`       |       168 | U+00A8 | DIAERESIS                                  | `&uml;`      |
+| `©`       |       169 | U+00A9 | COPYRIGHT SIGN                             | `&copy;`     |
+| `ª`       |       170 | U+00AA | FEMININE ORDINAL INDICATOR                 | `&ordf;`     |
+| `«`       |       171 | U+00AB | LEFT-POINTING DOUBLE ANGLE QUOTATION MARK  | `&laquo;`    |
+| `¬`       |       172 | U+00AC | NOT SIGN                                   | `&not;`      |
+| `­`       |       173 | U+00AD | SOFT HYPHEN                                | `&shy;`      |
+| `®`       |       174 | U+00AE | REGISTERED SIGN                            | `&reg;`      |
+| `¯`       |       175 | U+00AF | MACRON                                     | `&macr;`     |
+| `°`       |       176 | U+00B0 | DEGREE SIGN                                | `&deg;`      |
+| `±`       |       177 | U+00B1 | PLUS-MINUS SIGN                            | `&plusmn;`   |
+| `²`       |       178 | U+00B2 | SUPERSCRIPT TWO                            | `&sup2;`     |
+| `³`       |       179 | U+00B3 | SUPERSCRIPT THREE                          | `&sup3;`     |
+| `´`       |       180 | U+00B4 | ACUTE ACCENT                               | `&acute;`    |
+| `µ`       |       181 | U+00B5 | MICRO SIGN                                 | `&micro;`    |
+| `¶`       |       182 | U+00B6 | PILCROW SIGN                               | `&para;`     |
+| `·`       |       183 | U+00B7 | MIDDLE DOT                                 | `&middot;`   |
+| `¸`       |       184 | U+00B8 | CEDILLA                                    | `&cedil;`    |
+| `¹`       |       185 | U+00B9 | SUPERSCRIPT ONE                            | `&sup1;`     |
+| `º`       |       186 | U+00BA | MASCULINE ORDINAL INDICATOR                | `&ordm;`     |
+| `»`       |       187 | U+00BB | RIGHT-POINTING DOUBLE ANGLE QUOTATION MARK | `&raquo;`    |
+| `¼`       |       188 | U+00BC | VULGAR FRACTION ONE QUARTER                | `&frac14;`   |
+| `½`       |       189 | U+00BD | VULGAR FRACTION ONE HALF                   | `&frac12;`   |
+| `¾`       |       190 | U+00BE | VULGAR FRACTION THREE QUARTERS             | `&frac34;`   |
+| `¿`       |       191 | U+00BF | INVERTED QUESTION MARK                     | `&iquest;`   |
+| `À`       |       192 | U+00C0 | LATIN CAPITAL LETTER A WITH GRAVE          | `&Agrave;`   |
+| `Á`       |       193 | U+00C1 | LATIN CAPITAL LETTER A WITH ACUTE          | `&Aacute;`   |
+| `Â`       |       194 | U+00C2 | LATIN CAPITAL LETTER A WITH CIRCUMFLEX     | `&Acirc;`    |
+| `Ã`       |       195 | U+00C3 | LATIN CAPITAL LETTER A WITH TILDE          | `&Atilde;`   |
+| `Ä`       |       196 | U+00C4 | LATIN CAPITAL LETTER A WITH DIAERESIS      | `&Auml;`     |
+| `Å`       |       197 | U+00C5 | LATIN CAPITAL LETTER A WITH RING ABOVE     | `&Aring;`    |
+| `Æ`       |       198 | U+00C6 | LATIN CAPITAL LETTER AE                    | `&AElig;`    |
+| `Ç`       |       199 | U+00C7 | LATIN CAPITAL LETTER C WITH CEDILLA        | `&Ccedil;`   |
+| `È`       |       200 | U+00C8 | LATIN CAPITAL LETTER E WITH GRAVE          | `&Egrave;`   |
+| `É`       |       201 | U+00C9 | LATIN CAPITAL LETTER E WITH ACUTE          | `&Eacute;`   |
+| `Ê`       |       202 | U+00CA | LATIN CAPITAL LETTER E WITH CIRCUMFLEX     | `&Ecirc;`    |
+| `Ë`       |       203 | U+00CB | LATIN CAPITAL LETTER E WITH DIAERESIS      | `&Euml;`     |
+| `Ì`       |       204 | U+00CC | LATIN CAPITAL LETTER I WITH GRAVE          | `&Igrave;`   |
+| `Í`       |       205 | U+00CD | LATIN CAPITAL LETTER I WITH ACUTE          | `&Iacute;`   |
+| `Î`       |       206 | U+00CE | LATIN CAPITAL LETTER I WITH CIRCUMFLEX     | `&Icirc;`    |
+| `Ï`       |       207 | U+00CF | LATIN CAPITAL LETTER I WITH DIAERESIS      | `&Iuml;`     |
+| `Ð`       |       208 | U+00D0 | LATIN CAPITAL LETTER ETH                   | `&ETH;`      |
+| `Ñ`       |       209 | U+00D1 | LATIN CAPITAL LETTER N WITH TILDE          | `&Ntilde;`   |
+| `Ò`       |       210 | U+00D2 | LATIN CAPITAL LETTER O WITH GRAVE          | `&Ograve;`   |
+| `Ó`       |       211 | U+00D3 | LATIN CAPITAL LETTER O WITH ACUTE          | `&Oacute;`   |
+| `Ô`       |       212 | U+00D4 | LATIN CAPITAL LETTER O WITH CIRCUMFLEX     | `&Ocirc;`    |
+| `Õ`       |       213 | U+00D5 | LATIN CAPITAL LETTER O WITH TILDE          | `&Otilde;`   |
+| `Ö`       |       214 | U+00D6 | LATIN CAPITAL LETTER O WITH DIAERESIS      | `&Ouml;`     |
+| `×`       |       215 | U+00D7 | MULTIPLICATION SIGN                        | `&times;`    |
+| `Ø`       |       216 | U+00D8 | LATIN CAPITAL LETTER O WITH STROKE         | `&Oslash;`   |
+| `Ù`       |       217 | U+00D9 | LATIN CAPITAL LETTER U WITH GRAVE          | `&Ugrave;`   |
+| `Ú`       |       218 | U+00DA | LATIN CAPITAL LETTER U WITH ACUTE          | `&Uacute;`   |
+| `Û`       |       219 | U+00DB | LATIN CAPITAL LETTER U WITH CIRCUMFLEX     | `&Ucirc;`    |
+| `Ü`       |       220 | U+00DC | LATIN CAPITAL LETTER U WITH DIAERESIS      | `&Uuml;`     |
+| `Ý`       |       221 | U+00DD | LATIN CAPITAL LETTER Y WITH ACUTE          | `&Yacute;`   |
+| `Þ`       |       222 | U+00DE | LATIN CAPITAL LETTER THORN                 | `&THORN;`    |
+| `ß`       |       223 | U+00DF | LATIN SMALL LETTER SHARP S                 | `&szlig;`    |
+| `à`       |       224 | U+00E0 | LATIN SMALL LETTER A WITH GRAVE            | `&agrave;`   |
+| `á`       |       225 | U+00E1 | LATIN SMALL LETTER A WITH ACUTE            | `&aacute;`   |
+| `â`       |       226 | U+00E2 | LATIN SMALL LETTER A WITH CIRCUMFLEX       | `&acirc;`    |
+| `ã`       |       227 | U+00E3 | LATIN SMALL LETTER A WITH TILDE            | `&atilde;`   |
+| `ä`       |       228 | U+00E4 | LATIN SMALL LETTER A WITH DIAERESIS        | `&auml;`     |
+| `å`       |       229 | U+00E5 | LATIN SMALL LETTER A WITH RING ABOVE       | `&aring;`    |
+| `æ`       |       230 | U+00E6 | LATIN SMALL LETTER AE                      | `&aelig;`    |
+| `ç`       |       231 | U+00E7 | LATIN SMALL LETTER C WITH CEDILLA          | `&ccedil;`   |
+| `è`       |       232 | U+00E8 | LATIN SMALL LETTER E WITH GRAVE            | `&egrave;`   |
+| `é`       |       233 | U+00E9 | LATIN SMALL LETTER E WITH ACUTE            | `&eacute;`   |
+| `ê`       |       234 | U+00EA | LATIN SMALL LETTER E WITH CIRCUMFLEX       | `&ecirc;`    |
+| `ë`       |       235 | U+00EB | LATIN SMALL LETTER E WITH DIAERESIS        | `&euml;`     |
+| `ì`       |       236 | U+00EC | LATIN SMALL LETTER I WITH GRAVE            | `&igrave;`   |
+| `í`       |       237 | U+00ED | LATIN SMALL LETTER I WITH ACUTE            | `&iacute;`   |
+| `î`       |       238 | U+00EE | LATIN SMALL LETTER I WITH CIRCUMFLEX       | `&icirc;`    |
+| `ï`       |       239 | U+00EF | LATIN SMALL LETTER I WITH DIAERESIS        | `&iuml;`     |
+| `ð`       |       240 | U+00F0 | LATIN SMALL LETTER ETH                     | `&eth;`      |
+| `ñ`       |       241 | U+00F1 | LATIN SMALL LETTER N WITH TILDE            | `&ntilde;`   |
+| `ò`       |       242 | U+00F2 | LATIN SMALL LETTER O WITH GRAVE            | `&ograve;`   |
+| `ó`       |       243 | U+00F3 | LATIN SMALL LETTER O WITH ACUTE            | `&oacute;`   |
+| `ô`       |       244 | U+00F4 | LATIN SMALL LETTER O WITH CIRCUMFLEX       | `&ocirc;`    |
+| `õ`       |       245 | U+00F5 | LATIN SMALL LETTER O WITH TILDE            | `&otilde;`   |
+| `ö`       |       246 | U+00F6 | LATIN SMALL LETTER O WITH DIAERESIS        | `&ouml;`     |
+| `÷`       |       247 | U+00F7 | DIVISION SIGN                              | `&divide;`   |
+| `ø`       |       248 | U+00F8 | LATIN SMALL LETTER O WITH STROKE           | `&oslash;`   |
+| `ù`       |       249 | U+00F9 | LATIN SMALL LETTER U WITH GRAVE            | `&ugrave;`   |
+| `ú`       |       250 | U+00FA | LATIN SMALL LETTER U WITH ACUTE            | `&uacute;`   |
+| `û`       |       251 | U+00FB | LATIN SMALL LETTER U WITH CIRCUMFLEX       | `&ucirc;`    |
+| `ü`       |       252 | U+00FC | LATIN SMALL LETTER U WITH DIAERESIS        | `&uuml;`     |
+| `ý`       |       253 | U+00FD | LATIN SMALL LETTER Y WITH ACUTE            | `&yacute;`   |
+| `þ`       |       254 | U+00FE | LATIN SMALL LETTER THORN                   | `&thorn;`    |
+| `ÿ`       |       255 | U+00FF | LATIN SMALL LETTER Y WITH DIAERESIS        | `&yuml;`     |
 | `Œ`       |       338 | U+0152 | LATIN CAPITAL LIGATURE OE                  | `&OElig;`    |
 | `œ`       |       339 | U+0153 | LATIN SMALL LIGATURE OE                    | `&oelig;`    |
 | `Š`       |       352 | U+0160 | LATIN CAPITAL LETTER S WITH CARON          | `&Scaron;`   |
