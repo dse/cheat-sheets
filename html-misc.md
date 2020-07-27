@@ -27,7 +27,7 @@ HTML 5 restrictions are looser:
 
     Both have the same specificity.
 
-## ids and classes that do not need to be escaped in CSS selectors
+## ids and classes that DO NOT NEED to be escaped in CSS selectors
 
 -   one of the following:
     -   `--`
@@ -49,16 +49,18 @@ HTML 5 restrictions are looser:
 
 ## Examples
 
-These are valid in CSS selectors.
-
 ```
-FIXME
-```
-
-These are invalid, and must be escaped.
-
-```
-FIXME
+valid                   invalid
+----------------------  ----------------------
+--                      -
+-e    -3    -_    -\!   -!
+e     3     _     \!    !
+foo\ bar                foo bar
+foo\!bar                foo!bar
+foo-bar                 foo<DEL>bar
+foo_bar
+foo--bar
+foo__bar
 ```
 
 Sources:
