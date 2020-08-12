@@ -84,7 +84,7 @@
         %S      short for %ls (POSIX extension)
 ```
 
-*conversion-specification*:\
+*conversion-specification*:<br>
         `%`[*position*][*flags*][*width*][`.`*precision*][*size*]*type*
 
 
@@ -96,62 +96,62 @@ If one positional parameter is used, all parameters must be positional.
 
 
 *flags*: A series of one or more of the following characters:
-        `-`\
-        `+`\
-        (space)\
-        `0`\
-        `#`\
-        `'`\
+        `-`<br>
+        `+`<br>
+        (space)<br>
+        `0`<br>
+        `#`<br>
+        `'`
 
 
 *width*:
-        *integer*\
-        `*`\
-        `*`*integer*`$`\
+        *integer*<br>
+        `*`<br>
+        `*`*integer*`$`
 
 
 *precision*:
-        *integer*\
-        `*`\
-        `*`*integer*`$`\
+        *integer*<br>
+        `*`<br>
+        `*`*integer*`$`
 
 
 *size*:
-        `hh`\
-        `h`\
-        `l`\
-        `ll`\
-        `j`\
-        `z`\
-        `t`\
-        `L`\
+        `hh`<br>
+        `h`<br>
+        `l`<br>
+        `ll`<br>
+        `j`<br>
+        `z`<br>
+        `t`<br>
+        `L`
 
 
 *type*:
-        `d`\
-        `i`\
-        `o`\
-        `u`\
-        `x`\
-        `X`\
-        `f`\
-        `F`\
-        `e`\
-        `E`\
-        `g`\
-        `G`\
-        `a`\
-        `A`\
-        `c`\
-        `lc`\
-        `s`\
-        `ls`\
-        `n`\
-        `p`\
-        `m`\
-        `%`\
-        `D`\
-        `O`\
-        `U`\
-        `C`\
-        `S`\
+        `d`<br>
+        `i`<br>
+        `o`<br>
+        `u`<br>
+        `x`<br>
+        `X`<br>
+        `f`<br>
+        `F`<br>
+        `e`<br>
+        `E`<br>
+        `g`<br>
+        `G`<br>
+        `a`<br>
+        `A`<br>
+        `c`<br>
+        `lc`<br>
+        `s`<br>
+        `ls`<br>
+        `n`<br>
+        `p`<br>
+        `m`<br>
+        `%`<br>
+        `D`<br>
+        `O`<br>
+        `U`<br>
+        `C`<br>
+        `S`
