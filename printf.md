@@ -87,10 +87,13 @@
 *conversion-specification*:\
         `%`[*position*][*flags*][*width*][`.`*precision*][*size*]*type*
 
+
 *position*:
         *decimal-integer*`$`
 
+
 If one positional parameter is used, all parameters must be positional.
+
 
 *flags*: A series of one or more of the following characters:
         `-`\
@@ -100,15 +103,18 @@ If one positional parameter is used, all parameters must be positional.
         `#`\
         `'`\
 
+
 *width*:
         *integer*\
         `*`\
         `*`*integer*`$`\
 
+
 *precision*:
         *integer*\
         `*`\
         `*`*integer*`$`\
+
 
 *size*:
         `hh`\
@@ -119,6 +125,7 @@ If one positional parameter is used, all parameters must be positional.
         `z`\
         `t`\
         `L`\
+
 
 *type*:
         `d`\
