@@ -88,14 +88,14 @@
         `%`[*position*][*flags*][*width*][`.`*precision*][*size*]*type*
 
 
-*position*:
+*position*:<br>
         *decimal-integer*`$`
 
 
 If one positional parameter is used, all parameters must be positional.
 
 
-*flags*: A series of one or more of the following characters:
+*flags*: A series of one or more of the following characters:<br>
         `-`<br>
         `+`<br>
         (space)<br>
@@ -104,19 +104,19 @@ If one positional parameter is used, all parameters must be positional.
         `'`
 
 
-*width*:
+*width*:<br>
         *integer*<br>
         `*`<br>
         `*`*integer*`$`
 
 
-*precision*:
+*precision*:<br>
         *integer*<br>
         `*`<br>
         `*`*integer*`$`
 
 
-*size*:
+*size*:<br>
         `hh`<br>
         `h`<br>
         `l`<br>
@@ -127,7 +127,7 @@ If one positional parameter is used, all parameters must be positional.
         `L`
 
 
-*type*:
+*type*:<br>
         `d`<br>
         `i`<br>
         `o`<br>
