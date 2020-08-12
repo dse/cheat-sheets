@@ -84,69 +84,68 @@
         %S      short for %ls (POSIX extension)
 ```
 
-| *conversion-specification*:
-|     `%`[*position*][*flags*][*width*][`.`*precision*][*size*]*type*
-|
-| *position*:
-|     *decimal-integer*`$`
-|
-|     If one positional parameter is used, all parameters must be positional.
-|
-| *flags*:
-|     A series of one or more of the following characters:
-|
-|     `-`
-|     `+`
-|     (space)
-|     `0`
-|     `#`
-|     `'`
-|
-| *width*:
-|     *integer*
-|     `*`
-|     `*`*integer*`$`
-|
-| *precision*:
-|     *integer*
-|     `*`
-|     `*`*integer*`$`
-|
-| *size*:
-|     `hh`
-|     `h`
-|     `l`
-|     `ll`
-|     `j`
-|     `z`
-|     `t`
-|     `L`
-|
-| *type*:
-|     `d`
-|     `i`
-|     `o`
-|     `u`
-|     `x`
-|     `X`
-|     `f`
-|     `F`
-|     `e`
-|     `E`
-|     `g`
-|     `G`
-|     `a`
-|     `A`
-|     `c`
-|     `lc`
-|     `s`
-|     `ls`
-|     `n`
-|     `p`
-|     `m`
-|     `%`
-|     `D`
-|     `O`
-|     `U`
-|     `C`
-|     `S`
+*conversion-specification*:
+-   `%`[*position*][*flags*][*width*][`.`*precision*][*size*]*type*
+
+*position*:
+-   *decimal-integer*`$`
+
+If one positional parameter is used, all parameters must be positional.
+
+*flags*: A series of one or more of the following characters:
+
+-   `-`
+-   `+`
+-   (space)
+-   `0`
+-   `#`
+-   `'`
+
+*width*:
+-   *integer*
+-   `*`
+-   `*`*integer*`$`
+
+*precision*:
+-   *integer*
+-   `*`
+-   `*`*integer*`$`
+
+*size*:
+-   `hh`
+-   `h`
+-   `l`
+-   `ll`
+-   `j`
+-   `z`
+-   `t`
+-   `L`
+
+*type*:
+-   `d`
+-   `i`
+-   `o`
+-   `u`
+-   `x`
+-   `X`
+-   `f`
+-   `F`
+-   `e`
+-   `E`
+-   `g`
+-   `G`
+-   `a`
+-   `A`
+-   `c`
+-   `lc`
+-   `s`
+-   `ls`
+-   `n`
+-   `p`
+-   `m`
+-   `%`
+-   `D`
+-   `O`
+-   `U`
+-   `C`
+-   `S`
