@@ -102,27 +102,23 @@ terminator, but `$/` would also have to be set to `\r`.
 ## Beyond the `warnings` and `strict` Pragmata
 
 -   [`use common::sense;`](https://metacpan.org/pod/common::sense)
+    -   allow `utf8` in source code
+    -   `strict vars`
+    -   `strict subs`
+    -   but not `strict refs`
+    -   `feature say`
+    -   `feature state`
+    -   `feature switch`
+    -   `feature unicode_strings` to use Unicode rules in all string operations executed in its scope
+    -   `feature unicode_eval` to fix plain-string `eval` to work better in Unicode
+    -   `feature evalbytes` to enable `evalbytes` which is like `eval` but always parses byte strings
+    -   `feature current_sub` enables `__SUB__` which returns a reference to the current subroutine
+    -   `feature fc` enables `fc` which implements Unicode casefolding
+    -   `no feature array_base` disables non-zero array index bases
 
 What this provides:
 
 ```
-use utf8;
-    # allows UTF-8 in source code
-use strict qw(vars subs);
-    # does not include strict refs
-use feature qw(say state switch);
-use feature qw(unicode_strings);
-    # use Unicode rules in all sting operations executed in its scope
-use feature qw(unicode_eval);
-    # fix plain string `eval` to work better in unicode
-use feature qw(current_sub);
-    # provides `__SUB__` token returning reference to current subroutine
-use feature qw(fc);
-    # enables `fc`, which implements Unicode casefolding
-use feature qw(evalbytes);
-    # like `eval` but always parses strings of independent bytes
-no feature qw(array_base);
-    # disable non-zero array index bases
 no warnings;
 use warnings qw(FATAL);
 use warnings qw(closure);
@@ -146,11 +142,71 @@ use warnings qw(unpack);
 no warnings qw(exec);
 no warnings qw(newline);
 no warnings qw(unopened);
+
+The tree of warnings and which ones are enabled and not.
+
+        all -+
+             +- deprecated (not enabled)
+             +- exiting (not enabled)
+             +- experimental --+ (not enabled)
+             |                 +- experimental::* (not enabled)
+             +- glob (not enabled)
+             +- imprecision (not enabled)
+             +- io ------------+
+             |                 +- closed (enabled)
+             |                 +- exec
+             |                 +- layer (enabled)
+             |                 +- newline
+             |                 +- pipe (enabled)
+             |                 +- syscalls (enabled)
+             |                 +- unopened
+             +- locale (not enabled)
+             +- misc (not enabled)
+             +- missing (not enabled)
+             +- numeric (not enabled)
+             +- once (not enabled)
+             +- overflow (not enabled)
+             +- portable (not enabled)
+             +- recursion (not enabled)
+             +- redefine (not enabled)
+             +- redundant (not enabled)
+             +- regexp (not enabled)
+             +- shadow (not enabled)
+             +- signal (not enabled)
+             +- substr (not enabled)
+             +- syntax --------+
+             |                 +- ambiguous
+             |                 +- bareword
+             |                 +- digit (enabled)
+             |                 +- illegalproto
+             |                 +- parenthesis
+             |                 +- precedence
+             |                 +- printf (enabled)
+             |                 +- prototype (enabled)
+             |                 +- qw
+             |                 +- reserved (enabled)
+             |                 +- semicolon (enabled)
+             +- uninitialized (not enabled)
+             +- untie (not enabled)
+             +- utf8 ----------+ (not enabled)
+             |                 +- non_unicode (not enabled)
+             |                 +- nonchar (not enabled)
+             |                 +- surrogate (not enabled)
+             +- void (not enabled)
 ```
 
 ## To Enable Modern Features
 
 -   [`use Modern::Perl;`](https://metacpan.org/pod/Modern::Perl)
+    -   `strict`
+    -   `warnings`
+    -   all Perl 5.10 features
+        -   or all Perl 5.12 features if you say `use Modern::Perl '2011';`
+        -   or all Perl 5.14 features if you say `use Modern::Perl '2012';`
+        -   autc.
+    -   C3 method resolution order (`perldoc mro`)
+    -   `IO::File`
+    -   `IO::Handle`
 
 ## Enlightened Perl: Collections of Modules
 
@@ -158,11 +214,14 @@ no warnings qw(unopened);
 
 ## Other Cool Things
 
--   [`use perl5i;`](https://metacpan.org/pod/perl5i)
--   [`use uni::perl;`](https://metacpan.org/pod/release/MONS/uni-perl-0.03/lib/uni/perl.pm)
 -   [`use Toolkit;`](https://metacpan.org/pod/Toolkit)
--   [`use ToolSet;`](https://metacpan.org/pod/ToolSet)
 -   [`use Acme::Very::Modern::Perl;`](https://metacpan.org/pod/Acme::Very::Modern::Perl)
+    -   [`use Modern::Perl;`](https://metacpan.org/pod/Modern::Perl)
+    -   [`use Toolkit;`](https://metacpan.org/pod/Toolkit)
+    -   [`use latest;`](https://metacpan.org/pod/latest)
+    -   [`use uni::perl;`](https://metacpan.org/pod/release/MONS/uni-perl-0.03/lib/uni/perl.pm)
+    -   [`use perl5i;`](https://metacpan.org/pod/perl5i)
+    -   [`use common::sense;`](https://metacpan.org/pod/common::sense)
 
 ## Resources
 

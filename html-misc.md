@@ -47,6 +47,24 @@ HTML 5 restrictions are looser:
     -   `\` followed by any character other than hexdigit, LF, CR, or FF
     -   `\:` does not work in IE<8; use `\3a ` instead.
 
+## CSS class names
+
+<https://www.w3.org/TR/CSS21/grammar.html#scanner>
+
+-
+
+```
+ident		-?{nmstart}{nmchar}*
+nmstart		[_a-z]|{nonascii}|{escape}
+nmchar		[_a-z0-9-]|{nonascii}|{escape}
+nonascii	[\240-\377]
+escape		{unicode}|\\[^\r\n\f0-9a-f]
+unicode		\\{h}{1,6}(\r\n|[ \t\r\n\f])?
+h           [0-9a-f]
+
+```
+
+
 ## Examples
 
 These are valid in CSS selectors.

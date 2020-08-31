@@ -267,3 +267,27 @@ Old-school method:
 ```
 var args = Array.prototype.slice.call(arguments);
 ```
+
+## jQuery.getScript() without jQuery.
+
+```
+$.getScript(url, callback);
+
+// becomes
+
+$.get(url, undefined, callback, 'script');
+
+// becomes
+
+$.ajax({
+    url: url,
+    type: 'get',
+    dataType: 'script',
+    data: undefined,
+    success: callback
+});
+
+// becomes
+
+
+```
