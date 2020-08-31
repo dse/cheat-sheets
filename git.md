@@ -13,6 +13,10 @@
 
     git show <branch>:<file>
 
+# Which files contain conflicts?
+
+    git diff --name-only --diff-filter=U
+
 # Manual Merge because You Can't Do It from A Pull Request (GitHub)
 
 This is for a merge **from** a `<source-branch>` **into** a `<dest-branch>`.
