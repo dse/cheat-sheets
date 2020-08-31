@@ -12,3 +12,23 @@
 # Cat a file in another branch
 
     git show <branch>:<file>
+
+# Manual Merge because You Can't Do It from A Pull Request (GitHub)
+
+This is for a merge **from** a `<source-branch>` **into** a `<dest-branch>`.
+
+```
+git checkout <source-branch>
+git pull
+git merge --no-ff <dest-branch>
+# you may need to resolve conflicts here then run `git commit`
+git push
+```
+
+```
+git checkout <dest-branch>
+git pull
+git merge --no-ff <source-branch>
+# you may need to resolve conflicts here then run `git commit`
+git push
+```
