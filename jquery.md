@@ -4,7 +4,7 @@
 
 TBD
 
-## `$.ajax()`
+## `getScript`
 
 Something that's not obviously translatable to vanilla JS is:
 
