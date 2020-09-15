@@ -49,4 +49,49 @@ xhr.send(null);
 TBD
 
 ```
+jQuery.fn.slideDown = function (speed, easing, callback) {
+    return this.animate(genFx('show'), speed, easing, callback);
+};
+jQuery.fn.slideUp = function (speed, easing, callback) {
+    return this.animate(genFx('hide'), speed, easing, callback);
+};
+jQuery.fn.slideToggle = function (speed, easing, callback) {
+    return this.animate(genFx('toggle'), speed, easing, callback);
+};
+function genFx(type) {
+    return {
+        height: type,
+        marginTop: type,
+        marginBottom: type,
+        paddingTop: type,
+        paddingBottom: type
+    };
+};
+jQuery.fn.animate = function(prop, speed, easing, callback) {
+    var optall = {
+        duration: speed ?? 400,
+        easing: easing ?? undefined,
+        queue: 'fx',
+        old: false,
+        complete: function () { jQuery.dequeue(this, 'fx'); }
+    };
+    var doAnimation = function() {
+        var anim = Animation( this, jQuery.extend( {}, prop ), optall );
+        if (jQuery._data(this, "finish")) {
+            anim.stop( true );
+        }
+    };
+    doAnimation.finish = doAnimation;
+    return this.queue(optall.queue, doAnimation);
+};
+
+jQuery.speed = (speed, easing) => {
+    return {
+        duration: speed ?? 400,
+        easing: easing ?? undefined,
+        queue: 'fx',
+        old: false,
+        complete: function () { jQuery.dequeue(this, 'fx'); }
+    };
+}
 ```
