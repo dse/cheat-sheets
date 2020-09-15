@@ -1,9 +1,5 @@
 # jQuery Stuff
 
-## `slideDown`, `slideUp`, and `slideToggle`
-
-TBD
-
 ## `getScript`
 
 Something that's not obviously translatable to vanilla JS is:
@@ -46,4 +42,11 @@ xhr.onload = function () {
     document.head.appendChild(script).parentNode.removeChild(script);
 };
 xhr.send(null);
+```
+
+## `slideDown`, `slideUp`, and `slideToggle`
+
+TBD
+
+```
 ```
