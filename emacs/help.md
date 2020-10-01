@@ -9,12 +9,12 @@
 | C‑h c KEYS     | describe‑key‑briefly             | Display the command name run by the given key sequence.                                                                     |
 | C‑h C CODING   | describe‑coding‑system           | Describe the given coding system, or RET for current ones.                                                                  |
 | C‑h d PATTERN  | apropos‑documentation            | Show a list of functions, variables, and other items whose documentation matches the PATTERN (a list of words or a regexp). |
-| C‑h e          | view‑echo‑area‑messages          | Go to the *Messages* buffer which logs echo-area messages.                                                                  |
+| C‑h e          | view‑echo‑area‑messages          | Go to the \*Messages\* buffer which logs echo-area messages.                                                                |
 | C‑h f FUNCTION | describe‑function                | Display documentation for the given function.                                                                               |
 | C‑h F COMMAND  | Info‑goto‑emacs‑command‑node     | Show the Emacs manual’s section that describes the command.                                                                 |
 | C‑h g          | describe‑gnu‑project             | Display information about the GNU project.                                                                                  |
 | C‑h h          | view‑hello‑file                  | Display the HELLO file which illustrates various scripts.                                                                   |
-| C‑h i          | !info                             | Start the Info documentation reader: read included manuals.                                                                 |
+| C‑h i          | info                             | Start the Info documentation reader: read included manuals.                                                                 |
 | C‑h I METHOD   | describe‑input‑method            | Describe a specific input method, or RET for current.                                                                       |
 | C‑h k KEYS     | describe‑key                     | Display the full documentation for the key sequence.                                                                        |
 | C‑h K KEYS     | Info‑goto‑emacs‑key‑command‑node | Show the Emacs manual’s section for the command bound to KEYS.                                                              |
