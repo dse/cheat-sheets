@@ -1,5 +1,7 @@
 # Emacs Help
 
+<https://github.com/dse/cheat-sheets/blob/master/emacs/help.md>
+
 | Keys           | Command                          | Description                                                                                                                 |
 |:---------------|:---------------------------------|:----------------------------------------------------------------------------------------------------------------------------|
 | C-h a PATTERN  | apropos-command                  | Show commands whose name matches the PATTERN (a list of words or a regexp).  See also the ‘apropos’ command.                |
