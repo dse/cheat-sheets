@@ -13,9 +13,12 @@
 
     git show <branch>:<file>
 
+`<file>` must be relative to repository root **or** start with `./`
+(or `../` or something).  I think.
+
 # Which files contain conflicts?
 
-    git diff --name-only --diff-filter=U
+    git diff --name-only --diff-filter=U            # I guess
 
 # Manual Merge because You Can't Do It from A Pull Request (GitHub)
 
