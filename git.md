@@ -1,3 +1,47 @@
+# Git Config
+
+-   `--local` (default)
+    -   repository `.git/config`
+-   `--global`
+    -   `~/.gitconfig` or `$XDG_CONFIG_HOME/git/config`
+-   `--system`
+    -   `$(prefix)/etc/gitconfig`
+
+## Set
+
+-   default behavior is to replace at most one line.
+-   `--replace-all` replaces all lines matching key and optional value_regex.
+-   `--add` adds a new line without altering existing values
+
+## Unset
+
+-   `--unset` removes the first line matching the key
+-   `--unset-all` removes all lines matching the key
+
+# Merge Conflict Style
+
+-   `git config --global --unset merge.conflictStyle` (default)
+
+    ```
+    <<<<<<<
+        ours
+    =======
+        theirs
+    >>>>>>>
+    ```
+
+-   `git config --global merge.conflictStyle diff3`
+
+    ```
+    <<<<<<<
+        ours
+    |||||||
+        original
+    =======
+        theirs
+    >>>>>>>
+    ```
+
 # Branch Surgery
 
     * A                   * B
