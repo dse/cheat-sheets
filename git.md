@@ -57,13 +57,34 @@
 
     git show <branch>:<file>
 
+`<file>` must be relative to repository root **or** start with `./`
+(or `../` or something).  I think.
+
 # Which files contain conflicts?
 
-    git diff --name-only --diff-filter=U
+    git diff --name-only --diff-filter=U            # I guess
 
 # Manual Merge because You Can't Do It from A Pull Request (GitHub)
 
-This is for a merge **from** a `<source-branch>` **into** a `<dest-branch>`.
+You can still create the pull request but you can't do the automatic
+merge because, for example, there are merge conflicts.
+
+The following steps are what GitHub (the webapp) does in case of a
+merge conflict.
+
+This is for a merge **from** a `<source-branch>` **into** a
+`<dest-branch>`.
+
+**This merges both ways.**  Don't do this if `<dest-branch>` has
+commits not ready for `<source-branch>`.
+
+Example:
+
+> Let's say you want to merge something that's in `master` into
+> `feature-branch-1`.  The following steps would **first** merge
+> `feature-branch-1` into `master`, **which you do not want to do**,
+> then merge `master` into `feature-branch-1`.
+
 
 ```
 git checkout <source-branch>
@@ -80,3 +101,19 @@ git merge --no-ff <source-branch>
 # you may need to resolve conflicts here then run `git commit`
 git push
 ```
+
+# Undoing a Merge
+
+```
+git checkout <target-branch>
+git revert -m 1 <merge-commit-id>
+```
+
+## Re-doing the Merge, i.e., Undoing the Undo, i.e., Reverting the Revert
+
+```
+git checkout <target-branch>
+git revert <revert-commit-id>
+```
+
+lol.
