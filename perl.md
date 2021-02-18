@@ -99,6 +99,12 @@ This will safely deal with both `\n` and `\r\n`.
 It will also deal with `\r`, the MacOS versions 1 through 9 line
 terminator, but `$/` would also have to be set to `\r`.
 
+## Date/Time Parsing Modules
+
+-   Time::ParseDate
+-   Date::Parse
+-   HTTP::Date
+
 ## Beyond the `warnings` and `strict` Pragmata
 
 -   [`use common::sense;`](https://metacpan.org/pod/common::sense)

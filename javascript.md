@@ -64,69 +64,94 @@ anchor.href = 'https://example.com/';
 
 `encodeURIComponent()` encodes other characters as URI-encoded UTF-8.
 
-## Operator Precedence
+## Operator Precedence (cheat sheet)
 
-| Precedence | Operator type                 | Associativity | Individual operators  |
-|:-----------|:------------------------------|:--------------|:----------------------|
-| 20 (tight) | Grouping                      | n/a           | `(` ... `)`           |
-| 19         | Member Access                 | left-to-right | ... `.` ...           |
-|            | Computed Member Access        | left-to-right | ... `[` ... `]`       |
-|            | `new` (with argument list)    | n/a           | `new` ... `(` ... `)` |
-|            | Function Call                 | left-to-right | ... `(` ... `)`       |
-| 18         | `new` (without argument list) | right-to-left | `new` ...             |
-| 17         | Postfix Increment             | n/a           | ... `++`              |
-|            | Postfix Decrement             |               | ... `--`              |
-| 16         | Logical NOT                   | right-to-left | `!` ...               |
-|            | Bitwise NOT                   |               | `~` ...               |
-|            | Unary Plus                    |               | `+` ...               |
-|            | Unary Negation                |               | `-` ...               |
-|            | Prefix Increment              |               | `++` ...              |
-|            | Prefix Decrement              |               | `--` ...              |
-|            | `typeof`                      |               | `typeof` ...          |
-|            | `void`                        |               | `void` ...            |
-|            | `delete`                      |               | `delete` ...          |
-|            | `await`                       |               | `await` ...           |
-| 15         | Exponentiation                | right-to-left | ... `**` ...          |
-| 14         | Multiplication                | left-to-right | ... `*` ...           |
-|            | Division                      |               | ... `/` ...           |
-|            | Remainder                     |               | ... `%` ...           |
-| 13         | Addition                      | left-to-right | ... `+` ...           |
-|            | Subtraction                   |               | ... `-` ...           |
-| 12         | Bitwise Left Shift            | left-to-right | ... `<<` ...          |
-|            | Bitwise Right Shift           |               | ... `>>` ...          |
-|            | Bitwise Unsigned Right Shift  |               | ... `>>>` ...         |
-| 11         | Less Than                     | left-to-right | ... `<` ...           |
-|            | Less Than Or Equal            |               | ... `<=` ...          |
-|            | Greater Than                  |               | ... `>` ...           |
-|            | Greater Than Or Equal         |               | ... `>=` ...          |
-|            | `in`                          |               | ... `in` ...          |
-|            | `instanceof`                  |               | ... `instanceof` ...  |
-| 10         | Equality                      | left-to-right | ... `==` ...          |
-|            | Inequality                    |               | ... `!=` ...          |
-|            | Strict Equality               |               | ... `===` ...         |
-|            | Strict Inequality             |               | ... `!==` ...         |
-| 9          | Bitwise AND                   | left-to-right | ... `&` ...           |
-| 8          | Bitwise XOR                   | left-to-right | ... `^` ...           |
-| 7          | Bitwise OR                    | left-to-right | ... `\|` ...          |
-| 6          | Logical AND                   | left-to-right | ... `&&` ...          |
-| 5          | Logical OR                    | left-to-right | ... `\|\|` ...        |
-| 4          | Conditional                   | right-to-left | ... `?` ... `:` ...   |
-| 3          | Assignment                    | right-to-left | ... `=` ...           |
-|            |                               |               | ... `+=` ...          |
-|            |                               |               | ... `-=` ...          |
-|            |                               |               | ... `**=` ...         |
-|            |                               |               | ... `*=` ...          |
-|            |                               |               | ... `/=` ...          |
-|            |                               |               | ... `%=` ...          |
-|            |                               |               | ... `<<=` ...         |
-|            |                               |               | ... `>>=` ...         |
-|            |                               |               | ... `>>>=` ...        |
-|            |                               |               | ... `&=` ...          |
-|            |                               |               | ... `^=` ...          |
-|            |                               |               | ... `\|=` ...         |
-| 2          | `yield`                       | right-to-left | `yield` ...           |
-|            | `yield*`                      |               | `yield*` ...          |
-| 1 (loose)  | Comma / Sequence              | left-to-right | ... `,` ...           |
+```
+tighter                                                                            looser
+|                                                                                       |
+
+()  x.x    new X  x++  !x  **  *  +  <<   <   ==  &  ^  |  &&  ||  ??  ? :   =  yield   ,
+    x[]           x--  ~x      /  -  >>   <=  !=                            +=  yield*
+    new X()            +x      %     >>>  >   ===                           -=
+    x()                -x                 >=  !==                           *=
+    x?.x               ++x                in                                /=
+                       --x            instanceof                          etc.
+                       typeof x
+                       void x
+                       delete x
+                       await x
+```
+
+## Operator Precedence (detail)
+
+| Precedence | Operator type                 | Associativity | Individual operators   |
+|:-----------|:------------------------------|:--------------|:-----------------------|
+| 21 (tight) | Grouping                      | n/a           | `(` ... `)`            |
+| 20         | Member Access                 | left-to-right | ... `.` ...            |
+|            | Computed Member Access        | left-to-right | ... `[` ... `]`        |
+|            | `new` (with argument list)    | n/a           | `new` ... `(` ... `)`  |
+|            | Function Call                 | left-to-right | ... `(` ... `)`        |
+|            | Optional Chaining             | left-to-right | `?.`                   |
+| 19         | `new` (without argument list) | right-to-left | `new` ...              |
+| 18         | Postfix Increment             | n/a           | ... `++`               |
+|            | Postfix Decrement             |               | ... `--`               |
+| 17         | Logical NOT                   | right-to-left | `!` ...                |
+|            | Bitwise NOT                   |               | `~` ...                |
+|            | Unary Plus                    |               | `+` ...                |
+|            | Unary Negation                |               | `-` ...                |
+|            | Prefix Increment              |               | `++` ...               |
+|            | Prefix Decrement              |               | `--` ...               |
+|            | `typeof`                      |               | `typeof` ...           |
+|            | `void`                        |               | `void` ...             |
+|            | `delete`                      |               | `delete` ...           |
+|            | `await`                       |               | `await` ...            |
+| 16         | Exponentiation                | right-to-left | ... `**` ...           |
+| 15         | Multiplication                | left-to-right | ... `*` ...            |
+|            | Division                      |               | ... `/` ...            |
+|            | Remainder                     |               | ... `%` ...            |
+| 14         | Addition                      | left-to-right | ... `+` ...            |
+|            | Subtraction                   |               | ... `-` ...            |
+| 13         | Bitwise Left Shift            | left-to-right | ... `<<` ...           |
+|            | Bitwise Right Shift           |               | ... `>>` ...           |
+|            | Bitwise Unsigned Right Shift  |               | ... `>>>` ...          |
+| 12         | Less Than                     | left-to-right | ... `<` ...            |
+|            | Less Than Or Equal            |               | ... `<=` ...           |
+|            | Greater Than                  |               | ... `>` ...            |
+|            | Greater Than Or Equal         |               | ... `>=` ...           |
+|            | `in`                          |               | ... `in` ...           |
+|            | `instanceof`                  |               | ... `instanceof` ...   |
+| 11         | Equality                      | left-to-right | ... `==` ...           |
+|            | Inequality                    |               | ... `!=` ...           |
+|            | Strict Equality               |               | ... `===` ...          |
+|            | Strict Inequality             |               | ... `!==` ...          |
+| 10         | Bitwise AND                   | left-to-right | ... `&` ...            |
+| 9          | Bitwise XOR                   | left-to-right | ... `^` ...            |
+| 8          | Bitwise OR                    | left-to-right | ... `\|` ...           |
+| 7          | Logical AND                   | left-to-right | ... `&&` ...           |
+| 6          | Logical OR                    | left-to-right | ... `\|\|` ...         |
+| 5          | Null Coalescing               | left-to-right | ... `??` ...           |
+| 4          | Conditional                   | right-to-left | ... `?` ... `:` ...    |
+| 3          | Assignment                    | right-to-left | ... `=` ...            |
+|            |                               |               | ... `+=` ...           |
+|            |                               |               | ... `-=` ...           |
+|            |                               |               | ... `**=` ...          |
+|            |                               |               | ... `*=` ...           |
+|            |                               |               | ... `/=` ...           |
+|            |                               |               | ... `%=` ...           |
+|            |                               |               | ... `<<=` ...          |
+|            |                               |               | ... `>>=` ...          |
+|            |                               |               | ... `>>>=` ...         |
+|            |                               |               | ... `&=` ...           |
+|            |                               |               | ... `^=` ...           |
+|            |                               |               | ... `\|=` ...          |
+|            |                               |               | ... `&&=` ... (2020)   |
+|            |                               |               | ... `\|\|=` ... (2020) |
+|            |                               |               | ... `??=` ... (2020)   |
+| 2          | `yield`                       | right-to-left | `yield` ...            |
+|            | `yield*`                      |               | `yield*` ...           |
+| 1 (loose)  | Comma / Sequence              | left-to-right | ... `,` ...            |
+
+[source](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators#Assignment_operators)
 
 ## `RegExp.$1`, etc.
 
@@ -281,3 +306,59 @@ if (window.self === window.top) {
     // you **are** in an iframe!
 }
 ```
+
+## slice vs. substring vs. substr
+
+-   None of the methods change the original string.
+-   All methods take the starting index as their first argument.
+-   If the second argument is omitted, all methods return the substring from the start argument to the end of the string.
+
+|                                                         | slice              | substr             | substring       |
+|:--------------------------------------------------------|:-------------------|:-------------------|:----------------|
+| optional second argument                                | end index          | desired length     | end index       |
+| negative start argument                                 | from end of string | from end of string | 0               |
+| first index argument greater than second index argument | empty string       | n/a                | swaps arguments |
+
+```
+'0123456789'.slice(4)          === '456789'     // absent second argument, all
+'0123456789'.substr(4)         === '456789'     // methods go to end of string
+'0123456789'.substring(4)      === '456789'
+
+'0123456789'.slice(2, 6)       === '2345'       // start at 2, end before 6
+'0123456789'.substr(2, 6)      === '234567'     // start at 2, get next 6 characters
+'0123456789'.substring(2, 6)   === '2345'       // start at 2, end before 6
+
+'0123456789'.slice(-4)         === '6789'       // start at 4 behind end of string
+'0123456789'.substr(-4)        === '6789'       // start at 4 behind end of string
+'0123456789'.substring(-4)     === '0123456789' // start at 0, not -4
+
+'0123456789'.slice(-6, 2)      === ''           // start at 0, end before 2
+'0123456789'.substr(-6, 2)     === '45'         // starts at -6, get next 2
+'0123456789'.substring(-6, 2)  === '01'         // start at 0, end before 2
+
+'0123456789'.slice(6, 2)       === ''
+'0123456789'.substr(6, 2)      === '67'
+'0123456789'.substring(6, 2)   === '2345'
+
+'0123456789'.slice(-6, -2)     === '4567'       // start at -6, end before -2
+'0123456789'.substr(-6, -2)    === ''           // start at -6, get next -2 characters
+'0123456789'.substring(-6, -2) === ''           // start at 0 (-6), end at 0 (-2)
+```
+
+-   `slice` and `substring` take the `end` index as their optional
+    second argument; `substr` takes the desired substring `length`.
+
+-   If a negative `start` argument is specified, `slice` and `substr`
+    start from behind the end of the string; `substring` treats a
+    negative `start` argument as `0`.
+
+-   If an argument greater than the length of the string is specified:
+    -   `substring` treats both index arguments as 0.
+
+-   If the first argument is greater than the second, `substring` will
+    swap the arguments; `slice` will return an empty string.
+
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/substring
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/substr
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/slice
+https://www.bennadel.com/blog/2159-using-slice-substring-and-substr-in-javascript.htm
