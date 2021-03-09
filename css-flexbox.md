@@ -1,6 +1,6 @@
 # CSS Flexbox
 
-Details: <https://css-tricks.com/snippets/css/a-guide-to-flexbox/>
+-   [Details](https://css-tricks.com/snippets/css/a-guide-to-flexbox/>)
 
 ## Properties for the Flex Container (parent)
 
