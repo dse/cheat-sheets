@@ -293,6 +293,10 @@ Old-school method:
 var args = Array.prototype.slice.call(arguments);
 ```
 
+### How to Check for an Array-Like Object
+
+See [isArrayLike.js](js/isArrayLike.js).
+
 ## jQuery.getScript() without jQuery.
 
 See [jquery.md](jquery.md).
