@@ -1,3 +1,5 @@
+/*jshint freeze: false, bitwise: false */
+
 // https://github.com/behnammodi/polyfill/blob/master/string.polyfill.js
 // REQUIRES String.prototype.repeat, a polyfill for which is below.
 if (!String.prototype.padStart) {
@@ -36,6 +38,7 @@ if (!String.prototype.padEnd) {
 
 // https://github.com/behnammodi/polyfill/blob/master/string.polyfill.js
 if (!String.prototype.repeat) {
+    /*jshint eqeqeq: false */
     String.prototype.repeat = function(count) {
         'use strict';
         if (this == null) {
@@ -72,4 +75,5 @@ if (!String.prototype.repeat) {
         }
         return rpt;
     };
+    /*jshint eqeqeq: true */
 }

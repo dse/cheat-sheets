@@ -1,3 +1,5 @@
+/*jshint bitwise: false, singleGroups: false */
+
 // https://github.com/kevlatus/polyfill-array-includes
 // https://mariusschulz.com/blog/ecmascript-2016-array-prototype-includes
 if (!Array.prototype.includes) {
