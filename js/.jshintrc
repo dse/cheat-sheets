@@ -1,0 +1,55 @@
+/**
+ * JSHint options.  See https://jshint.com/docs/options/
+ */
+
+{
+    // enforcing options
+    "bitwise":       true,  // `true` prohibits bitwise operators, e.g., `&`, `|`, `^`.
+    "curly":         true,  // `true` requires `{}` around blocks in loops and conditionals.
+    "eqeqeq":        true,  // `true` prohibits use of `==` and `!=`, in favor of `===` and `!==`.
+    "esversion":     5,     // ECMAScript 5.  IE11 baseline, mainly for legacy corporate environments.
+    "forin":         true,  // `true` requires all `for in` loops to filter objects' items.
+    "freeze":        true,  // `true` prohibits overwriting prototypes of native objects, such as `Array`, `Date`, and `Object`.
+    "futurehostile": true,  // `true` warns about future reserved words.
+    "latedef":       true,  // `true` prohibits use of variables before their definitions.
+    "leanswitch":    true,  // `true` prohibits unnecessary `switch` statement clauses.
+    "maxerr":        100,   // Maximum number of warnings before JSHint gives up.
+    "noarg":         true,  // `true` prohibits the use of `arguments.caller` and `arguments.callee`.
+    "nocomma":       true,  // `true` prohibits use of the comma operator.
+    "nonbsp":        true,  // `true` warns about U+00A0 NO-BREAK SPACE characters.
+    "nonew":         true,  // `true` prohibits the use of constructors for side-effects.
+    "noreturnawait": true,  // `true` prohibits `return await`, in favor of returning the results of asynchronous operations directly.
+    "regexpu":       false, // `true` warns about regular expressions not including the `u` flag.
+    "shadow":        false, // `false` checks for duplicate variable declarations in the same scope only.
+    "singleGroups":  true,  // `true` prohibits unnecessary use of the grouping operator.
+    "strict":        false, // `false` disables warnings about strict mode.
+    "trailingcomma": false, // `true` warns when a comma is not placed after the last element of an array or object literal.
+    "undef":         true,  // `true` prohibits the use of variables not explicitly declared.
+    "unused":        true,  // `true` warns about defined variables that are never used.
+    "varstmt":       false, // `true` prohibits the use of `var` statements, in favor of `let` and `const`.
+
+    // relaxing options
+    "asi":           false, // `true` to suppress warnings about missing semicolons.
+    "boss":          false, // `true` to suppress warnings about the use of assignments where comparisons are expected (e.g., in `if` and `while` conditions)
+    "debug":         false, // `true` to suppress warnings about the `debugger` statement, i.e., browser breakpoint.
+    "elision":       false, // `true` to allow the use of ES3 array elision elements or empty elements.
+    "eqnull":        true,  // `true` to suppress warnings about `== null` comparisons.  Only `null` and `undefined` are `== null`.
+    "evil":          false, // `true` to suppress warnings about the use of `eval`.
+    "expr":          false, // `true` to suppress warnings about the use of expressions where assignments and function calls are expected.
+    "funcscope":     false, // `true` to suppress warnings about declaring variables inside control structures that are then used outside of them.
+    "iterator":      false, // `true` to suppress warnings about the `__iterator__` property.
+    "lastsemic":     false, // `true` to suppress warnings about the missing semicolon for the last statement in a one-line block.
+    "loopfunc":      false, // `true` to suppress warnings about functions inside of loops.
+    "moz":           false, // `true` to allow the use of Mozilla JavaScript extensions.
+    "notypeof":      false, // `true` to suppress warnings about invalid `typeof` operator values.
+    "noyield":       false, // `true` to suppress warnings about generator functions containing no `yield` statements.
+    "plusplus":      false, // `true` to prohibit the use of `++` and `--` unary operators.
+    "proto":         false, // `true` to suppress warnings about the `__proto__` property.
+    "scripturl":     false, // `true` to suppress warnings about the use of script-targeted URLs, e.g., `javascript:...`.
+    "supernew":      false, // `true` to suppress warnings about certain "weird" constructions.
+    "validthis":     false, // `true` to suppress warnings about the use of `this` in non-constructor functions in strict mode.
+    "withstmt":      false, // `true` to suppress warnings about the use of the `with` statement.
+
+    // environment options
+    "browser":       true   // globals exposed by modern web browsers, such as `document`, `navigator`, and `FileReader`.
+}
