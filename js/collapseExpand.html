@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+        <title>Page Title</title>
+        <style>
+            .four {
+                background-color: green;
+            }
+        </style>
+    </head>
+    <body>
+
+        <h1>
+            Page Title
+        </h1>
+
+        <div id="one">
+            <p>Bacon ipsum dolor amet venison tenderloin biltong tail brisket cupim, turkey ham hock t-bone. Meatloaf tenderloin strip steak prosciutto buffalo, turkey biltong cow capicola pork chop fatback bresaola turducken salami kielbasa. Ground round frankfurter flank, doner sirloin swine drumstick rump. Turducken filet mignon leberkas, burgdoggen bacon tongue tri-tip pancetta pork belly shoulder. Ribeye beef chicken, rump drumstick buffalo ground round spare ribs. Bacon shankle ham hock pork loin beef ribs shoulder leberkas porchetta cow sausage picanha.</p>
+        </div>
+        <div id="two">
+            <p>Kevin leberkas corned beef picanha rump short loin. Venison ham hock pig biltong pancetta, kevin brisket capicola cupim corned beef shoulder boudin drumstick. Shankle biltong corned beef ham doner turkey. Picanha tongue ham hock chuck.</p>
+        </div>
+        <div id="three">
+            <p>Pig venison ball tip shankle, burgdoggen porchetta cow corned beef hamburger tenderloin. Hamburger swine fatback beef ribs, pork chop shankle ham. Jerky flank salami, ham hock beef ribs ham tongue filet mignon prosciutto landjaeger ribeye rump t-bone venison. Drumstick pork loin kielbasa pig, hamburger rump swine tri-tip. Porchetta turkey chicken pork belly andouille kielbasa, ham boudin pork landjaeger. Meatball beef ribs chislic porchetta pastrami shankle, leberkas alcatra frankfurter prosciutto shank pork belly flank. Venison brisket picanha, pig chislic landjaeger chuck pork loin t-bone porchetta pancetta.</p>
+        </div>
+        <div id="four" style="background-color: yellow;">
+            <p>Pig venison ball tip shankle, burgdoggen porchetta cow corned beef hamburger tenderloin. Hamburger swine fatback beef ribs, pork chop shankle ham. Jerky flank salami, ham hock beef ribs ham tongue filet mignon prosciutto landjaeger ribeye rump t-bone venison. Drumstick pork loin kielbasa pig, hamburger rump swine tri-tip. Porchetta turkey chicken pork belly andouille kielbasa, ham boudin pork landjaeger. Meatball beef ribs chislic porchetta pastrami shankle, leberkas alcatra frankfurter prosciutto shank pork belly flank. Venison brisket picanha, pig chislic landjaeger chuck pork loin t-bone porchetta pancetta.</p>
+        </div>
+
+        <p>
+            <button id="buttonOne">one</button>
+            <button id="buttonTwo">two</button>
+            <button id="buttonThree">three</button>
+        </p>
+
+        <p>
+            <button id="fourRed">red</button>
+            <button id="fourGreen">green</button>
+            <button id="fourBlue">blue</button>
+        </p>
+
+        <script src="collapseExpand.js"></script>
+        <script>
+            var buttonOne = document.getElementById('buttonOne');
+            var buttonTwo = document.getElementById('buttonTwo');
+            var buttonThree = document.getElementById('buttonThree');
+
+            var fourRed = document.getElementById('fourRed');
+            var fourYellow = document.getElementById('fourYellow');
+            var fourGreen = document.getElementById('fourGreen');
+            var fourBlue = document.getElementById('fourBlue');
+
+            var one = document.getElementById('one');
+            var two = document.getElementById('two');
+            var three = document.getElementById('three');
+            var four = document.getElementById('four');
+
+            buttonOne.addEventListener('click', function () {
+                CollapseExpand.toggle(one);
+            });
+            buttonTwo.addEventListener('click', function () {
+                CollapseExpand.toggle(two);
+            });
+            buttonThree.addEventListener('click', function () {
+                CollapseExpand.toggle(three);
+            });
+
+            fourRed.addEventListener('click', function () {
+                four.style.backgroundColor = 'red';
+            });
+            fourYellow.addEventListener('click', function () {
+                four.style.backgroundColor = null;
+            });
+            fourGreen.addEventListener('click', function () {
+                four.style.backgroundColor = '';
+            });
+            fourBlue.addEventListener('click', function () {
+                four.style.backgroundColor = 'blue';
+            });
+        </script>
+
+    </body>
+</html>

@@ -1,0 +1,17 @@
+1. Let O be ? ToObject(this value).
+2. Let len be ? LengthOfArrayLike(O).
+3. If len is 0, return false.
+4. Let n be ? ToIntegerOrInfinity(fromIndex).
+5. Assert: If fromIndex is undefined, then n is 0.
+6. If n is +∞, return false.
+7. Else if n is -∞, set n to 0.
+8. If n ≥ 0, then
+    a. Let k be n.
+9. Else,
+    a. Let k be len + n.
+    b. If k < 0, set k to 0.
+10. Repeat, while k < len,
+    a. Let elementK be ? Get(O, ! ToString(𝔽(k))).
+    b. If SameValueZero(searchElement, elementK) is true, return true.
+    c. Set k to k + 1.
+11. Return false.

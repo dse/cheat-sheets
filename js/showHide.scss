@@ -1,0 +1,9 @@
+// hat tip: https://css-tricks.com/using-css-transitions-auto-dimensions/
+
+.container {
+    .section {
+        overflow: hidden;
+        transition: height 0.3s ease-out;
+        height: auto;
+    }
+}
