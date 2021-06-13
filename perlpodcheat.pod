@@ -2,6 +2,8 @@
 
 =head1 perlpodcheat
 
+L<https://github.com/dse/cheat-sheets/blob/master/perlpodcheat.pod>
+
 Paragraphs are separated by one or more blank lines.  Completely blank
 lines is best.
 
