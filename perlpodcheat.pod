@@ -12,7 +12,7 @@ lines is best.
 B<Ordinary Paragraphs>: text starts at column 1.
 
 B<Verbatim Paragraphs>: each line starts with at least one space or
-tab.
+tab.  Go past column 70 and some formatters may wrap your lines.
 
 B<Command Paragraphs>: first line starts with an equal sign.
 
