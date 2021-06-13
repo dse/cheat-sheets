@@ -1,0 +1,87 @@
+=pod
+
+=head1 perlpodcheat
+
+Paragraphs are separated by one or more blank lines.  Completely blank
+lines is best.
+
+=head2 Types of Paragraphs
+
+B<Ordinary Paragraphs>: text starts at column 1.
+
+B<Verbatim Paragraphs>: each line starts with at least one space or
+tab.
+
+B<Command Paragraphs>: first line starts with an equal sign.
+
+=head2 Command Paragraphs
+
+    =pod                        Any command starts a POD section.
+                                Use =pod to start with ordinary
+    PARAGRAPH                   or verbatim text.
+
+    ...
+
+    =cut                        =cut ends a POD section.
+
+    =head1 HEADING TEXT         Headings.  =head1 is top level.
+    =head2 HEADING TEXT
+    =head3 HEADING TEXT
+    =head4 HEADING TEXT
+
+    =over 4                     Lists.
+    =item TEXT
+    PARAGRAPH                   Use =item * for bullet lists.
+    ...                         Use =item 1. for numbered lists.
+    =back                       Use =item TEXT for other lists.
+
+    =begin FORMATNAME           Special formatting.
+    PARAGRAPH
+    ...                         Use =begin ... =end for
+    =end FORMATNAME             multiple paragraphs.
+
+    =for FORMATNAME TEXT        Use =for for a single paragraph.
+
+    =encoding TYPE              Specify early.  See Encode::Supported.
+                                Examples: latin1, utf8, ShiftJIS
+
+=head2 Formatting Codes
+
+    I<text>                     italic
+    B<text>                     bold
+    C<code>                     code
+    F<filename>                 filenames
+    S<text>                     non-breaking spaces
+    X<topic name>               for building index entries
+    Z<>                         null code, see perlpod(1).
+
+    L<Net::Ping>                link to another manpage
+    L<perlsyn/"For Loops">      link to a section in another manpage
+    L</"Object Methods">        link to a section in this manpage
+
+    L<Perl Error Messages|perldiag>             to control link text
+    L<postfix "if"|perlsyn/"Statement Modifiers">
+    L<the various attributes|/"Member Data">
+
+    L<https://www.perl.org/>                    to link to websites
+    L<Perl's Website|https://www.perl.org/>
+
+=head2 Character Escapes
+
+    E<lt>       < (less than)           E<eacute>   HTML entity
+    E<gt>       > (greater than)        E<0x201e>   hexadecimal
+    E<verbar>   | (vertical bar)        E<075>      octal
+    E<sol>      / (solidus)             E<181>      decimal
+
+=head2 Multiple Angle Brackets for Readability
+
+    C<$a E<lt>=E<gt> $b>
+
+    C<< $a <=> $b >>            at least one space must follow <<...
+    C<<< ">>thing.dat" >>>      at least one space must precede >>...
+
+=head2 Hints
+
+Use C<podchecker> to check syntax.
+
+=cut
