@@ -81,6 +81,7 @@ B<Command Paragraphs>: first line starts with an equal sign.
 
     C<< $a <=> $b >>            at least one space must follow <<...
     C<<< ">>thing.dat" >>>      at least one space must precede >>...
+    C<<<<    C<<< ">>thing.dat" >>>        >>>>
 
 =head2 Hints
 
