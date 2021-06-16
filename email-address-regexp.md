@@ -1,6 +1,6 @@
-# Email
+# The Email Address Regular Expression
 
-## The Email Address Regular Expression
+https://github.com/dse/cheat-sheets/blob/master/email-address-regexp.md
 
 The following regular expression, [per by the WHATWG HTML
 specification][standard], is used by all modern web browsers to
