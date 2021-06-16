@@ -1,5 +1,7 @@
 # ProQuest Cheat Sheet
 
+https://github.com/dse/cheat-sheets/blob/master/proquest.md
+
 Do your online newspapers, library resources, and/or card catalogues
 use ProQuest?
 
