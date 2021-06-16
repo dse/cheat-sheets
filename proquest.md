@@ -10,13 +10,16 @@ https://www.proquest.com/help/academic/webframe.html?Search_Tips.html#Search_Tip
     food AND nutrition
     food OR nutrition
     nursing NOT shortage                documents that contain nursing but not shortage
-    nursing NEAR/3 education            up to three words in between
-        NEAR defaults to NEAR/4
-        N does not default (ProQuest interprets as search term)
-    nursing N/3 education
-    nursing PRE/4 education             up to four words in between
-    nursing P/4 education
-    nursing-education                   => nursing PRE/0 education
+    NEAR                                for words wording before/after eachother
+        nursing NEAR/3 education        up to three words in between
+        nursing N/3 education
+            NEAR defaults to NEAR/4
+            N does not default (ProQuest interprets as search term)
+    PRE                                 specifies word order: <before> PRE <after>
+        nursing PRE/4 education         up to four words in between
+        nursing P/4 education
+        nursing-education               => nursing PRE/0 education
+
     SU.EXACT("higher education")        exact subject search
 
 # Subject Searching: Qualifiers
@@ -36,6 +39,7 @@ This is to limit your search within the subject of "aspirin".
 # Operator Precedence
 
     these bind tighter      education AND elementary NOT secondary
+    (are interpreted first)
     PRE                          ||
     NEAR                        \||/
     AND                          \/
