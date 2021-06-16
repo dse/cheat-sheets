@@ -2,7 +2,7 @@
 
 https://github.com/dse/cheat-sheets/blob/master/email-address-regexp.md
 
-The following regular expression, [per by the WHATWG HTML
+The following regular expression, [from the WHATWG HTML
 specification][standard], is used by all modern web browsers to
 determine whether what you've typed in is a valid email address.
 
