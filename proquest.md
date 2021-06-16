@@ -1,6 +1,7 @@
 # ProQuest Cheat Sheet
 
-Do your online library resources and/or card catalogues use ProQuest?
+Do your online newspapers, library resources, and/or card catalogues
+use ProQuest?
 
 https://www.proquest.com/help/academic/webframe.html?Search_Tips.html#Search_Tips.html
 
@@ -8,30 +9,39 @@ https://www.proquest.com/help/academic/webframe.html?Search_Tips.html#Search_Tip
 
     food AND nutrition
     food OR nutrition
-    nursing NOT shortage
-    nursing NEAR/3 education
+    nursing NOT shortage                documents that contain nursing but not shortage
+    nursing NEAR/3 education            up to three words in between
+        NEAR defaults to NEAR/4
+        N does not default (ProQuest interprets as search term)
     nursing N/3 education
-    nursing PRE/4 education
+    nursing PRE/4 education             up to four words in between
     nursing P/4 education
-    SU.EXACT("higher education")
+    nursing-education                   => nursing PRE/0 education
+    SU.EXACT("higher education")        exact subject search
 
 # Subject Searching: Qualifiers
+
+So, a lot of card catalog headings are going to have a subject and
+inside of that a **qualifer** or sub-subject.
+
+Example: "aspirin -- adverse effects" might be a listed subject.
+"Adverse effects" would be your qualifier.
+
+This is to limit your search within the subject of "aspirin".
 
     MESH(descriptor LNK qualifier)
     MESH("aspirin" LNK "adverse effects")
     MESH("aspirin -- adverse effects")
     
-    aspirin 
-
 # Operator Precedence
 
-    tighter
-    PRE
-    NEAR
-    AND
-    OR
+    these bind tighter      education AND elementary NOT secondary
+    PRE                          ||
+    NEAR                        \||/
+    AND                          \/
+    OR                      (education AND elementary) NOT secondary
     NOT
-    looser
+    these bind looser
 
 # Fields
 
