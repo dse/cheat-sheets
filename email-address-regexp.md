@@ -12,18 +12,33 @@ determine whether what you've typed in is a valid email address.
 
 It is compatible with JavaScript and Perl.
 
-Just copy and paste it as-is.
-
-## Just Use It.
+## Just Copy and Paste It As-Is.
 
 There is no reason to use another regular expression.  Especially not
 [that four-thousand-character one from hell][longregex].
 
-This regular expression will probably accept some email addresses that
-you or someone you are working with might believe are invalid.  They
-are, in fact, valid.  This regular expression has been vetted
-thoroughly and agreed on by software engineering teams from every
-browser vendor.
+This regular expression might accept some email addresses that you or
+someone you care about think are invalid.  They are, in fact, valid.
+This regular expression has been vetted thoroughly and agreed on by
+software engineering teams from every browser vendor.
+
+## "Someone might type in `username@gmail` and forget the `.com`."
+
+It's still valid.
+
+`gmail` is a top-level domain.  So are `apple`, `hotmail`, `aol`,
+`yahoo`, and surely plenty of others.
+
+An email address with **only** the top-level domain is still valid.
+
+Additionally, accounts on `@gmail` could conceivably be different from
+ones on `@gmail.com`.
+
+People are going to type in their email addresses incorrectly in a web
+form, no matter what validation you use.  You do not need to implement
+an overly complex solution just to catch a few rare edge cases.
+
+## Use In HTML
 
 You do not even need to write JavaScript code to use it:
 
@@ -39,7 +54,7 @@ In the form of a **JavaScript or JSON string** with `/` delimiters removed:
 "^[a-zA-Z0-9.!#$%&'*+\\/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$"
 ```
 
-In the form of a **Perl string**, escaped both ways:
+In the form of a **Perl string** with `/` delimiters removed, escaped both ways:
 
 ```
 "^[a-zA-Z0-9.!#\$%&'*+\\/=?^_`{|}~-]+\@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*\$"
