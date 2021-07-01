@@ -127,6 +127,20 @@
 
 -   `Shift+Alt+{Up,Down}` reorders list items.
 
+## Shell Shortcuts
+
+-   `shell:startup`
+
+-   `shell:common startup`
+
+-   `shell:windows`
+
+-   more:
+
+    https://www.winhelponline.com/blog/shell-commands-to-access-the-special-folders/
+
+    https://answers.microsoft.com/en-us/windows/forum/windows_7-files/i-have-windows-7-and-cannot-locate-the-send-to/652b4c8a-e743-46c4-a554-c1c8b334ee35?msgId=3637ef2c-0c8c-4e49-8b7c-13531c3364b9&page=2&tab=MoreHelp
+
 Source(s):
 
 -   https://twitter.com/i/events/790312594389110784
