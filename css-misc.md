@@ -1,10 +1,12 @@
 # CSS Blah
 
-## Now?
+## Styling an `<hr>`
+
+### Now?
 
 Just do what Normalize, Bootstrap, and/or Foundation do, I guess.
 
-## Old Way to Style an HR
+### An Old Way
 
 ```
 hr {
@@ -18,7 +20,7 @@ hr {
 }
 ```
 
-## Another Old Way
+### Another Old Way
 
 ```
 hr {
