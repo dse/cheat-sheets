@@ -60,11 +60,15 @@ anchor.href = 'https://example.com/';
 -   0
 -   `""` (the empty string)
 
-## Characters Not Touched by `encodeURIComponent`
+## `encodeURIComponent`
 
-`A–Z a–z 0–9 ! & ( ) * - . _ ~`
+-   `A-Z a-z 0-9` are left unchanged.
 
-`encodeURIComponent()` encodes other characters as URI-encoded UTF-8.
+-   `! ' ( ) * - . _ ~` are left unchanged.
+
+-   `<space> " # $ % & + , / : ; < = > ? @ [ \ ] ^ `` { | } ~` are encoded.
+
+Encoding is URI-encoded UTF-8.
 
 ## Operator Precedence (cheat sheet)
 
@@ -380,3 +384,23 @@ array.sort(function (a, b) {
                            { numeric: true, ignorePunctuation: true });
 });
 ```
+
+## String Types
+
+-   [`String`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)
+
+    JavaScript's negative string type.  A sequence of UTF-16 integers
+    (code units).  For characters beyond the BMP, you get the high and
+    low surrogates.
+
+-   [`DOMString`](https://developer.mozilla.org/en-US/docs/Web/API/DOMString)
+
+    A sequence of UTF-16 integers.  Corresponds exactly to the
+    built-in `String` type.
+
+-   [`USVString`](https://developer.mozilla.org/en-US/docs/Web/API/USVString)
+
+    A sequence of Unicode code points.
+
+-   [`CSSOMString`](https://developer.mozilla.org/en-US/docs/Web/API/CSSOMString)
+
