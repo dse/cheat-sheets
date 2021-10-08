@@ -1,0 +1,69 @@
+{
+    /* ENFORCING */
+    "bitwise":           true,      // prohibits bitwise operators (^ | & ...)
+    "curly":             true,      // requires curly-braced blocks with loops and conditionals
+    "eqeqeq":            true,      // prohibits `==` and `!=`
+    "esversion":         11,        // 3, 5, 6|2015, 7|2016, 8|2017, 9|2018, 10|2019, 11|2020
+    "forin":             true,      // requires `for in` loops to filter an object's items
+    "freeze":            true,      // prevents overwriting native objects' prototypes
+    "futurehostile":     true,      // warns about use of identifiers defined in future JS versions
+    "latedef":           "nofunc",  // prohibits use of a variable before its definition; "nofunc" allows late function declarations
+    "leanswitch":        true,      // prohibits unnecessary clauses in `switch` statements
+    "noarg":             true,      // prohibits `arguments.caller` and `.callee`
+    "nocomma":           true,      // prohibits the comma operator
+    "nonbsp":            true,      // warns about U+00A0 NO-BREAK SPACE characters
+    "nonew":             true,      // prohibits use of `new` entirely for side effects
+    "noreturnawait":     true,      // prohibits `return await`
+    "regexpu":           false,     // warns about regular expressions without the `/u` flag
+    "shadow":            false,     // https://jshint.com/docs/options/#shadow
+    "singleGroups":      false,     // prohibits unnecessary uses of the grouping operator `(` ... `)`
+    "strict":            false,     // requires code to run in ES5 strict mode
+    "trailingcomma":     false,     // warns about missing commas after the end of an array or object
+    "undef":             true,      // prohibits use of variables not explicitly declared
+    "unused":            true,      // warns about variables defined then never used
+    "varstmt":           true,      // prohibits `var` statements
+    /* RELAXING */
+    "asi":               false,     // allow missing semicolons
+    "boss":              false,     // allow assignments where comparisons are expected
+    "debug":             false,     // allow `debugger` statements
+    "elision":           false,     // allow use of ES3 array elision elements
+    "eqnull":            true,      // allow use of `== null`
+    "evil":              false,     // allow `eval`
+    "expr":              false,     // allow expressions where assignments or function calls are expected
+    "funcscope":         false,     // allow `var`s declared in a block inside a function scope
+    "iterator":          false,     // allow the `__iterator__` property
+    "lastsemic":         false,     // allow omission of the last semicolon in a one-line block
+    "loopfunc":          false,     // allow use of functions inside loops
+    "moz":               false,     // allow use of Mozilla JS extensions
+    "notypeof":          false,     // allow use of invalid `typeof` values
+    "noyield":           false,     // allow use of generator functions without `yield` statements
+    "plusplus":          false,     // prohibits the unary increment and decrement operators
+    "proto":             false,     // allow use of the `__proto__` property
+    "scripturl":         false,     // allow use of `javascript:...` and other script-targeted URLs
+    "supernew":          false,     // https://jshint.com/docs/options/#supernew
+    "validthis":         false,     // https://jshint.com/docs/options/#validthis
+    "withstmt":          false,     // allow use of `with`
+    /* ENVIRONMENTS */
+    "browser":           false,     // modern browsers' globals
+    "browserify":        false,     // Browserify tool
+    "couch":             false,     // CouchDB
+    "devel":             false,     // `alert`, `confirm`, `console`, `Debug`, `opera`, and `prompt`
+    "dojo":              false,     // Dojo toolkit
+    "jasmine":           false,     // Jasmine unit testing framework
+    "jquery":            false,     // jQuery library
+    "mocha":             false,     // Mocha unit testing framework
+    "module":            false,     // code describes an ES6 module and is strict mode
+    "mootools":          false,     // MooTools framework
+    "node":              false,     // Node runtime environment
+    "nonstandard":       false,     // `escape` and `unescape`
+    "phantom":           false,     // PhantomJS runtime
+    "prototypejs":       false,     // Prototype JavaScript framework
+    "qunit":             false,     // QUnit unit testing framework
+    "rhino":             false,     // Rhino runtime environment
+    "shelljs":           false,     // ShellJS library
+    "typed":             false,     // globals for typed array constructors
+    "worker":            false,     // globals available inside a Web Worker
+    "wsh":               false,     // globals available in Windows Script Host
+    "yui":               false      // YUI framework
+    // "globals":           [],     // whitelist of variables not formally specified
+}
