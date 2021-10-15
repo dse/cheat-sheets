@@ -2,6 +2,68 @@
 
 [gitglossary(7): pathspec](https://git-scm.com/docs/gitglossary.html#def_pathspec)
 
+A **pathspec** is usually just a filename you specify for `git add`,
+`git grep`, `git diff`, `git checkout`, or other commands to limit
+the scope of their actions to specific directories and/or filenames.
+
+-   Paths match themselves.
+
+-   `<filename>.<ext>` without any kind of directory prefix
+
+    matches all files thusly named in the entire directory tree.  Uses
+    `fnmatch(3)`.  `*` and `?` **can** match directory separators.
+
+-   `<a>/<b>/<filename>.<ext>`
+
+    matches any thusly named file in `<a>/<b>` or any of its
+    subdirectories.
+
+A pathspec starting with a colon `:` has a special meaning.
+
+-   `:(<magic-word>,<magic-word>,...)<pattern>`
+
+    | pathspec | |
+    |:--|:--|
+    | `:(top)<pattern>` | matches from the working tree root no matter where you are |
+
+-   `:(literal)<pattern>` treats wildcards as literal.
+
+-   `:(icase)<pattern>` case-insensitive match
+
+-   `:(glob)<pattern>` an `fnmatch(3)` `FNM_PATHNAME` glob
+
+    -   `**/` matches what follows in all directories in an entire
+        tree
+
+    -   trailing `/**` matches everything inside
+
+    -   `/**/` matches zero or more directories
+
+-   `:(attr:<reqmt> <reqmt> ...)` where each `<reqmt>` is
+
+    | `<reqmt>`        |                                       |
+    |:-----------------|:--------------------------------------|
+    | `<attr>`         | attribute is set                      |
+    | `-<attr>`        | attribute is unset                    |
+    | `<attr>=<value>` | set to the specified string `<value>` |
+    | `!<attr>`        | attribute is unspecified              |
+    
+    1.  `:(attr:text vendored)*.json`
+    
+    2.  `:(attr:!text !vendored)*.pdf`
+
+    See `gitattributes(5)`.
+
+-   `:(exclude)<pattern>` to exclude pathnames.
+
+    Non-exclude pathspecs are checked, then exclude pathspecs.
+
+
+
+
+
+
+
 Patterns normally match themselves.
 
 `*` and `?` wildcards can match directory separators.
