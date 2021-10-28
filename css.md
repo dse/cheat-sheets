@@ -1,32 +1,19 @@
 # CSS Cheat Sheet
 
-## Layout
+## Properties
 
-    align-content: center | start | end | flex-start | flex-end |
-                   baseline | first baseline | last baseline |
-                   space-between | space-around | space-evenly | stretch |
-                   safe center | unsafe center |
-                   normal;
-    align-items: stretch |
-                 center | start | end | flex-start | flex-end |
-                 baseline | first-baseline | last-baseline |
-                 safe center | unsafe center |
-                 normal;
-    align-self: center | start | end | self-start | self-end | flex-start | flex-end |
-                baseline | first-baseline | last-baseline |
-                stretch |
-                auto | normal;
+### Layout
+
     align-tracks: start | end | center | baseline | first-baseline | last-baseline |
                   space-between | space-around | space-evenly |
-                  stretch |
-                  normal;
+                  stretch | normal;
 
     block-size:  <length> | <percentage> | max-content | min-content | fit-content(<length> | <percentage>) | auto;
     inline-size: <length> | <percentage> | max-content | min-content | fit-content(<length> | <percentage>) | auto;
-    max-block-size: 
-    min-block-size:
-    max-inline-size: 
-    min-inline-size:
+    max-block-size:  <length> | <percentage> | max-content | min-content | fit-content(<length> | <percentage>) | auto;
+    max-inline-size: <length> | <percentage> | max-content | min-content | fit-content(<length> | <percentage>) | auto;
+    min-block-size:  <length> | <percentage> | max-content | min-content | fit-content(<length> | <percentage>);
+    min-inline-size: <length> | <percentage> | max-content | min-content | fit-content(<length> | <percentage>);
 
     bottom: <length> | <percentage> | auto;
     left:   <length> | <percentage> | auto;
@@ -38,17 +25,12 @@
     clear: none | left | right | both | inline-start | inline-end;
     float: none | left | right | inline-start | inline-end;
            
-    clip: auto | rect(<top>, <right>, <bottom>, <left>);
-        /* each being a <length> or auto */
+    clip: auto | rect(<top>, <right>, <bottom>, <left>); /* each being a <length> or auto */
 
-    display: block | inline | inline-block |
-             flex | inline-flex |
-             grid | inline-grid |
+    display: block | inline | inline-block | flex | inline-flex | grid | inline-grid |
              flow-root |
-             block flow | inline flow |
-             block flex | inline flex |
-             block grid | inline grid |
-             block flow-root | inline flow-root |
+             block flow | inline flow | block flex | inline flex |
+             block grid | inline grid | block flow-root | inline flow-root |
              table | inline-table | 
              list-item | list-item <display-outside> | list-item flow | list-item flow-root |
              table-{row,header,footer}-group |
@@ -57,53 +39,34 @@
              contents | none;
     visibility: visible | hidden | collapse;
 
-    flex-basis
-        -direction
-        -grow
-        -shrink
-        -wrap
+    height:     <length> | <percentage> | max-content | min-content | fit-content(<length> | <percentage>) | auto;
+    width:      <length> | <percentage> | max-content | min-content | fit-content(<length> | <percentage>) | auto;
+    max-height: <length> | <percentage> | max-content | min-content | fit-content(<length> | <percentage>) | none;
+    max-width:  <length> | <percentage> | max-content | min-content | fit-content(<length> | <percentage>) | none;
+    min-height: <length> | <percentage> | max-content | min-content | fit-content(<length> | <percentage>);
+    min-width:  <length> | <percentage> | max-content | min-content | fit-content(<length> | <percentage>);
 
-    height: <length> | <percentage> | max-content | min-content | fit-content(<length> | <percentage>) | auto;
-    width:  <length> | <percentage> | max-content | min-content | fit-content(<length> | <percentage>) | auto;
-    max-height:
-    max-width:
-    min-height:
-    min-width:
-    
-    justify-content: center | start | end | flex-start | flex-end | left | right |
-                     space-between | space-around | space-evenly | stretch |
-                     safe center | unsafe center |
-                     normal;
+    margin:         <all sides> | <v> <h> | <t> <h> <b> | <t> <r> <b> <l>;
+    margin-bottom:  <length> | <percentage> | auto;
+    margin-top:     ";
+    margin-left:    ";
+    margin-right:   ";
 
-    margin: <all four sides>;
-    margin: <vertical margin> <horizontal margin>;
-    margin: <top> <horizontal> <bottom>;
-    margin: <top> <right> <bottom> <left>;
-    margin-bottom: <length> | <percentage> | auto;
-    margin-top:    <length> | <percentage> | auto;
-    margin-left:   <length> | <percentage> | auto;
-    margin-right:  <length> | <percentage> | auto;
+    padding:        <all sides> | <v> <h> | <t> <h> <b> | <t> <r> <b> <l>;
+    padding-bottom: <length> | <percentage>;
+    padding-top:    ";
+    padding-left:   ";
+    padding-right:  ";
 
     order: <integer>;
-
     overflow: <overflow x and y> | <overflow-x> | <overflow-y>;
     overflow-x: visible | hidden | clip | scroll | auto;
     overflow-y: visible | hidden | clip | scroll | auto;
-
-    padding: <all four sides>;
-    padding: <vertical padding> <horizontal padding>;
-    padding: <top> <horizontal> <bottom>;
-    padding: <top> <right> <bottom> <left>;
-    padding-bottom: <length> | <percentage>;
-    padding-top:    <length> | <percentage>;
-    padding-left:   <length> | <percentage>;
-    padding-right:  <length> | <percentage>;
-    
     position: static | relative | absolute | fixed | sticky;
     resize: none | both | horizontal | vertical;
     z-index: <integer> | auto;
 
-## Text
+### Text
 
     direction: ltr | rtl;
     
@@ -119,11 +82,9 @@
     font-stretch: ultra-condensed | extra-condensed | condensed | semi-condensed | normal |
                   semi-expanded | expanded | extra-expanded | ultra-expanded | <percentage>;
     font-style: normal | italic | oblique | oblique <angle>;
-    font-variant: /* see below */;
+    font-variant: ...;
     font-weight: normal | bold | lighter | bolder | 100 200 ... 900 | <number between 1 and 1000 inclusive>; /* 400 = normal; 700 = bold */
-                 https://developer.mozilla.org/en-US/docs/Web/CSS/font-weight#fallback_weights
-    line-height: normal | <unitless number (float)> | <length> | <percentage>;
-                 /* unitless numbers are preferred */
+    line-height: normal | <unitless number (preferred)> | <length> | <percentage>;
 
     letter-spacing: normal | <length>;
     word-spacing: normal | <length> | <percentage>;
@@ -138,6 +99,9 @@
     text-decoration-color: <color>;
     text-decoration-style: solid | double | dotted | dashed | wavy;
     text-decoration-thickness: auto | from-font | <length> | <percentage>;
+    text-decoration-skip-ink: none | auto | all;
+    text-underline-offset: auto | <length> | <percentage>;
+    text-underline-position: auto | from-font | under | left | right | under left | under right;
 
     text-indent: <length> | <percentage of containing block width>;
     text-overflow: clip | ellipsis | <two values for start and end>; /* default is clip */
@@ -149,36 +113,45 @@
     white-space: normal | nowrap | pre | pre-wrap | pre-line | break-spaces;
     word-break: normal | break-all | keep-all; /* break-word is deprecated */
     
-## Appearance
+    font-feature-settings
+    font-kerning
+    font-optical-sizing
+    font-variation-settings
+
+    text-orientation: mixed | upright | sideways-right | sideways | use-glyph-orientation;
+    text-rendering: auto | optimizeSpeed | optimizeLegibility | geometricPrecision;
+    writing-mode: horizontal-tb | vertical-rl | vertical-lr;
+
+### Appearance
 
     color: <color keyword> | <named color> | <hex color> | rgb() | hsl();
 
-    background:
+    background: ...;
     background-attachment: scroll | fixed | local;
     background-clip: border-box | padding-box | content-box | text;
     background-color: <named color> | <hex color> | rgb() | hsl() | currentcolor | transparent;
-    background-image: <color> | url() | <multiple comma separated>;
-        /* there's more options */
+    background-image: <color> | url() | <multiple comma separated> | ...;
     background-origin: border-box | padding-box | content-box;
-    background-position:   <shorthand>;
+
+    background-position: ...;
     background-position-x: left | right | center | <length> | <percentage> | <side> <value> | <value>, ...;
     background-position-y: top | bottom | center | <length> | <percentage> | <side> <value> | <value>, ...;
     background-repeat: repeat-x | repeat-y | repeat | space | round | no-repeat | <h> <v>;
     background-size: cover | contain | <width> | <width> <height> | <value>, ...;
     
-    border: <-width> <-style> <-color>;
-    border-width: thin | medium | thick | <length> |
-                  <v> <h> | <t> <h> <b> | <t> <r> <b> <l>;
-    border-style: none | hidden | dotted | dashed | solid | double | groove | ridge | inset | outset |
-                  <v> <h> | <t> <h> <b> | <t> <r> <b> <l>;
-    border-color: <color> |
-                  <v> <h> | <t> <h> <b> | <t> <r> <b> <l>;
+    border: ...;
+    border-width: thin | medium | thick | <length> | <v> <h> | <t> <h> <b> | <t> <r> <b> <l>;
+    border-style: none | hidden | dotted | dashed | solid |
+                  double | groove | ridge | inset | outset | <v> <h> | <t> <h> <b> | <t> <r> <b> <l>;
+    border-color: <color> | <v> <h> | <t> <h> <b> | <t> <r> <b> <l>;
+    border-{bottom,top,left,right}-{color,style,width}: ...;
 
-    border-{bottom,top,left,right}-{color,style,width};
-
-    FIXME
-    border-radius: <all> | <v> <h> | <t> <h> <b> | <t> <r> <b> <l>;
-    border-<side>-radius: ...;
+    border-radius: <length> | <percentage> | <tl-br> <tr-bl> | <tl> <tr-bl> <br> | <tl> <tr> <br> <bl> |
+                   <horizontal border-radius> / <vertical border-radius>;
+    border-bottom-left-radius:  <length> | <percentage> | <h> <v>;
+    border-bottom-right-radius: "
+    border-top-left-radius:     "
+    border-top-right-radius:    "
 
     outline: <color> || <style> || <width>;
     outline-color: <color> | invert;
@@ -192,22 +165,14 @@
     border-image-source: none | url() | <gradient>;
     border-image-width: auto | <length> | <percentage> | <number> | <v> <h> | <t> <h> <b> | <t> <r> <b> <l>;
 
-    box-shadow: none |
-                <offset x> <offset y> <color>? |
-                <offset x> <offset y> <blur radius> <color>? |
-                <offset x> <offset y> <blur radius> <spread radius> <color>? |
-                inset <box-shadow>;
+    box-shadow: none | <offset x> <offset y> <color>? |
+                       <offset x> <offset y> <blur radius> <color>? |
+                       <offset x> <offset y> <blur radius> <spread radius> <color>? |
+                       inset <box-shadow>;
 
-    cursor: [ [ <url> [ <x> <y> ]? , ]* [ auto | default | none |
-                                          context-menu | help | pointer | progress | wait | cell | crosshair |
-                                          text | vertical-text | alias | copy | move | no-drop | not-allowed |
-                                          e-resize | n-resize | w-resize | s-resize |
-                                          ne-resize | nw-resize | se-resize | sw-resize |
-                                          ew-resize | ns-resize |
-                                          nesw-resize | nwse-resize |
-                                          col-resize | row-resize | all-scroll | zoom-in | zoom-out | grab | grabbing ] ];
+    cursor: ...;
 
-## Animation
+### Animation
 
     animation-delay
     animation-direction
@@ -222,88 +187,130 @@
     transition-property
     transition-timing-function
 
-## Grid
+### Grid
 
-    grid-auto-columns
-    grid-auto-flow
-    grid-auto-rows
-    grid-column-end
-    grid-column-start
-    grid-row-end
-    grid-row-start
-    grid-template-areas
-    grid-template-columns
+    /* container */
+    display: grid | inline-grid | block grid | inline grid;
     grid-template-rows
-    justify-items
-    justify-self
-    order
+    grid-template-columns
+    grid-auto-rows
+    grid-auto-columns
+    grid-template-areas
+    gap: <row- and column-gap> | <row-gap> <column-gap>;
+    row-gap: normal | <length> | <percentage>;
+    column-gap: normal | <length> | <percentage>;
 
-## Flex
+    place-items: <align-items> / <justify-items> | <align-and-justify-items>;
+    align-items: /* see flex */
+    justify-items: /* any justify-self value */
 
-    justify-items
-    justify-self
-    order
+    place-content: <align> <justify> | <align and justify>;
+    align-content:
+    justify-content:
+    grid-auto-flow: row | column | row dense | column dense;
 
-## Table
+    /* items */
+    grid-row-start
+    grid-row-end
+    grid-column-start
+    grid-column-end
+    grid-column
+    grid-row
+    grid-area
+    align-self: ...;
+    justify-self: auto | normal | stretch | center | start | end |
+                  flex-start | flex-end | self-start | self-end | left | right |
+                  baseline | first baseline | last baseline |
+                  safe center | unsafe center |
+                  legacy right | legacy left | legacy center;
+    order: <integer>;
 
-    border-collapse
-    caption-side
-    empty-cells
-    table-layout
+### Flex
 
-## Generated Content
+    /* container */
+    display:         flex | inline-flex | block flex | inline flex;
+    flex-flow:       <flex-direction> <flex-wrap>;
+    flex-direction:  row | row-reverse | column | column-reverse;
+    flex-wrap:       nowrap | wrap | wrap-reverse;
+    justify-content: normal | stretch | center | start | end | flex-start | flex-end | left | right |
+                                        space-between | space-around | space-evenly |
+                                        safe center | unsafe center;
+    align-items:     normal | stretch | center | start | end | flex-start | flex-end |
+                                        baseline | first-baseline | last-baseline |
+                                        safe center | unsafe center;
+    align-content:   normal | stretch | center | start | end | flex-start | flex-end |
+                                        baseline | first baseline | last baseline |
+                                        space-between | space-around | space-evenly |
+                                        safe center | unsafe center;
 
-    content
-    counter-increment
-    counter-reset
-    quotes
+    /* items */
+    order:       <integer>;
+    flex:        <-grow>;                      /* shrink = 1; basis = 0 */
+    flex:        <-grow> <-shrink>;            /* basis = 0 */
+    flex:        <-grow> <-shrink> <-basis>;
+    flex-basis:  <length> | <percentage> | auto | fill | 
+                 max-content | min-content | fit-content | content;
+    flex-grow:   <number>;
+    flex-shrink: <number>;
+    align-self:  normal | stretch | auto | center | start | end |
+                                           self-start | self-end | flex-start | flex-end |
+                                           baseline | first-baseline | last-baseline;
 
-## Other
+### Table
+
+    border-collapse: collapse | separate;
+    caption-side:    top | bottom | block-{start,end} | inline-{start,end};
+    empty-cells:     show | hide;
+    table-layout:    auto | fixed;
+
+### Generated Content
+
+    content:           normal | none | <image> | <image> / <alt text string> | <string> | <counter> | attr() | open-quote | close-quote | no-open-quote | no-close-quote |
+                       open-quote counter();
+    counter-increment: <custom-indent> <integer>? |
+                       <custom-indent> <integer>? <custom-indent> <integer>? ...;
+    counter-reset:     none | <custom-indent> <integer>? |
+                              <custom-indent> <integer>? <custom-indent> <integer>? ...;
+    counter-set:       none | <custom-indent> <integer>? |
+                              <custom-indent> <integer>? <custom-indent> <integer>? ...;
+
+    quotes: none | auto | <string open> <string close> | 
+                          <string open1> <string close1> <string open2> <string close2> ...;
+
+### Lists
+
+    list-style:          <-type> || <-image> || <-position>;
+    list-style-image:    <image>;
+    list-style-position: inside | outside;
+    list-style-type:     disc | circle | square | decimal | gregorian | trad-chinese-informal | kannada | <string> | custom-counter-style | none;
+
+### Paragraphs
+
+    hyphens: none | manual | auto;
+    widows: <integer>;
+    orphans: <integer>;
+
+### Printing
+
+    break-after
+    break-before
+    break-inside
+
+### Other
 
     all: initial | inherit | revert | unset;
 
-    font-feature-settings
-    font-kerning
-    font-optical-sizing
-    font-variation-settings
-
-    forced-color-adjust
-
-    text-orientation
-    text-rendering
-
-    writing-mode
-    zoom
     alignment-baseline
-    appearance
-    aspect-ratio
+
+    appearance: none | auto | menulist-button | textfield |
+                button | searchfield | textarea | push-button | slider-horizontal | checkbox | radio | square-button | menulist | listbox | meter | progress-bar;
+
+    aspect-ratio: <width positive number> / <height positive number>;
+
     backdrop-filter
     backface-visibility
     background-blend-mode
     baseline-shift
-    border-block-end-color
-    border-block-end-style
-    border-block-end-width
-    border-block-start-color
-    border-block-start-style
-    border-block-start-width
-    border-bottom-left-radius
-    border-bottom-right-radius
-    border-end-end-radius
-    border-end-start-radius
-    border-inline-end-color
-    border-inline-end-style
-    border-inline-end-width
-    border-inline-start-color
-    border-inline-start-style
-    border-inline-start-width
-    border-start-end-radius
-    border-start-start-radius
-    border-top-left-radius
-    border-top-right-radius
-    break-after
-    break-before
-    break-inside
     buffered-rendering
     caret-color
     clip-path
@@ -314,7 +321,6 @@
     color-scheme
     column-count
     column-fill
-    column-gap
     column-rule-color
     column-rule-style
     column-rule-width
@@ -323,34 +329,34 @@
     contain
     contain-intrinsic-size
     content-visibility
-    counter-set
-    cx
-    cy
-    d
     dominant-baseline
+
+    /* SVG */
     fill
     fill-opacity
     fill-rule
+
     filter
     flood-color
     flood-opacity
-    hyphens
+    forced-color-adjust: auto | none;
     image-orientation
     image-rendering
+
     inset-block-end
     inset-block-start
     inset-inline-end
     inset-inline-start
+
     isolation
     lighting-color
-    line-break
-    list-style-image
-    list-style-position
-    list-style-type
+    line-break /* CJK */
+
     margin-block-end
     margin-block-start
     margin-inline-end
     margin-inline-start
+
     marker-end
     marker-mid
     marker-start
@@ -362,30 +368,31 @@
     offset-distance
     offset-path
     offset-rotate
-    opacity
-    orphans
+
+    opacity: <number [0, 1]> | <percentage [0%, 100%]>;
+
     overflow-anchor
     overflow-clip-margin
     overflow-wrap
+
     overscroll-behavior-block
     overscroll-behavior-inline
     overscroll-behavior-x
     overscroll-behavior-y
+
     padding-block-end
     padding-block-start
     padding-inline-end
     padding-inline-start
+
     page
     page-orientation
-    paint-order
+
+    paint-order /* SVG */
     perspective
     perspective-origin
-    pointer-events
-    r
-    row-gap
+    pointer-events: auto | none;
     ruby-position
-    rx
-    ry
     scroll-behavior
     scroll-margin-block-end
     scroll-margin-block-start
@@ -414,6 +421,8 @@
     speak
     stop-color
     stop-opacity
+
+    /* SVG */
     stroke
     stroke-dasharray
     stroke-dashoffset
@@ -422,79 +431,23 @@
     stroke-miterlimit
     stroke-opacity
     stroke-width
-    text-anchor
-    text-combine-upright
-    text-decoration-skip-ink
-    text-underline-offset
-    text-underline-position
+    text-anchor /* SVG */
+
+    text-combine-upright /* CJK */
+
     touch-action
+
     transform
     transform-box
     transform-origin
     transform-style
+
     unicode-bidi
     user-select
     vector-effect
-    widows
     will-change
-    x
-    y
 
-
-
-
-## font-variant
-
-    normal | none | [ <common-lig-values> ||
-                      <discretionary-lig-values> ||
-                      <historical-lig-values> ||
-                      <contextual-alt-values> ||
-                      stylistic( <feature-value-name> ) ||
-                      historical-forms ||
-                      styleset( <feature-value-name># ) ||
-                      character-variant( <feature-value-name># ) ||
-                      swash( <feature-value-name> ) ||
-                      ornaments( <feature-value-name> ) ||
-                      annotation( <feature-value-name> ) ||
-                      [ small-caps | all-small-caps | petite-caps | all-petite-caps | unicase | titling-caps ] ||
-                      <numeric-figure-values> ||
-                      <numeric-spacing-values> ||
-                      <numeric-fraction-values> ||
-                      ordinal ||
-                      slashed-zero ||
-                      <east-asian-variant-values> ||
-                      <east-asian-width-values> ||
-                      ruby ]
-
-    <common-lig-values> = [ common-ligatures | no-common-ligatures ]
-    <discretionary-lig-values> = [ discretionary-ligatures | no-discretionary-ligatures ]
-    <historical-lig-values> = [ historical-ligatures | no-historical-ligatures ]
-    <contextual-alt-values> = [ contextual | no-contextual ]
-    <feature-value-name> = <custom-ident>
-    <numeric-figure-values> = [ lining-nums | oldstyle-nums ]
-    <numeric-spacing-values> = [ proportional-nums | tabular-nums ]
-    <numeric-fraction-values> = [ diagonal-fractions | stacked-fractions ]
-    <east-asian-variant-values> = [ jis78 | jis83 | jis90 | jis04 | simplified | traditional ]
-    <east-asian-width-values> = [ full-width | proportional-width ]
-
-    font-variant-alternates:
-        normal | [ stylistic( <feature-value-name> ) ||
-                   historical-forms ||
-                   styleset( <feature-value-name># ) ||
-                   character-variant( <feature-value-name># ) ||
-                   swash( <feature-value-name> ) ||
-                   ornaments( <feature-value-name> ) ||
-                   annotation( <feature-value-name> ) ]
-    font-variant-caps: 
-        normal | [ <numeric-figure-values> || <numeric-spacing-values> || <numeric-fraction-values> || ordinal || slashed-zero ]
-    font-variant-east-asian:
-        normal | [ <east-asian-variant-values> || <east-asian-width-values> || ruby ]
-    font-variant-ligatures:
-        normal | none | [ <common-lig-values> || <discretionary-lig-values> || <historical-lig-values> || <contextual-alt-values> ]
-    font-variant-numeric:
-        normal | [ <numeric-figure-values> || <numeric-spacing-values> || <numeric-fraction-values> || ordinal || slashed-zero ]
-
-## Value Definition Syntax
+### Value Definition Syntax
 
 https://developer.mozilla.org/en-US/docs/Web/CSS/Value_definition_syntax
 

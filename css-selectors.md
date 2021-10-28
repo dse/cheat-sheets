@@ -1,5 +1,18 @@
 # CSS Selectors
 
+## Attribute Selectors
+
+    [<attr>]                has the specified attribute.
+    [<attr>=<value>]        specified attribute has specified value.
+    [<attr>~=<value>]       specified attribute has specified value as one of many space-separated values.
+    [<attr>|=<value>]       specified attribute has specified value, or its value starts with <value> followed by a hyphen.
+    [<attr>^=<value>]       specified attribute starts with specified value.
+    [<attr>$=<value>]       specified attribute ends with specified value.
+    [<attr>*=<value>]       specified attribute contains specified value as a substring.
+    [<attr><op><value> i]   above is checked case-**in**sensitively
+    
+## Whatever
+
 ```
 selector list           <selector>, ...
 type selectors          <elementName>
