@@ -404,3 +404,13 @@ array.sort(function (a, b) {
 
 -   [`CSSOMString`](https://developer.mozilla.org/en-US/docs/Web/API/CSSOMString)
 
+## Ways to Convert Things to Strings
+
+```
+str = JSON.stringify(value);
+str = value.toString();
+str = value.toJSON();                   // where applicable
+str = String(value);
+str = Object.prototype.toString.apply(value);
+str = "" + value;
+```
