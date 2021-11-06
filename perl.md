@@ -229,6 +229,16 @@ The tree of warnings and which ones are enabled and not.
     -   [`use perl5i;`](https://metacpan.org/pod/perl5i)
     -   [`use common::sense;`](https://metacpan.org/pod/common::sense)
 
+## Caching for LWP::UserAgent
+
+-   [`LWP::UserAgent::Cached`](https://metacpan.org/pod/LWP::UserAgent::Cached)
+    -   does not seem to provide a way to set cache expiration (or lifetime)
+-   [`LWP::UserAgent::Caching`](https://metacpan.org/pod/LWP::UserAgent::Caching)
+
+## Date/Time Parsing
+
+-   [`Time::ParseDate`](https://metacpan.org/pod/Time::ParseDate)
+
 ## Resources
 
 -   [perlmodlib(3)](https://perldoc.perl.org/perlmodlib.html)
