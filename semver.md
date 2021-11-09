@@ -52,12 +52,20 @@ For pre-release identifiers:
     
 -   two only containing digits are compared numerically
 
+        1.0.0-beta.2 < 1.0.0-beta.11
+
 -   other identifiers are compared in ASCII sort order
+
+        1.0.0-alpha.beta < 1.0.0-beta < 1.0.0-rc.1
 
 -   numeric has lower precedence than non-numeric
 
+        1.0.0-alpha.1 < 1.0.0-alpha.beta
+
 -   larger set of pre-release fields has higher precedence than
     smaller set when all smaller-set identifiers are equal
+    
+        1.0.0-alpha.beta < 1.0.0-alpha.beta.1.0.0
 
 Example:
 
