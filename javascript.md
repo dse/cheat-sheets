@@ -406,6 +406,9 @@ array.sort(function (a, b) {
 
 ## Ways to Convert Things to Strings
 
+...and to check what types of objects they are, for varying
+definitions of *type*.
+
 ```
                         Object.prototype.                                                                       JSON.stringify(x)               typeof x
                         toString.apply(x)       x.toString() or String(x) or "" + x                             x.toJSON();
@@ -448,4 +451,57 @@ new Date()              "[object Date]"         "Wed Dec 01 2021 12:44:18 GMT-05
 Symbol('foo')           "[object Symbol]"       "Symbol(cat)"                                                   undefined                       "symbol"
                                                         // "" + x throws an error on symbol values
 ----------------------  ----------------------  --------------------------------------------------------------  ------------------------------  --------------
+an array-like object,
+e.g., a NodeList        "[object NodeList]"     "[object NodeList]"                                             {"0":{},"1":{},...}             "object"
+----------------------  ----------------------  --------------------------------------------------------------  ------------------------------  --------------
 ```
+
+## Checking for Plain Objects
+
+To check if a supplied value is a plain object:
+
+    if (Object.prototype.toString.apply(value) === '[object Object]') {
+        // ...
+    }
+
+If `typeof value === 'object'`:
+
+-   If your `value` is any of the following, the check above returns
+    false:
+
+    -   `null`
+    -   an `Array`
+    -   `arguments`
+    -   an `Error`
+    -   a `Boolean`, `Number`, or `String` primitive wrapper **object**
+    -   a `Date`
+    -   a `RegExp`
+    -   an array-like object such as a `NodeList`
+    
+    This practically excludes anything that isn't a plain object.
+
+If `typeof value !== 'object'`:
+
+-   Then the check above is going to return false.  This applies to
+    the following types of values:
+
+    -   `undefined`
+        -   `typeof value === "undefined"`
+    -   a function
+        -   `typeof value === "function"`
+    -   a boolean, number, string, or bigint primitive
+        -   `typeof value === "boolean`
+        -   `typeof value === "number"`
+        -   `typeof value === "string"`
+        -   `typeof value === "bigint"`
+    -   a `Symbol`
+        -   `typeof value === "symbol"`
+
+## Node.js
+
+### Are we running the script directly?
+
+    if (require.main === module) {
+        ...
+    }
+
