@@ -497,6 +497,12 @@ If `typeof value !== 'object'`:
     -   a `Symbol`
         -   `typeof value === "symbol"`
 
+## TODO
+
+-   The proper way to check for an array.
+
+-   The way to check for an array-like object.
+
 ## Node.js
 
 ### Are we running the script directly?
