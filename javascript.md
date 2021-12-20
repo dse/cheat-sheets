@@ -410,8 +410,10 @@ array.sort(function (a, b) {
 definitions of *type*.
 
 ```
-                        Object.prototype.                                                                       JSON.stringify(x)               typeof x
-                        toString.apply(x)       x.toString() or String(x) or "" + x                             x.toJSON();
+[A] Object.prototype.toString.apply(x)
+
+                                                                                                                JSON.stringify(x)               typeof x
+                        [A]                     x.toString() or String(x) or "" + x                             x.toJSON();
 ----------------------  ----------------------  --------------------------------------------------------------  ------------------------------  --------------
 undefined               "[object Undefined]"    -                                                               -                               "undefined"
 ----------------------  ----------------------  --------------------------------------------------------------  ------------------------------  --------------
