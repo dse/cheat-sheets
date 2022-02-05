@@ -1,183 +1,34 @@
 # MySQL
 
-## Command Line
+    mysql [<option> ...] [<dbname>]
+        -h, --host=<name>
+        -P, --port=<num>
+        -u, --user=<name>
+        -p, --password[=<pass>]
+        -C, --compress
 
-```
-mysql [<options>] [<database>]
+            --show-warnings             after every stmt
 
-    -C, --compress
-    -D, --database=<name>
-    -h, --host=<name>
-    -p, --password[=<name>]
-    -P, --port=<number>
-    -u, --user=<name>
+            --verbose
 
-    -?, --help
-    -I, --help
-        --abort-source-on-error
-        --auto-rehash
-    -A, --no-auto-rehash
-        --auto-vertical-output    (if result is wider than terminal)
-    -B, --batch                   (enables --silent)
-        --binary-as-hex
-        --character-sets-dir=<name>
-        --column-type-info
-    -c, --comments
-    -#, --debug[=<number>]
-        --debug-check
-    -T, --debug-info
-        --default-character-set=<name>
-        --delimiter=<name>
-    -e, --execute=<name>
-    -E, --vertical
-    -f, --force
-    -G, --named-commands
-    -i, --ignore-spaces
-        --init-command=<name>
-        --local-infile
-    -b, --no-beep
-    -H, --html
-    -X, --xml
-        --line-numbers
-    -L, --skip-line-numbers
-    -n, --unbuffered
-        --column-names
-    -N, --skip-column-names
-        --sigint-ignore
-    -o, --one-database
-        --pager[=<name>]
-        --progress-reports
-        --prompt=<name>
-        --protocol=<name>
-    -q, --quick
-    -r, --raw
-        --reconnect
-    -s, --silent
-    -S, --socket=<name>
-    -t, --table                 output in table format
-        --tee=<name>
-    -U, --safe-updates
-    -U, --i-am-a-dummy
-    -v, --verbose
-    -V, --version
-    -w, --wait
-        --connect-timeout=<number>
-        --max-allowed-packet=<number>
-        --net-buffer-length=<number>
-        --select-limit=<number>
-        --max-join-size=<number>
-        --secure-auth
-        --server-arg=<name>
-        --show-warnings
-        --plugin-dir=<name>
-        --default-auth=<name>
-        --binary-mode
+    mysqldump [<option> ...] <dbname> [<tablename> ...]
+    mysqldump [<option> ...] --databases <dbname> ...
+    mysqldump [<option> ...] --all-databases
+        -h, --host=<name>
+        -P, --port=<num>
+        -u, --user=<user>
+        -p, --password[=<pass>]
+        -C, --compress
 
-        --ssl
-        --ssl-ca=<name>
-        --ssl-capath=<name>
-        --ssl-cert=<name>
-        --ssl-cipher=<name>
-        --ssl-key=<name>
-        --ssl-crl=<name>
-        --ssl-crlpath=<name>
-        --ssl-verify-server-cert
+        -A, --all-databases
+        -Y, --all-tablespaces           ?
+            --add-drop-database
+            --add-drop-table
+            --add-drop-trigger
+            --flush-privileges          use with --all-databases
+            --ignore-database=<name>
+            --ignore-table=<name>
+        -d, --no-data
+        -R, --routines                  dump stored routines (funcs and procs)
 
-mysqldump [<options>] <database> [<tables>]
-mysqldump [<options>] --databases [<options>] <database> ...
-mysqldump [<options>] --all-databases [<options>]
-
-  -C, --compress
-  -h, --host=<name>
-  -p, --password[=<name>]
-  -P, --port=<number>
-  -u, --user=<name>
-
-  -A, --all-databases
-  -Y, --all-tablespaces
-  -y, --no-tablespaces
-      --add-drop-database
-      --add-drop-table
-      --add-drop-trigger
-      --add-locks
-      --allow-keywords
-      --apply-slave-statements
-      --character-sets-dir=<name>
-  -i, --comments
-      --compatible=<name>
-      --compact
-  -c, --complete-insert
-  -a, --create-options
-  -B, --databases
-  -#, --debug[=<number>]
-      --debug-check
-      --debug-info
-      --default-character-set=<name>
-      --delayed-insert
-      --delete-master-logs
-  -K, --disable-keys
-      --dump-slave[=<number>]
-  -E, --events
-  -e, --extended-insert
-      --fields-terminated-by=<name>
-      --fields-enclosed-by=<name>
-      --fields-optionally-enclosed-by=<name>
-      --fields-escaped-by=<name>
-  -F, --flush-logs
-      --flush-privileges
-  -f, --force
-      --gtid
-  -?, --help
-      --hex-blob
-      --ignore-database=<name>
-      --ignore-table=<name>
-      --include-master-host-port
-      --insert-ignore
-      --lines-terminated-by=<name>
-  -x, --lock-all-tables
-  -l, --lock-tables
-      --log-error=<name>
-      --log-queries
-      --master-data[=<number>]
-      --max-allowed-packet=<number>
-      --net-buffer-length=<number>
-      --no-autocommit
-  -n, --no-create-db
-  -t, --no-create-info
-  -d, --no-data
-      --no-data-med
-  -N, --no-set-names
-      --opt
-      --order-by-primary
-      --protocol=<name>
-  -q, --quick
-  -Q, --quote-names
-      --replace
-  -r, --result-file=<name>
-  -R, --routines
-      --set-charset
-      --single-transaction
-      --dump-date
-      --skip-opt
-  -S, --socket=<name>
-  -T, --tab=<name>
-      --tables
-      --triggers
-      --tz-utc
-  -v, --verbose
-  -V, --version
-  -w, --where=<name>
-  -X, --xml
-      --plugin-dir=<name>
-      --default-auth=<name>
-
-      --ssl
-      --ssl-ca=<name>
-      --ssl-capath=<name>
-      --ssl-cert=<name>
-      --ssl-cipher=<name>
-      --ssl-key=<name>
-      --ssl-crl=<name>
-      --ssl-crlpath=<name>
-      --ssl-verify-server-cert
-```
+            --verbose

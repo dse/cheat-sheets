@@ -117,3 +117,22 @@ git revert <revert-commit-id>
 ```
 
 lol.
+
+## Copying a repository to elsewhere
+
+    git clone --mirror <old-remote> <dir>
+    cd <dir>
+    git push <new-remote> --all
+    git push <new-remote> --tags
+    
+    git clone <new-remote>
+
+## Bitbucket
+
+    git@bitbucket.org:<owner>/<repos>.git
+
+## AWS CodeCommit
+
+    codecommit::us-east-1://<repos>
+    codecommit::us-east-1://<profile>@<repos>
+
