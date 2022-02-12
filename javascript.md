@@ -513,3 +513,77 @@ If `typeof value !== 'object'`:
         ...
     }
 
+## Back to Kinds of Objects
+
+JavaScript is an arcane mess invented by someone who opposed
+non-heterosexual marriage.
+
+### Types, Conceptually
+
+JavaScript has the following primitive types:
+
+    number, bigint, string, boolean, symbol
+
+the following special primitive values:
+
+    null, undefined
+
+and the following non-primitive types:
+
+    array, object, function
+
+### Types, `typeof`
+
+The value of the `typeof` operator mostly, but not perfectly,
+aligns with the object's type.
+
+Its value can be one of the following strings:
+
+-   undefined
+-   object
+-   boolean
+-   number
+-   bigint
+-   string
+-   symbol
+-   function
+-   object
+
+Notice the lack of arrays.  Arrays have a `typeof` of `object`.
+
+Notice the lack of null.  Null has a `typeof` of `object`.
+
+Other than that, `typeof`s jibe with the actual object types.
+
+## Ways to Convert Things to Strings
+
+There aren't enough ways in JavaScript to take a value and convert it
+into a string.  There really aren't.
+
+-   `String(value)` performs type conversions to strings.
+
+    22.1.1.1 specifies the mechanics of the `String` function when it
+    isn't called as a constructor.
+    
+    -   If no arguments are supplied, an empty string is returned.
+    -   If the argument is a symbol, its descriptive string is returned, e.g., `"Symbol(42)"`.
+    Otherwise, we refer to 7.1.17...
+    -   `undefined` yields `"undefined"`.
+    -   `null` yields `"null"`.
+    -   boolean values yield `"true"` or `"false"`.
+    -   numbers yield things like `"3.14159"`.
+    -   strings yield themselves.
+    -   bigints yield things like `"42069n"`.
+    -   Dates yield values like `"Tue Feb 08 2022 21:43:19 GMT-0500 (Eastern Standard Time)"`.
+    -   objects having a property keyed by the symbol `Symbol.toPrimitive` have it called.
+    -   objects having a callable method `toString` return that method's value if it ain't an object.
+    -   objects having a callable method `valueOf`  return that method's value if it ain't an object.
+    -   
+
+
+
+-   `value.toString()`
+-   `value.toJSON()`
+-   `Object.prototype.toString.apply(value)`
+-   `JSON.stringify(value)`
+-   `"" + value`
