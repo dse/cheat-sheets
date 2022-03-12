@@ -1,0 +1,10 @@
+dos
+    clip < readme.txt
+
+cygwin
+    #1 (device file)
+        cat filename >/dev/clipboard
+        cat /dev/clipboard
+    #2 (parts of cygutils)
+        putclip <filename
+        getclip >filename

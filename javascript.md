@@ -587,3 +587,40 @@ into a string.  There really aren't.
 -   `Object.prototype.toString.apply(value)`
 -   `JSON.stringify(value)`
 -   `"" + value`
+
+## [Enumerability and Ownership of Properties](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Enumerability_and_ownership_of_properties)
+
+| thingy                  | own? | inherited? | enumerable? | non-enumerable? | string-keyed? | symbol-keyed? |
+|:------------------------|:-----|:-----------|:------------|:----------------|:--------------|:--------------|
+| **Iterating**           |      |            |             |                 |               |               |
+| `Object.keys(value)`    | own  |            | enumerable  |                 | string-keyed  |               |
+| `for ... in`            | own  | inherited  | enumerable  |                 | string-keyed  |               |
+| `getOwnPropertyNames`   | own  |            | enumerable  | non-enumerable  | string-keyed  |               |
+| `getOwnPropertySymbols` | own  |            | enumerable  | non-enumerable  |               | symbol-keyed  |
+| **Checking**            |      |            |             |                 |               |               |
+| `propertyIsEnumerable`  |      |            | enumerable  |                 |               |               |
+
+    Object.getAllPropertyNames = function (obj) {
+        var props = [];
+        do {
+            Object.getOwnProperties(obj).forEach(function (prop) {
+                if (!props.indexOf(prop) === -1) {
+                    props.push(prop);
+                }
+            });
+        } while (obj = Object.getPrototypeOf(obj);
+    };
+
+### Checking
+
+-   `propertyIsEnumerable`
+
+## Function.prototype.bind()
+
+    function seeAndSay(animal, verb, onomatopoeia) {
+        console.log(`The ${animal} ${verb}, '${onomatopoeia}'.`);
+    }
+    
+    const say = seeAndSay.bind(null, 'cow');
+
+    say('says', 'moo');
