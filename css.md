@@ -1,5 +1,7 @@
 # CSS Cheat Sheet
 
+[transition-timing-function: cubic-bezier(<var>float</var>, <var>float</var>, <var>float</var>, <var>float</var>)](https://cubic-bezier.com/)
+
 ## Properties
 
 ### Layout
