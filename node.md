@@ -33,3 +33,11 @@
     -   matches multiple strings, regexes, fns
     -   against a string
 
+## getopt
+
+-   posix-getopt - can you specify long option without short options?
+
+    https://www.npmjs.com/package/posix-getopt
+    
+    https://github.com/joyent/node-getopt
+
