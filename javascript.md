@@ -539,15 +539,14 @@ aligns with the object's type.
 
 Its value can be one of the following strings:
 
--   undefined
--   object
--   boolean
--   number
 -   bigint
+-   boolean
+-   function
+-   number
+-   object
 -   string
 -   symbol
--   function
--   object
+-   undefined
 
 Notice the lack of arrays.  Arrays have a `typeof` of `object`.
 
