@@ -560,27 +560,6 @@ There aren't enough ways in JavaScript to take a value and convert it
 into a string.  There really aren't.
 
 -   `String(value)` performs type conversions to strings.
-
-    22.1.1.1 specifies the mechanics of the `String` function when it
-    isn't called as a constructor.
-    
-    -   If no arguments are supplied, an empty string is returned.
-    -   If the argument is a symbol, its descriptive string is returned, e.g., `"Symbol(42)"`.
-    Otherwise, we refer to 7.1.17...
-    -   `undefined` yields `"undefined"`.
-    -   `null` yields `"null"`.
-    -   boolean values yield `"true"` or `"false"`.
-    -   numbers yield things like `"3.14159"`.
-    -   strings yield themselves.
-    -   bigints yield things like `"42069n"`.
-    -   Dates yield values like `"Tue Feb 08 2022 21:43:19 GMT-0500 (Eastern Standard Time)"`.
-    -   objects having a property keyed by the symbol `Symbol.toPrimitive` have it called.
-    -   objects having a callable method `toString` return that method's value if it ain't an object.
-    -   objects having a callable method `valueOf`  return that method's value if it ain't an object.
-    -   
-
-
-
 -   `value.toString()`
 -   `value.toJSON()`
 -   `Object.prototype.toString.apply(value)`
@@ -623,3 +602,28 @@ into a string.  There really aren't.
     const say = seeAndSay.bind(null, 'cow');
 
     say('says', 'moo');
+
+## Localhost?
+
+    function isLocalhost(hostname) {
+        if (hostname == null) {
+            hostname = location.hostname;
+        }
+        return /(?:^|\.)localhost$/.test(location.hostname);
+    }
+
+    // https://datatracker.ietf.org/doc/html/rfc1918
+    function isPrivateIpBlock(hostname) {
+        if (hostname == null) {
+            hostname = location.hostname;
+        }
+        return (
+            /^10\.[0-9]+\.[0-9]+\.[0-9]+$/.test(location.hostname)
+            ||
+            /^192\.168\.[0-9]+\.[0-9]+$/.test(location.hostname)
+            ||
+            /^172\.(?:1[6-9]|2[0-9]|3[01])\.[0-9]+\.[0-9]+$/.test(location.hostname)
+        );
+    }
+    
+    (?:0|1[0-9]?[0-9]?|2(?:[0-4][0-9]?|5[0-5]?|[6-9])?|[3-9][0-9]?)
