@@ -23,6 +23,9 @@
     flex-wrap: nowrap;                          /* default */
                wrap;                            /* top->bottom|left->right */
                wrap-reverse;                    /* bottom->top|right->left */
+               
+    /* shorthand */
+    place-content: <align-content> <justify-content>;
 
     /* alignment and distribution of space along main axis */
     justify-content: flex-start;        /* default |[X][X][X]            | */
@@ -46,6 +49,13 @@
                    space-between;               /* |[X]      [X]      [X]| */
                    space-around;                /* |  [X]    [X]    [X]  | */
                    stretch;             /* default |[XXXXX][XXXXX][XXXXX]| */
+
+    /* shorthand */
+    gap: <length|percentage>;                   /* specifies both */
+         <row-gap> <column-gap>;
+
+    row-gap:    <length|percentage>;
+    column-gap: <length|percentage>;
 }
 ```
 
