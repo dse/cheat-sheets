@@ -30,11 +30,9 @@
 [hasownprop]:     https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/hasOwnProperty
 [hasown]:         https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/hasOwn
 [inoperator]:     https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/in
-
 [keys]:           https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/keys
 [values]:         https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/values
 [entries]:        https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/entries
-
 [ownnames]:       https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/getOwnPropertyNames
 [ownsymbols]:     https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/getOwnPropertySymbols
 [owndescrs]:      https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/getOwnPropertyDescriptors
@@ -42,8 +40,6 @@
 [forin]:          https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for...in
 [objassign]:      https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/assign
 [objspread]:      https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_syntax
-
-[this]: https://github.com/dse/cheat-sheets/blob/master/javascript-object-property-enumerability-and-ownership.md
-
-[reference]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Enumerability_and_ownership_of_properties
+[this]:           https://github.com/dse/cheat-sheets/blob/master/javascript-object-property-enumerability-and-ownership.md
+[reference]:      https://developer.mozilla.org/en-US/docs/Web/JavaScript/Enumerability_and_ownership_of_properties
 
