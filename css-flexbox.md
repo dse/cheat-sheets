@@ -6,23 +6,21 @@
 
 ```
 .container {
-
-    display: flex;                              /* block level */
-             inline-flex;                       /* inline level */
+    display: flex | inline-flex;                /* block or inline */
 
     /* shorthand */
     flex-flow: <flex-direction> <flex-wrap>;    /* default: row nowrap */
 
     /* main axis */
-    flex-direction: row;                        /* default left->right */
-                    row-reverse;                        /* right->left */
-                    column;                             /* top->bottom */
-                    column-reverse;                     /* bottom->top */
+    flex-direction: row;                    /* default left->right */
+                    row-reverse;                    /* right->left */
+                    column;                         /* top->bottom */
+                    column-reverse;                 /* bottom->top */
 
     /* additional rows or columns? */
-    flex-wrap: nowrap;                          /* default */
-               wrap;                            /* top->bottom|left->right */
-               wrap-reverse;                    /* bottom->top|right->left */
+    flex-wrap: nowrap;                      /* default */
+               wrap;                        /* top->bottom|left->right */
+               wrap-reverse;                /* bottom->top|right->left */
                
     /* shorthand */
     place-content: <align-content> <justify-content>;
@@ -63,23 +61,22 @@
 
 ```
 .container > * {
-
-    order: <integer>;                           /* default: 0 */
-
     /* shorthand */
-    flex: none;                                 /* => 0 0 auto */
+    flex: none;                             /* => 0 0 auto */
           <basis>;
-          <grow> [<shrink>] [<basis>];          /* default: 0 1 auto */
+          <grow> [<shrink>] [<basis>];      /* default: 0 1 auto */
 
     /* proportion of available space to occupy */
-    flex-grow: <non-negative-number>;           /* default: 0 */
+    flex-grow: <non-negative-number>;       /* default: 0 */
 
     /* when size of all items is larger than flex container */
-    flex-shrink: <non-negative-number>;         /* default: 1 */
+    flex-shrink: <non-negative-number>;     /* default: 1 */
 
     /* default size of an element before remaining space is distributed */
-    flex-basis: <length> | auto;                /* default: auto */
+    flex-basis: <length> | auto;            /* default: auto */
 
-    align-self: <align-items>;                  /* override parent's align-items */
+    align-self: <align-items>;              /* override parent align-items */
+
+    order: <integer>;                       /* default: 0 */
 }
 ```
