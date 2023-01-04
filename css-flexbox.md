@@ -10,6 +10,9 @@
     display: flex;                              /* block level */
              inline-flex;                       /* inline level */
 
+    /* shorthand */
+    flex-flow: <flex-direction> <flex-wrap>;    /* default: row nowrap */
+
     /* main axis */
     flex-direction: row;                        /* default left->right */
                     row-reverse;                        /* right->left */
@@ -20,9 +23,6 @@
     flex-wrap: nowrap;                          /* default */
                wrap;                            /* top->bottom|left->right */
                wrap-reverse;                    /* bottom->top|right->left */
-
-    /* shorthand */
-    flex-flow: <flex-direction> <flex-wrap>;    /* default: row nowrap */
 
     /* alignment and distribution of space along main axis */
     justify-content: flex-start;        /* default |[X][X][X]            | */
