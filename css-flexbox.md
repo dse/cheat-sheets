@@ -56,6 +56,11 @@
 
     order: <integer>;                           /* default: 0 */
 
+    /* shorthand */
+    flex: none;                                 /* => 0 0 auto */
+          <basis>;
+          <grow> [<shrink>] [<basis>];          /* default: 0 1 auto */
+
     /* proportion of available space to occupy */
     flex-grow: <non-negative-number>;           /* default: 0 */
 
@@ -64,11 +69,6 @@
 
     /* default size of an element before remaining space is distributed */
     flex-basis: <length> | auto;                /* default: auto */
-
-    /* shorthand */
-    flex: none;                                 /* => 0 0 auto */
-          <basis>;
-          <grow> <shrink>? <basis>?;            /* default: 0 1 auto */
 
     align-self: <align-items>;                  /* override parent's align-items */
 }
