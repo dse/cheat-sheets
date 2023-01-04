@@ -4,27 +4,27 @@
 
 ## Querying
 
-|                                       | enum own | enum inh | nonenum own | nonenum inh |            |         |         |
-|:--------------------------------------|:---------|:---------|:------------|:------------|------------|---------|---------|
-| [Object#propertyIsEnumerable][isenum] | ✓        |          |             |             | enum       | own     | str/sym |
-| [Object#hasOwnProperty][hasownprop]   | ✓        |          | ✓           |             | enum/¬enum | own     | str/sym |
-| [Object.hasOwn][hasown]               | ✓        |          | ✓           |             | enum/¬enum | own     | str/sym |
-| [in][inoperator]                      | ✓        | ✓        | ✓           | ✓           | enum/¬enum | own/inh | str/sym |
+|                                       | enum own | enum inh | ¬enum own | ¬enum inh |            |         |         |
+|:--------------------------------------|:---------|:---------|:----------|:----------|------------|---------|---------|
+| [Object#propertyIsEnumerable][isenum] | ✓        |          |           |           | enum       | own     | str/sym |
+| [Object#hasOwnProperty][hasownprop]   | ✓        |          | ✓         |           | enum/¬enum | own     | str/sym |
+| [Object.hasOwn][hasown]               | ✓        |          | ✓         |           | enum/¬enum | own     | str/sym |
+| [in][inoperator]                      | ✓        | ✓        | ✓         | ✓         | enum/¬enum | own/inh | str/sym |
 
 ## Traversing
 
-|                                               | enum own  | enum inh  | nonenum own | nonenum inh |            |         |         |
-|:----------------------------------------------|:----------|:----------|:------------|:------------|:-----------|:--------|:--------|
-| [Object.keys][keys]                           | ✓ strings |           |             |             | enum       | own     | str     |
-| [Object.values][values]                       | ✓ strings |           |             |             | enum       | own     | str     |
-| [Object.entries][entries]                     | ✓ strings |           |             |             | enum       | own     | str     |
-| [Object.getOwnPropertyNames][ownnames]        | ✓ strings |           | ✓ strings   |             | enum/¬enum | own     | str     |
-| [Object.getOwnPropertySymbols][ownsymbols]    | ✓ symbols |           | ✓ symbols   |             | enum/¬enum | own     | sym     |
-| [Object.getOwnPropertyDescriptors][owndescrs] | ✓         |           | ✓           |             | enum/¬enum | own     | str/sym |
-| [Reflect.ownKeys][reflectownkeys]             | ✓         |           | ✓           |             | enum/¬enum | own     | str/sym |
-| [for...in][forin]                             | ✓ strings | ✓ strings |             |             | enum       | own/inh | str     |
-| [Object.assign][objassign]                    | ✓         |           |             |             | enum       | own     | str/sym |
-| [Object spread][objspread]                    | ✓         |           |             |             | enum       | own     | str/sym |
+|                                               | enum own  | enum inh  | ¬enum own | ¬enum inh |            |         |         |
+|:----------------------------------------------|:----------|:----------|:----------|:----------|:-----------|:--------|:--------|
+| [Object.keys][keys]                           | ✓ strings |           |           |           | enum       | own     | str     |
+| [Object.values][values]                       | ✓ strings |           |           |           | enum       | own     | str     |
+| [Object.entries][entries]                     | ✓ strings |           |           |           | enum       | own     | str     |
+| [Object.getOwnPropertyNames][ownnames]        | ✓ strings |           | ✓ strings |           | enum/¬enum | own     | str     |
+| [Object.getOwnPropertySymbols][ownsymbols]    | ✓ symbols |           | ✓ symbols |           | enum/¬enum | own     | sym     |
+| [Object.getOwnPropertyDescriptors][owndescrs] | ✓         |           | ✓         |           | enum/¬enum | own     | str/sym |
+| [Reflect.ownKeys][reflectownkeys]             | ✓         |           | ✓         |           | enum/¬enum | own     | str/sym |
+| [for...in][forin]                             | ✓ strings | ✓ strings |           |           | enum       | own/inh | str     |
+| [Object.assign][objassign]                    | ✓         |           |           |           | enum       | own     | str/sym |
+| [Object spread][objspread]                    | ✓         |           |           |           | enum       | own     | str/sym |
 
 [isenum]:         https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/propertyIsEnumerable
 [hasownprop]:     https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/hasOwnProperty
