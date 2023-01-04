@@ -1,183 +1,98 @@
-# MySQL
+# mysql
 
-## Command Line
+Usage: mysql [OPTIONS] [database]
 
-```
-mysql [<options>] [<database>]
+  -h, --host=name     Connect to host.
+  -P, --port=#        Port number to use for connection or 0 for default to, in
+                      order of preference, my.cnf, $MYSQL_TCP_PORT,
+                      /etc/services, built-in default (3306).
+  -u, --user=name     User for login if not current user.
+  -p, --password[=name]
+                      Password to use when connecting to server. If password is
+                      not given it's asked from the tty.
 
-    -C, --compress
-    -D, --database=<name>
-    -h, --host=<name>
-    -p, --password[=<name>]
-    -P, --port=<number>
-    -u, --user=<name>
+  -v, --verbose       Write more. (-v -v -v gives the table output format).
+  -V, --version       Output version information and exit.
 
-    -?, --help
-    -I, --help
-        --abort-source-on-error
-        --auto-rehash
-    -A, --no-auto-rehash
-        --auto-vertical-output    (if result is wider than terminal)
-    -B, --batch                   (enables --silent)
-        --binary-as-hex
-        --character-sets-dir=<name>
-        --column-type-info
-    -c, --comments
-    -#, --debug[=<number>]
-        --debug-check
-    -T, --debug-info
-        --default-character-set=<name>
-        --delimiter=<name>
-    -e, --execute=<name>
-    -E, --vertical
-    -f, --force
-    -G, --named-commands
-    -i, --ignore-spaces
-        --init-command=<name>
-        --local-infile
-    -b, --no-beep
-    -H, --html
-    -X, --xml
-        --line-numbers
-    -L, --skip-line-numbers
-    -n, --unbuffered
-        --column-names
-    -N, --skip-column-names
-        --sigint-ignore
-    -o, --one-database
-        --pager[=<name>]
-        --progress-reports
-        --prompt=<name>
-        --protocol=<name>
-    -q, --quick
-    -r, --raw
-        --reconnect
-    -s, --silent
-    -S, --socket=<name>
-    -t, --table                 output in table format
-        --tee=<name>
-    -U, --safe-updates
-    -U, --i-am-a-dummy
-    -v, --verbose
-    -V, --version
-    -w, --wait
-        --connect-timeout=<number>
-        --max-allowed-packet=<number>
-        --net-buffer-length=<number>
-        --select-limit=<number>
-        --max-join-size=<number>
-        --secure-auth
-        --server-arg=<name>
-        --show-warnings
-        --plugin-dir=<name>
-        --default-auth=<name>
-        --binary-mode
+  -B, --batch         Don't use history file. Disable interactive behavior.  (Enables --silent.)
+  --column-type-info  Display column type information.
+  -C, --compress      Use compression in server/client protocol.
+  -D, --database=name Database to use.
+  -e, --execute=name  Execute command and quit. (Disables --force and history file.)
+  --column-names      Write column names in results.
+                      (Defaults to on; use --skip-column-names to disable.)
+  -N, --skip-column-names
+                      Don't write column names in results.
+  -o, --one-database  Ignore statements except those that occur while the
+                      default database is the one named at the command line.
+  -r, --raw           Write fields without conversion. Used with --batch.
+  -s, --silent        Be more silent. Print results with a tab as separator,
+                      each row on new line.
+  -t, --table         Output in table format.
 
-        --ssl
-        --ssl-ca=<name>
-        --ssl-capath=<name>
-        --ssl-cert=<name>
-        --ssl-cipher=<name>
-        --ssl-key=<name>
-        --ssl-crl=<name>
-        --ssl-crlpath=<name>
-        --ssl-verify-server-cert
+# mysqldump
 
-mysqldump [<options>] <database> [<tables>]
-mysqldump [<options>] --databases [<options>] <database> ...
-mysqldump [<options>] --all-databases [<options>]
+Usage: mysqldump [OPTIONS] database [tables]
+OR     mysqldump [OPTIONS] --databases [OPTIONS] DB1 [DB2 DB3...]
+OR     mysqldump [OPTIONS] --all-databases [OPTIONS]
 
-  -C, --compress
-  -h, --host=<name>
-  -p, --password[=<name>]
-  -P, --port=<number>
-  -u, --user=<name>
+  -h, --host=name     Connect to host.
+  -P, --port=#        Port number to use for connection.
+  -u, --user=name     User for login if not current user.
+  -p, --password[=name] 
+                      Password to use when connecting to server. If password is
+                      not given it's solicited on the tty.
 
-  -A, --all-databases
-  -Y, --all-tablespaces
-  -y, --no-tablespaces
-      --add-drop-database
-      --add-drop-table
-      --add-drop-trigger
-      --add-locks
-      --allow-keywords
-      --apply-slave-statements
-      --character-sets-dir=<name>
-  -i, --comments
-      --compatible=<name>
-      --compact
-  -c, --complete-insert
-  -a, --create-options
-  -B, --databases
-  -#, --debug[=<number>]
-      --debug-check
-      --debug-info
-      --default-character-set=<name>
-      --delayed-insert
-      --delete-master-logs
-  -K, --disable-keys
-      --dump-slave[=<number>]
-  -E, --events
-  -e, --extended-insert
-      --fields-terminated-by=<name>
-      --fields-enclosed-by=<name>
-      --fields-optionally-enclosed-by=<name>
-      --fields-escaped-by=<name>
-  -F, --flush-logs
-      --flush-privileges
-  -f, --force
-      --gtid
-  -?, --help
-      --hex-blob
-      --ignore-database=<name>
-      --ignore-table=<name>
-      --include-master-host-port
-      --insert-ignore
-      --lines-terminated-by=<name>
-  -x, --lock-all-tables
-  -l, --lock-tables
-      --log-error=<name>
-      --log-queries
-      --master-data[=<number>]
-      --max-allowed-packet=<number>
-      --net-buffer-length=<number>
-      --no-autocommit
-  -n, --no-create-db
-  -t, --no-create-info
-  -d, --no-data
-      --no-data-med
-  -N, --no-set-names
-      --opt
-      --order-by-primary
-      --protocol=<name>
-  -q, --quick
-  -Q, --quote-names
-      --replace
-  -r, --result-file=<name>
-  -R, --routines
-      --set-charset
-      --single-transaction
-      --dump-date
-      --skip-opt
-  -S, --socket=<name>
-  -T, --tab=<name>
-      --tables
-      --triggers
-      --tz-utc
-  -v, --verbose
-  -V, --version
-  -w, --where=<name>
-  -X, --xml
-      --plugin-dir=<name>
-      --default-auth=<name>
+  -v, --verbose       Print info about the various stages.
+  -V, --version       Output version information and exit.
 
-      --ssl
-      --ssl-ca=<name>
-      --ssl-capath=<name>
-      --ssl-cert=<name>
-      --ssl-cipher=<name>
-      --ssl-key=<name>
-      --ssl-crl=<name>
-      --ssl-crlpath=<name>
-      --ssl-verify-server-cert
-```
+  -A, --all-databases Dump all the databases. This will be same as --databases
+                      with all databases selected.
+  --add-drop-database Add a DROP DATABASE before each create.
+  --add-drop-table    Add a DROP TABLE before each create.
+                      (Defaults to on; use --skip-add-drop-table to disable.)
+  --add-drop-trigger  Add a DROP TRIGGER before each create.
+  -C, --compress      Use compression in server/client protocol.
+  -B, --databases     Dump several databases. Note the difference in usage; in
+                      this case no tables are given. All name arguments are
+                      regarded as database names. 'USE db_name;' will be
+                      included in the output.
+  --flush-privileges  Emit a FLUSH PRIVILEGES statement after dumping the mysql
+                      database.  This option should be used any time the dump
+                      contains the mysql database and any other database that
+                      depends on the data in the mysql database for proper
+                      restore. 
+  --ignore-database=name 
+                      Do not dump the specified database. To specify more than
+                      one database to ignore, use the directive multiple times,
+                      once for each database. Only takes effect when used
+                      together with --all-databases|-A
+  --ignore-table=name Do not dump the specified table. To specify more than one
+                      table to ignore, use the directive multiple times, once
+                      for each table.  Each table must be specified with both
+                      database and table names, e.g.,
+                      --ignore-table=database.table.
+  -x, --lock-all-tables 
+                      Locks all tables across all databases. This is achieved
+                      by taking a global read lock for the duration of the
+                      whole dump. Automatically turns --single-transaction and
+                      --lock-tables off.
+  -l, --lock-tables   Lock all tables for read.
+                      (Defaults to on; use --skip-lock-tables to disable.)
+  --no-autocommit     Wrap tables with autocommit/commit statements.
+  -n, --no-create-db  Suppress the CREATE DATABASE ... IF EXISTS statement that
+                      normally is output for each dumped database if
+                      --all-databases or --databases is given.
+  -t, --no-create-info 
+                      Don't write table creation info.
+  -d, --no-data       No row information.
+  --opt               Same as --add-drop-table, --add-locks, --create-options,
+                      --quick, --extended-insert, --lock-tables, --set-charset,
+                      and --disable-keys. Enabled by default, disable with
+                      --skip-opt.
+  --skip-opt          Disable --opt. Disables --add-drop-table, --add-locks,
+                      --create-options, --quick, --extended-insert,
+                      --lock-tables, --set-charset, and --disable-keys.
+  --tables            Overrides option --databases (-B).
+  --triggers          Dump triggers for each dumped table.
+                      (Defaults to on; use --skip-triggers to disable.)

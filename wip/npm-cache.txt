@@ -1,0 +1,30 @@
+// https://www.npmjs.com/package/memory-cache
+//     get(key)
+//     put(key, value, timeoutMs, timeoutCallback)
+//     del(key)
+//     clear()
+//     size() => # entries
+//     keys()
+// https://www.npmjs.com/package/cache
+//     put(key, val)
+//     get(key)
+//     del(key)
+// https://www.npmjs.com/package/node-cache
+//     set(key, val, [ttl])
+//     get(key)
+//     del(key)
+//     keys() => array of keys
+//     has(key)
+//     flushAll()
+// https://www.npmjs.com/package/node-file-cache
+//     set(key, value)
+//     get(key)
+//     size() => # entries
+//     expire(key)
+//     clear()
+// https://www.npmjs.com/package/node-fetch-cache
+
+memoize
+memoizee
+memoize-fs
+serialize-javascript

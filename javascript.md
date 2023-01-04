@@ -299,8 +299,10 @@ https://www.bennadel.com/blog/2159-using-slice-substring-and-substr-in-javascrip
 definitions of *type*.
 
 ```
-                        Object.prototype.                                                                       JSON.stringify(x)               typeof x
-                        toString.apply(x)       x.toString() or String(x) or "" + x                             x.toJSON();
+[A] Object.prototype.toString.apply(x)
+
+                                                                                                                JSON.stringify(x)               typeof x
+                        [A]                     x.toString() or String(x) or "" + x                             x.toJSON();
 ----------------------  ----------------------  --------------------------------------------------------------  ------------------------------  --------------
 undefined               "[object Undefined]"    -                                                               -                               "undefined"
 ----------------------  ----------------------  --------------------------------------------------------------  ------------------------------  --------------
@@ -400,3 +402,117 @@ If `typeof value !== 'object'`:
         ...
     }
 
+## Back to Kinds of Objects
+
+JavaScript is an arcane mess invented by someone who opposed
+non-heterosexual marriage.
+
+### Types, Conceptually
+
+JavaScript has the following primitive types:
+
+    number, bigint, string, boolean, symbol
+
+the following special primitive values:
+
+    null, undefined
+
+and the following non-primitive types:
+
+    array, object, function
+
+### Types, `typeof`
+
+The value of the `typeof` operator mostly, but not perfectly,
+aligns with the object's type.
+
+Its value can be one of the following strings:
+
+-   bigint
+-   boolean
+-   function
+-   number
+-   object
+-   string
+-   symbol
+-   undefined
+
+Notice the lack of arrays.  Arrays have a `typeof` of `object`.
+
+Notice the lack of null.  Null has a `typeof` of `object`.
+
+Other than that, `typeof`s jibe with the actual object types.
+
+## Ways to Convert Things to Strings
+
+There aren't enough ways in JavaScript to take a value and convert it
+into a string.  There really aren't.
+
+-   `String(value)` performs type conversions to strings.
+-   `value.toString()`
+-   `value.toJSON()`
+-   `Object.prototype.toString.apply(value)`
+-   `JSON.stringify(value)`
+-   `"" + value`
+
+## [Enumerability and Ownership of Properties](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Enumerability_and_ownership_of_properties)
+
+| thingy                  | own? | inherited? | enumerable? | non-enumerable? | string-keyed? | symbol-keyed? |
+|:------------------------|:-----|:-----------|:------------|:----------------|:--------------|:--------------|
+| **Iterating**           |      |            |             |                 |               |               |
+| `Object.keys(value)`    | own  |            | enumerable  |                 | string-keyed  |               |
+| `for ... in`            | own  | inherited  | enumerable  |                 | string-keyed  |               |
+| `getOwnPropertyNames`   | own  |            | enumerable  | non-enumerable  | string-keyed  |               |
+| `getOwnPropertySymbols` | own  |            | enumerable  | non-enumerable  |               | symbol-keyed  |
+| **Checking**            |      |            |             |                 |               |               |
+| `propertyIsEnumerable`  |      |            | enumerable  |                 |               |               |
+
+    Object.getAllPropertyNames = function (obj) {
+        var props = [];
+        do {
+            Object.getOwnProperties(obj).forEach(function (prop) {
+                if (!props.indexOf(prop) === -1) {
+                    props.push(prop);
+                }
+            });
+        } while (obj = Object.getPrototypeOf(obj);
+    };
+
+### Checking
+
+-   `propertyIsEnumerable`
+
+## Function.prototype.bind()
+
+    function seeAndSay(animal, verb, onomatopoeia) {
+        console.log(`The ${animal} ${verb}, '${onomatopoeia}'.`);
+    }
+    
+    const say = seeAndSay.bind(null, 'cow');
+
+    say('says', 'moo');
+
+## Localhost?
+
+    function isLocalhost(hostname) {
+        if (hostname == null) {
+            hostname = location.hostname;
+        }
+        return /(?:^|\.)localhost$/.test(location.hostname);
+    }
+
+    // https://datatracker.ietf.org/doc/html/rfc1918
+    function isPrivateIpBlock(hostname) {
+        if (hostname == null) {
+            hostname = location.hostname;
+        }
+        return (
+            /^10\.[0-9]+\.[0-9]+\.[0-9]+$/.test(location.hostname)
+            ||
+            /^192\.168\.[0-9]+\.[0-9]+$/.test(location.hostname)
+            ||
+            /^172\.(?:1[6-9]|2[0-9]|3[01])\.[0-9]+\.[0-9]+$/.test(location.hostname)
+        );
+    }
+    
+    (?:0|1[0-9]?[0-9]?|2(?:[0-4][0-9]?|5[0-5]?|[6-9])?|[3-9][0-9]?)

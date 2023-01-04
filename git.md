@@ -117,3 +117,47 @@ git revert <revert-commit-id>
 ```
 
 lol.
+
+## Mirroring a Repository
+
+-   don't remember whence, probably atlassian instructions
+
+        git clone --mirror <old-remote> <dir>
+        cd <dir>
+        git push <new-remote> --all
+        git push <new-remote> --tags
+
+        git clone <new-remote>
+    
+-   https://docs.github.com/en/repositories/creating-and-managing-repositories/duplicating-a-repository#mirroring-a-repository
+
+        git clone --bare <old-remote>
+        cd <dir>.git
+        git checkout master
+        git push --mirror <new-remote>
+        
+-   https://docs.github.com/en/repositories/creating-and-managing-repositories/duplicating-a-repository#mirroring-a-repository-in-another-location
+
+        git clone --mirror <old-remote>
+        cd <dir>
+        git remote set-url --push origin <new-remote>
+        git fetch -p origin
+        git push --mirror
+
+-   https://medium.com/cloud-native-the-gathering/how-to-mirror-copy-an-entire-existing-git-repository-into-a-new-one-3bb8faefad9e
+
+    Good instructions if you already have a clone of the repos, maybe.
+    
+        cd <dir>
+        git checkout master
+        git push --mirror <new-remote>
+
+## Bitbucket
+
+    git@bitbucket.org:<owner>/<repos>.git
+
+## AWS CodeCommit
+
+    codecommit::us-east-1://<repos>
+    codecommit::us-east-1://<profile>@<repos>
+
