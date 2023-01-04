@@ -63,16 +63,13 @@
     flex-shrink: <non-negative-number>;         /* default: 1 */
 
     /* default size of an element before remaining space is distributed */
-    flex-basis: <length>;
-                auto;                           /* default */
+    flex-basis: <length> | auto;                /* default: auto */
 
     /* shorthand */
     flex: none;                                 /* => 0 0 auto */
           <basis>;
-          <grow> <shrink>? <basis>?;
-          0 1 auto;                             /* default */
+          <grow> <shrink>? <basis>?;            /* default: 0 1 auto */
 
-    /* override parent's align-items property */
-    align-self: <align-items>;                  /* default based on parent */
+    align-self: <align-items>;                  /* override parent's align-items */
 }
 ```
