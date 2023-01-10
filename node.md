@@ -15,8 +15,126 @@ The following chart is heavily simplified.  See https://node.green/
 
 ## Certain ES Features of Import
 
-|:------|:-------|
+### ES2015/ES6
 
+The first and most pivotal and important of the current string of ES
+releases.
+
+-   default function parameters
+-   rest parameters
+-   spread syntax
+-   for object literals:
+    -   computed properties
+    -   shorthand properties
+    -   shorthand methods
+-   `for...of` loops
+-   octal `0x644` literals
+-   binary `0b110100100` literals
+-   template literals
+-   regexp `/y` and `/u` flags
+-   destructuring in declarations, assignment, and parameters
+-   better Unicode string handling
+    -   Unicode code point escapes `\u{1f4a9}`
+    -   `String.fromCodePoint`
+    -   `String.codePointAt`
+    -   `String.normalize`
+-   `new.target`
+-   `const`
+-   `let`
+-   `arrow functions`
+-   `super`
+-   classes
+-   generators
+-   typed arrays
+-   promises
+-   `Map`
+-   `Set`
+-   `WeakMap`
+-   `WeakSet`
+-   `Proxy`
+-   `Reflect`
+-   `Symbol`
+-   `Object.assign`, `.is`, `.getOwnPropertySymbols`, `.setPrototypeOf`
+-   function `name` property
+-   `String.raw`
+-   `String.prototype.normalize`, `repeat`, `startsWith`, `endsWith`, `includes`, `[Symbol.iterator]`
+-   `Regexp.prototype.flags`
+-   `Array.from`, `Array.of`
+-   `Array.prototype.copyWithin`, `find`, `findIndex`, `fill`, `keys`, `values`, `entries`, `splice`, ...
+-   `Number.isFinite`, `isInteger`, `isSafeInteger`, `isNaN`, `parseFloat`, `parseInt`, `EPSILON`, `MIN_SAFE_INTEGER`, `MAX_SAFE_INTEGER`
+-   Additional `Math.` methods
+    -   clz32, imul, sign, log10, log2, log1p, expm1, cosh, sinh, tanh, acosh, asinh, atanh, trunc, fround, cbrt, hypot
+-   Array, RegExp, Function, and Promise are subclassable
+    -   as are Boolean, Number, String, Error, Map, and Set
+-   Object.
+    -   getPropertyOf, getOwnPropertyDescriptor, getOwnPropertyNames, seal, freeze, preventExtensions, isSealed, isFrozen,
+        isExtensible
+-   `Object.keys`
+-   `String` HTML methods
+
+### ES2016/ES7
+
+-   exponentation operator `**`
+-   `Array.prototype.includes`
+
+### ES2017/ES8
+
+-   `Object.values`
+-   `Object.entries`
+-   `Object.getOwnPropertyDescriptors`
+-   `String.prototype.padStart`
+-   `String.prototype.padEnd`
+-   `async` functions
+-   shared memory
+-   atomics
+-   `/u` flag
+-   `arguments.caller` removed
+
+### ES2018/ES9
+
+-   object spread/rest properties
+-   `Promise#finally`
+-   `/s` flag
+-   async generators
+-   `for...await...of` loops
+
+### ES2019/ES10
+
+-   `String#trimLeft`
+-   `String#trimRight`
+-   `String#trimStart`
+-   `String#trimEnd`
+-   `Array#flat`
+-   `Array#flatMap`
+-   JSON superset: may contain U+2028 LINE SEPARATOR and U+2029 PARAGRAPH SEPARATOR
+
+### ES2020/ES11
+
+-   `String#matchAll`
+-   `BigInt`
+-   `globalThis`
+-   optional chaining operator `?.`
+
+### ES2021/ES12
+
+-   `String#replaceAll`
+-   Numeric separators à la `4_294_967_296` `3.141_592_653_589_793_238`
+-   assignment operators `||=` `&&=` `??=`
+
+### ES2022/ES13
+
+-   instance class fields
+-   static class fields
+-   private class fields
+-   `Object.hasOwn`
+-   `Error.cause`
+-   regexp `/d` flag
+
+### ES2023/ES14
+
+-   `Array#findLast`
+-   `Array#findLastIndex`
+-   standardize hashbang `#!/wash/your/hands`
 
 ## Pure ESM
 
