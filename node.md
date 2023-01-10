@@ -1,5 +1,27 @@
 # Node.js
 
+## Node Versions and ES Versions
+
+The following chart is heavily simplified.  See https://node.green/
+
+| Node         | ES                             |
+|:-------------|:-------------------------------|
+| 20 (nightly) | ES2023/ES14 + some ESNEXT      |
+| 18           | ES2023/ES14                    |
+| 16           | ES2020/ES11 + some ES2022/ES13 |
+| 14           | ES2020/ES11                    |
+| 12           | ES2019/ES10 + some ES2020/ES11 |
+| 10           | ES2018/ES9                     |
+
+## Certain ES Features of Import
+
+|:------|:-------|
+
+
+## Pure ESM
+
+[https://gist.github.com/sindresorhus/a39789f98801d908bbc7ff3ecc99d99c](why your favorite package is pure ESM now)
+
 ## Current Directory
 
     require('path').resolve('./')
