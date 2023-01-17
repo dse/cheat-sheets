@@ -37,6 +37,35 @@ Values you might think are falsy but are not:
 
 -   `NaN`
 
+### The Matrix of Values
+
+| value                          |                            | `isset` | `empty` | truthy | falsy | `is_null` |
+|:-------------------------------|:---------------------------|:--------|:--------|:-------|:------|:----------|
+| undefined                      | not declared               |         | *       |        | *     | *         |
+| `unset`                        | declared but not set       |         | *       |        | *     | *         |
+| `NULL`                         |                            |         | *       |        | *     | *         |
+| `FALSE`                        |                            | *       | *       |        | *     |           |
+| `""`                           | the empty string           | *       | *       |        | *     |           |
+| `0`                            |                            | *       | *       |        | *     |           |
+| `-0`                           |                            | *       | *       |        | *     |           |
+| `0.0`                          |                            | *       | *       |        | *     |           |
+| `-0.0`                         |                            | *       | *       |        | *     |           |
+| `"0"`                          | the string "0"             | *       | *       |        | *     |           |
+| `[]`                           | an empty array             | *       | *       |        | *     |           |
+| `new SimpleXMLElement('<x/>')` | an empty elt. sans attrs.  | *       | *       |        | *     |           |
+| `[0]`                          | non-empty arrays           | *       |         | *      |       |           |
+| `TRUE`                         |                            | *       |         | *      |       |           |
+| `1`                            |                            | *       |         | *      |       |           |
+| `"0.0"`                        |                            | *       |         | *      |       |           |
+| `"-0"`                         |                            | *       |         | *      |       |           |
+| `"-0.0"`                       |                            | *       |         | *      |       |           |
+| `NAN`                          | result of `sqrt(-1)`, etc. | *       |         | *      |       |           |
+
+-   https://www.php.net/manual/en/language.types.boolean.php
+-   https://www.php.net/manual/en/function.isset.php
+-   https://www.php.net/manual/en/function.empty.php
+-   https://www.php.net/manual/en/types.comparisons.php
+
 ## print\_r vs. var\_dump vs. var\_export
 
 ### [print\_r](https://www.php.net/manual/en/function.print-r.php)

@@ -70,95 +70,6 @@ anchor.href = 'https://example.com/';
 
 Encoding is URI-encoded UTF-8.
 
-## Operator Precedence (cheat sheet)
-
-```
-tighter                                                                            looser
-|                                                                                       |
-
-()  x.x    new X  x++  !x  **  *  +  <<   <   ==  &  ^  |  &&  ||  ??  ? :   =  yield   ,
-    x[]           x--  ~x      /  -  >>   <=  !=                            +=  yield*
-    new X()            +x      %     >>>  >   ===                           -=
-    x()                -x                 >=  !==                           *=
-    x?.x               ++x                in                                /=
-                       --x            instanceof                          etc.
-                       typeof x
-                       void x
-                       delete x
-                       await x
-```
-
-## Operator Precedence (detail)
-
-| Precedence | Operator type                 | Associativity | Individual operators   |
-|:-----------|:------------------------------|:--------------|:-----------------------|
-| 21 (tight) | Grouping                      | n/a           | `(` ... `)`            |
-| 20         | Member Access                 | left-to-right | ... `.` ...            |
-|            | Computed Member Access        | left-to-right | ... `[` ... `]`        |
-|            | `new` (with argument list)    | n/a           | `new` ... `(` ... `)`  |
-|            | Function Call                 | left-to-right | ... `(` ... `)`        |
-|            | Optional Chaining             | left-to-right | `?.`                   |
-| 19         | `new` (without argument list) | right-to-left | `new` ...              |
-| 18         | Postfix Increment             | n/a           | ... `++`               |
-|            | Postfix Decrement             |               | ... `--`               |
-| 17         | Logical NOT                   | right-to-left | `!` ...                |
-|            | Bitwise NOT                   |               | `~` ...                |
-|            | Unary Plus                    |               | `+` ...                |
-|            | Unary Negation                |               | `-` ...                |
-|            | Prefix Increment              |               | `++` ...               |
-|            | Prefix Decrement              |               | `--` ...               |
-|            | `typeof`                      |               | `typeof` ...           |
-|            | `void`                        |               | `void` ...             |
-|            | `delete`                      |               | `delete` ...           |
-|            | `await`                       |               | `await` ...            |
-| 16         | Exponentiation                | right-to-left | ... `**` ...           |
-| 15         | Multiplication                | left-to-right | ... `*` ...            |
-|            | Division                      |               | ... `/` ...            |
-|            | Remainder                     |               | ... `%` ...            |
-| 14         | Addition                      | left-to-right | ... `+` ...            |
-|            | Subtraction                   |               | ... `-` ...            |
-| 13         | Bitwise Left Shift            | left-to-right | ... `<<` ...           |
-|            | Bitwise Right Shift           |               | ... `>>` ...           |
-|            | Bitwise Unsigned Right Shift  |               | ... `>>>` ...          |
-| 12         | Less Than                     | left-to-right | ... `<` ...            |
-|            | Less Than Or Equal            |               | ... `<=` ...           |
-|            | Greater Than                  |               | ... `>` ...            |
-|            | Greater Than Or Equal         |               | ... `>=` ...           |
-|            | `in`                          |               | ... `in` ...           |
-|            | `instanceof`                  |               | ... `instanceof` ...   |
-| 11         | Equality                      | left-to-right | ... `==` ...           |
-|            | Inequality                    |               | ... `!=` ...           |
-|            | Strict Equality               |               | ... `===` ...          |
-|            | Strict Inequality             |               | ... `!==` ...          |
-| 10         | Bitwise AND                   | left-to-right | ... `&` ...            |
-| 9          | Bitwise XOR                   | left-to-right | ... `^` ...            |
-| 8          | Bitwise OR                    | left-to-right | ... `\|` ...           |
-| 7          | Logical AND                   | left-to-right | ... `&&` ...           |
-| 6          | Logical OR                    | left-to-right | ... `\|\|` ...         |
-| 5          | Null Coalescing               | left-to-right | ... `??` ...           |
-| 4          | Conditional                   | right-to-left | ... `?` ... `:` ...    |
-| 3          | Assignment                    | right-to-left | ... `=` ...            |
-|            |                               |               | ... `+=` ...           |
-|            |                               |               | ... `-=` ...           |
-|            |                               |               | ... `**=` ...          |
-|            |                               |               | ... `*=` ...           |
-|            |                               |               | ... `/=` ...           |
-|            |                               |               | ... `%=` ...           |
-|            |                               |               | ... `<<=` ...          |
-|            |                               |               | ... `>>=` ...          |
-|            |                               |               | ... `>>>=` ...         |
-|            |                               |               | ... `&=` ...           |
-|            |                               |               | ... `^=` ...           |
-|            |                               |               | ... `\|=` ...          |
-|            |                               |               | ... `&&=` ... (2020)   |
-|            |                               |               | ... `\|\|=` ... (2020) |
-|            |                               |               | ... `??=` ... (2020)   |
-| 2          | `yield`                       | right-to-left | `yield` ...            |
-|            | `yield*`                      |               | `yield*` ...           |
-| 1 (loose)  | Comma / Sequence              | left-to-right | ... `,` ...            |
-
-[source](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators#Assignment_operators)
-
 ## `RegExp.$1`, etc.
 
 [RegExp documentation](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp)
@@ -307,16 +218,6 @@ See [isArrayLike.js](js/isArrayLike.js).
 
 See [jquery.md](jquery.md).
 
-## Iframe Detection
-
-```
-if (window.self === window.top) {
-    // you're not in an iframe!
-} else {
-    // you **are** in an iframe!
-}
-```
-
 ## slice vs. substring vs. substr
 
 -   None of the methods change the original string.
@@ -372,18 +273,6 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects
 https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/substr
 https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/slice
 https://www.bennadel.com/blog/2159-using-slice-substring-and-substr-in-javascript.htm
-
-## Natural Sort
-
-[hat tip](https://fuzzytolerance.info/blog/2019/07/19/The-better-way-to-do-natural-sort-in-JavaScript/)
-
-```
-array.sort(function (a, b) {
-    // assuming a and b are just strings
-    return a.localeCompare(b, navigator.languages[0] || navigator.language,
-                           { numeric: true, ignorePunctuation: true });
-});
-```
 
 ## String Types
 
