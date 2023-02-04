@@ -1,3 +1,426 @@
 # My Frequently Used AWS CLI commands
 
--   aws route53 list-resource-record-sets --hosted-zone-id _hostedZoneId_
+-   **aws route53 list-resource-record-sets --hosted-zone-id** _hostedZoneId_
+
+## Available Services
+
+-   aws accessanalyzer
+-   aws account
+-   aws acm
+-   aws acm-pca
+-   aws alexaforbusiness
+-   aws amp
+-   aws amplify
+-   aws amplifybackend
+-   aws amplifyuibuilder
+-   aws apigateway
+-   aws apigatewaymanagementapi
+-   aws apigatewayv2
+-   aws appconfig
+-   aws appconfigdata
+-   aws appflow
+-   aws appintegrations
+-   aws application-autoscaling
+-   aws application-insights
+-   aws applicationcostprofiler
+-   aws appmesh
+-   aws apprunner
+-   aws appstream
+-   aws appsync
+-   aws athena
+-   aws auditmanager
+-   aws autoscaling
+-   aws autoscaling-plans
+-   aws backup
+-   aws backup-gateway
+-   aws batch
+-   aws billingconductor
+-   aws braket
+-   aws budgets
+-   aws ce
+-   aws chime
+-   aws chime-sdk-identity
+-   aws chime-sdk-media-pipelines
+-   aws chime-sdk-meetings
+-   aws chime-sdk-messaging
+-   aws cloud9
+-   aws cloudcontrol
+-   aws clouddirectory
+-   aws cloudformation
+-   aws cloudfront
+-   aws cloudhsm
+-   aws cloudhsmv2
+-   aws cloudsearch
+-   aws cloudsearchdomain
+-   aws cloudtrail
+-   aws cloudwatch
+-   aws codeartifact
+-   aws codebuild
+-   aws codecommit
+-   aws codeguru-reviewer
+-   aws codeguruprofiler
+-   aws codepipeline
+-   aws codestar
+-   aws codestar-connections
+-   aws codestar-notifications
+-   aws cognito-identity
+-   aws cognito-idp
+-   aws cognito-sync
+-   aws comprehend
+-   aws comprehendmedical
+-   aws compute-optimizer
+-   aws configservice
+-   aws configure
+-   aws connect
+-   aws connect-contact-lens
+-   aws connectparticipant
+-   aws cur
+-   aws customer-profiles
+-   aws databrew
+-   aws dataexchange
+-   aws datapipeline
+-   aws datasync
+-   aws dax
+-   aws deploy
+-   aws detective
+-   aws devicefarm
+-   aws devops-guru
+-   aws directconnect
+-   aws discovery
+-   aws dlm
+-   aws dms
+-   aws docdb
+-   aws drs
+-   aws ds
+-   aws dynamodb
+-   aws dynamodbstreams
+-   aws ebs
+-   aws ec2
+-   aws ec2-instance-connect
+-   aws ecr
+-   aws ecr-public
+-   aws ecs
+-   aws efs
+-   aws eks
+-   aws elastic-inference
+-   aws elasticache
+-   aws elasticbeanstalk
+-   aws elastictranscoder
+-   aws elb
+-   aws elbv2
+-   aws emr
+-   aws emr-containers
+-   aws emr-serverless
+-   aws es
+-   aws events
+-   aws evidently
+-   aws finspace
+-   aws finspace-data
+-   aws firehose
+-   aws fis
+-   aws fms
+-   aws forecast
+-   aws forecastquery
+-   aws frauddetector
+-   aws fsx
+-   aws gamelift
+-   aws gamesparks
+-   aws glacier
+-   aws globalaccelerator
+-   aws glue
+-   aws grafana
+-   aws greengrass
+-   aws greengrassv2
+-   aws groundstation
+-   aws guardduty
+-   aws health
+-   aws healthlake
+-   aws help
+-   aws history
+-   aws honeycode
+-   aws iam
+-   aws identitystore
+-   aws imagebuilder
+-   aws importexport
+-   aws inspector
+-   aws inspector2
+-   aws iot
+-   aws iot-data
+-   aws iot-jobs-data
+-   aws iot1click-devices
+-   aws iot1click-projects
+-   aws iotanalytics
+-   aws iotdeviceadvisor
+-   aws iotevents
+-   aws iotevents-data
+-   aws iotfleethub
+-   aws iotsecuretunneling
+-   aws iotsitewise
+-   aws iotthingsgraph
+-   aws iottwinmaker
+-   aws iotwireless
+-   aws ivs
+-   aws ivschat
+-   aws kafka
+-   aws kafkaconnect
+-   aws kendra
+-   aws keyspaces
+-   aws kinesis
+-   aws kinesis-video-archived-media
+-   aws kinesis-video-media
+-   aws kinesis-video-signaling
+-   aws kinesisanalytics
+-   aws kinesisanalyticsv2
+-   aws kinesisvideo
+-   aws kms
+-   aws lakeformation
+-   aws lambda
+-   aws lex-models
+-   aws lex-runtime
+-   aws lexv2-models
+-   aws lexv2-runtime
+-   aws license-manager
+-   aws lightsail
+-   aws location
+-   aws logs
+-   aws lookoutequipment
+-   aws lookoutmetrics
+-   aws lookoutvision
+-   aws machinelearning
+-   aws macie
+-   aws macie2
+-   aws managedblockchain
+-   aws marketplace-catalog
+-   aws marketplace-entitlement
+-   aws marketplacecommerceanalytics
+-   aws mediaconnect
+-   aws mediaconvert
+-   aws medialive
+-   aws mediapackage
+-   aws mediapackage-vod
+-   aws mediastore
+-   aws mediastore-data
+-   aws mediatailor
+-   aws memorydb
+-   aws meteringmarketplace
+-   aws mgh
+-   aws mgn
+-   aws migration-hub-refactor-spaces
+-   aws migrationhub-config
+-   aws migrationhubstrategy
+-   aws mobile
+-   aws mq
+-   aws mturk
+-   aws mwaa
+-   aws neptune
+-   aws network-firewall
+-   aws networkmanager
+-   aws nimble
+-   aws opensearch
+-   aws opsworks
+-   aws opsworks-cm
+-   aws organizations
+-   aws outposts
+-   aws panorama
+-   aws personalize
+-   aws personalize-events
+-   aws personalize-runtime
+-   aws pi
+-   aws pinpoint
+-   aws pinpoint-email
+-   aws pinpoint-sms-voice
+-   aws pinpoint-sms-voice-v2
+-   aws polly
+-   aws pricing
+-   aws proton
+-   aws qldb
+-   aws qldb-session
+-   aws quicksight
+-   aws ram
+-   aws rbin
+-   aws rds
+-   aws rds-data
+-   aws redshift
+-   aws redshift-data
+-   aws rekognition
+-   aws resiliencehub
+-   aws resource-groups
+-   aws resourcegroupstaggingapi
+-   aws robomaker
+-   aws route53
+-   aws route53-recovery-cluster
+-   aws route53-recovery-control-config
+-   aws route53-recovery-readiness
+-   aws route53domains
+-   aws route53resolver
+-   aws rum
+-   aws s3
+    -   aws s3 cp
+    -   aws s3 ls
+    -   aws s3 mb
+    -   aws s3 mv
+    -   aws s3 presign
+    -   aws s3 rb
+    -   aws s3 rm
+    -   aws s3 sync
+    -   aws s3 website
+-   aws s3api
+    -   aws s3api abort-multipart-upload
+    -   aws s3api complete-multipart-upload
+    -   aws s3api copy-object
+    -   aws s3api create-bucket
+    -   aws s3api create-multipart-upload
+    -   aws s3api delete-bucket
+    -   aws s3api delete-bucket-analytics-configuration
+    -   aws s3api delete-bucket-cors
+    -   aws s3api delete-bucket-encryption
+    -   aws s3api delete-bucket-intelligent-tiering-configuration
+    -   aws s3api delete-bucket-inventory-configuration
+    -   aws s3api delete-bucket-lifecycle
+    -   aws s3api delete-bucket-metrics-configuration
+    -   aws s3api delete-bucket-ownership-controls
+    -   aws s3api delete-bucket-policy
+    -   aws s3api delete-bucket-replication
+    -   aws s3api delete-bucket-tagging
+    -   aws s3api delete-bucket-website
+    -   aws s3api delete-object
+    -   aws s3api delete-object-tagging
+    -   aws s3api delete-objects
+    -   aws s3api delete-public-access-block
+    -   aws s3api get-bucket-accelerate-configuration
+    -   aws s3api get-bucket-acl
+    -   aws s3api get-bucket-analytics-configuration
+    -   aws s3api get-bucket-cors
+    -   aws s3api get-bucket-encryption
+    -   aws s3api get-bucket-intelligent-tiering-configuration
+    -   aws s3api get-bucket-inventory-configuration
+    -   aws s3api get-bucket-lifecycle-configuration
+    -   aws s3api get-bucket-location
+    -   aws s3api get-bucket-logging
+    -   aws s3api get-bucket-metrics-configuration
+    -   aws s3api get-bucket-notification-configuration
+    -   aws s3api get-bucket-ownership-controls
+    -   aws s3api get-bucket-policy
+    -   aws s3api get-bucket-policy-status
+    -   aws s3api get-bucket-replication
+    -   aws s3api get-bucket-request-payment
+    -   aws s3api get-bucket-tagging
+    -   aws s3api get-bucket-versioning
+    -   aws s3api get-bucket-website
+    -   aws s3api get-object
+    -   aws s3api get-object-acl
+    -   aws s3api get-object-attributes
+    -   aws s3api get-object-legal-hold
+    -   aws s3api get-object-lock-configuration
+    -   aws s3api get-object-retention
+    -   aws s3api get-object-tagging
+    -   aws s3api get-object-torrent
+    -   aws s3api get-public-access-block
+    -   aws s3api head-bucket
+    -   aws s3api head-object
+    -   aws s3api help
+    -   aws s3api list-bucket-analytics-configurations
+    -   aws s3api list-bucket-intelligent-tiering-configurations
+    -   aws s3api list-bucket-inventory-configurations
+    -   aws s3api list-bucket-metrics-configurations
+    -   aws s3api list-buckets
+    -   aws s3api list-multipart-uploads
+    -   aws s3api list-object-versions
+    -   aws s3api list-objects
+    -   aws s3api list-objects-v2
+    -   aws s3api list-parts
+    -   aws s3api put-bucket-accelerate-configuration
+    -   aws s3api put-bucket-acl
+    -   aws s3api put-bucket-analytics-configuration
+    -   aws s3api put-bucket-cors
+    -   aws s3api put-bucket-encryption
+    -   aws s3api put-bucket-intelligent-tiering-configuration
+    -   aws s3api put-bucket-inventory-configuration
+    -   aws s3api put-bucket-lifecycle-configuration
+    -   aws s3api put-bucket-logging
+    -   aws s3api put-bucket-metrics-configuration
+    -   aws s3api put-bucket-notification-configuration
+    -   aws s3api put-bucket-ownership-controls
+    -   aws s3api put-bucket-policy
+    -   aws s3api put-bucket-replication
+    -   aws s3api put-bucket-request-payment
+    -   aws s3api put-bucket-tagging
+    -   aws s3api put-bucket-versioning
+    -   aws s3api put-bucket-website
+    -   aws s3api put-object
+    -   aws s3api put-object-acl
+    -   aws s3api put-object-legal-hold
+    -   aws s3api put-object-lock-configuration
+    -   aws s3api put-object-retention
+    -   aws s3api put-object-tagging
+    -   aws s3api put-public-access-block
+    -   aws s3api restore-object
+    -   aws s3api select-object-content
+    -   aws s3api upload-part
+    -   aws s3api upload-part-copy
+    -   aws s3api wait
+    -   aws s3api write-get-object-response
+-   aws s3control
+    -   aws s3api create-access-point
+    -   aws s3api create-access-point-for-object-lambda
+    -   aws s3api create-bucket
+    -   aws s3api create-job
+    -   aws s3api create-multi-region-access-point
+    -   aws s3api delete-access-point
+    -   aws s3api delete-access-point-for-object-lambda
+    -   aws s3api delete-access-point-policy
+    -   aws s3api delete-access-point-policy-for-object-lambda
+    -   aws s3api delete-bucket
+    -   aws s3api delete-bucket-lifecycle-configuration
+    -   aws s3api delete-bucket-policy
+    -   aws s3api delete-bucket-tagging
+    -   aws s3api delete-job-tagging
+    -   aws s3api delete-multi-region-access-point
+    -   aws s3api delete-public-access-block
+    -   aws s3api delete-storage-lens-configuration
+    -   aws s3api delete-storage-lens-configuration-tagging
+    -   aws s3api describe-job
+    -   aws s3api describe-multi-region-access-point-operation
+    -   aws s3api get-access-point
+    -   aws s3api get-access-point-configuration-for-object-lambda
+    -   aws s3api get-access-point-for-object-lambda
+    -   aws s3api get-access-point-policy
+    -   aws s3api get-access-point-policy-for-object-lambda
+    -   aws s3api get-access-point-policy-status
+    -   aws s3api get-access-point-policy-status-for-object-lambda
+    -   aws s3api get-bucket
+    -   aws s3api get-bucket-lifecycle-configuration
+    -   aws s3api get-bucket-policy
+    -   aws s3api get-bucket-tagging
+    -   aws s3api get-job-tagging
+    -   aws s3api get-multi-region-access-point
+    -   aws s3api get-multi-region-access-point-policy
+    -   aws s3api get-multi-region-access-point-policy-status
+    -   aws s3api get-public-access-block
+    -   aws s3api get-storage-lens-configuration
+    -   aws s3api get-storage-lens-configuration-tagging
+    -   aws s3api help
+    -   aws s3api list-access-points
+    -   aws s3api list-access-points-for-object-lambda
+    -   aws s3api list-jobs
+    -   aws s3api list-multi-region-access-points
+    -   aws s3api list-regional-buckets
+    -   aws s3api list-storage-lens-configurations
+    -   aws s3api put-access-point-configuration-for-object-lambda
+    -   aws s3api put-access-point-policy
+    -   aws s3api put-access-point-policy-for-object-lambda
+    -   aws s3api put-bucket-lifecycle-configuration
+    -   aws s3api put-bucket-policy
+    -   aws s3api put-bucket-tagging
+    -   aws s3api put-job-tagging
+    -   aws s3api put-multi-region-access-point-policy
+    -   aws s3api put-public-access-block
+    -   aws s3api put-storage-lens-configuration
+    -   aws s3api put-storage-lens-configuration-tagging
+    -   aws s3api update-job-priority
+    -   aws s3api update-job-status
+-   aws s3outposts
+-   aws sagemaker
+-   aws sagemaker-a2i-runtime
+-   aws sagemaker-edge
+-   xray
