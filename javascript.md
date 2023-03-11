@@ -467,16 +467,19 @@ into a string.  There really aren't.
 | **Checking**            |      |            |             |                 |               |               |
 | `propertyIsEnumerable`  |      |            | enumerable  |                 |               |               |
 
-    Object.getAllPropertyNames = function (obj) {
-        var props = [];
-        do {
-            Object.getOwnProperties(obj).forEach(function (prop) {
-                if (!props.indexOf(prop) === -1) {
-                    props.push(prop);
-                }
-            });
-        } while (obj = Object.getPrototypeOf(obj);
-    };
+    function listAllPropertyNames(obj) {
+       for (; obj; obj = Object.getPrototypeOf(obj)) {
+          const propNames = Object.getOwnPropertyNames(obj);
+          propNames.sort();
+          propNames.forEach((name) => {
+             if (obj[name] instanceof Function) {
+                console.log(name + '()');
+             } else {
+                console.log(name);
+             }
+          });
+       }
+    }
 
 ### Checking
 
@@ -516,3 +519,64 @@ into a string.  There really aren't.
     }
     
     (?:0|1[0-9]?[0-9]?|2(?:[0-4][0-9]?|5[0-5]?|[6-9])?|[3-9][0-9]?)
+
+## Up the Class Tree
+
+    class A {}
+    class B extends A {}
+    class C extends B {}
+    
+    // C extends B
+    // B extends A
+    // A extends (Z = Object.getPrototypeOf(Object)) 
+    // Z extends Object.prototype
+    
+    a = new A();
+    b = new B();
+    c = new C();
+    
+    c.__proto__.__proto__ === b.__proto__
+    b.__proto__.__proto__ === a.__proto__
+    a.__proto__.__proto__ === Object.prototype
+    Object.prototype.__proto__ === null
+    
+    c.__proto__.constructor === C
+    c.__proto__.__proto__.constructor === B
+    b.__proto__.constructor === B
+    b.__proto__.__proto__.constructor === A
+    a.__proto__.constructor === A
+    a.__proto__.__proto__.constructor === Object
+    
+    Z = Object.getPrototypeOf(A)
+    
+    Object.getPrototypeOf(C) === B
+    Object.getPrototypeOf(B) === A
+    Object.getPrototypeOf(A) === Z
+    Object.getPrototypeOf(Z) === Object.prototype
+
+    C.prototype === c.__proto__
+    B.prototype === b.__proto__
+    A.prototype === a.__proto__
+    Z.prototype === undefined
+    Object.prototype === ...
+
+    C.constructor === Function (itself a function)
+    B.constructor === Function
+    A.constructor === Function
+    Z.constructor === Function
+    Object.constructor === Function
+    
+    C.prototype.constructor === C
+    B.prototype.constructor === B
+    A.prototype.constructor === A
+    Z.prototype.constructor ==> throws a TypeError
+    Object.prototype.constructor === Object (itself a function)
+
+    (Function instanceof Function) === true
+    (Object instanceof Object) === true
+
+    c instanceof C === true
+    c instanceof B === true
+    c instanceof A === true
+    c instanceof Z ==> throws a TypeError
+    c instanceof Object === true

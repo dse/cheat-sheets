@@ -17,7 +17,7 @@
 | _ESAbstract.Get                           | No                            |
 | _ESAbstract.GetIterator                   | No                            |
 | _ESAbstract.GetMethod                     | No                            |
-| _ESAbstract.GetPrototypeFromConstructor   | No                            |
+| _ESAbstract.Get1PrototypeFromConstructor   | No                            |
 | _ESAbstract.GetSubstitution               | No                            |
 | _ESAbstract.GetV                          | No                            |
 | _ESAbstract.HasOwnProperty                | No                            |

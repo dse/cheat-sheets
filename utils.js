@@ -8,3 +8,9 @@ Object.getAllPropertyNames = function (obj) {
         });
     } while ((obj = Object.getPrototypeOf(obj)));
 };
+
+function walkUpClass (klass) {
+    do {
+        console.log(obj);
+    } while ((obj = Object.getPrototypeOf(obj)));
+}

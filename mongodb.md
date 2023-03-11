@@ -1,344 +1,296 @@
-Rather have a damn query language, Mongo decided on convoluted JSON objects.
+# Mongo
+
+Rather have a damn query language, Mongo decided on convoluted JSON
+objects.
 
 Actually, two or three different kinds of JSON objects, depending on
 what you're using them for.
 
-# AGGREGATION PIPELINES
+## Operators
 
-    db.xxx.aggregate([
-        <AGGREGATION STAGE>,
-        ...
-    ]);
+-   Query and Projection https://www.mongodb.com/docs/manual/reference/operator/query/
+    -   Comparison    https://www.mongodb.com/docs/manual/reference/operator/query-comparison/
+    -   Logical       https://www.mongodb.com/docs/manual/reference/operator/query-logical/
+    -   Element       https://www.mongodb.com/docs/manual/reference/operator/query-element/
+    -   Evaluation    https://www.mongodb.com/docs/manual/reference/operator/query-evaluation/
+    -   Geospatial    https://www.mongodb.com/docs/manual/reference/operator/query-geospatial/
+    -   Array         https://www.mongodb.com/docs/manual/reference/operator/query-array/
+    -   Boolean       https://www.mongodb.com/docs/manual/reference/operator/query-boolean/
+    -   Projection    https://www.mongodb.com/docs/manual/reference/operator/projection/
+    -   Miscellaneous https://www.mongodb.com/docs/manual/reference/operator/query-miscellaneous/
+-   Update
+    -   Field Update   https://www.mongodb.com/docs/manual/reference/operator/update-field/
+    -   Array Update   https://www.mongodb.com/docs/manual/reference/operator/update-array/
+    -   Bitwise Update https://www.mongodb.com/docs/manual/reference/operator/update-bitwise/
+-   Aggregation
+    -   Stages    https://www.mongodb.com/docs/manual/reference/operator/aggregation-pipeline/
+    -   Operators https://www.mongodb.com/docs/manual/reference/operator/aggregation/
 
-# QUERY FILTER DOCUMENTS
+## Types of Operations
 
-    db.find(
-        QUERY,
-        OPTIONS
-    )
-    
-# QUERY
+-   Read Operations
 
-    { <field>: <value>, ... }
-    
-    { status: 'D' }
-    
-    { <field>: { <operator>: <value> } }
-    { <field>: { $eq: <value> } }
-    
-# QUERY OPERATORS
+    ```
+    coll.find(query, [options]);
+    coll.findOne(query, [options]);
+    coll.findOneAndDelete(query, [options]);
+    coll.findOneAndUpdate(query, [options]);
+    call.findOneAndReplace(query, [options]);
+    ```
 
-    $eq
-    $gt
-    $gte
-    $in
-    $lt
-    $lte
-    $ne
-    $nin
+-   Queries
+    
+    -   Literal Value Queries
 
-    $and
-    $not
-    $nor
-    $or
-    
-    $exists
-    $type
-    
-    $expr
-    $jsonSchema
-    $mod
-    $regex
-    $text
-    $where
-    
-    $geoIntersects
-    $geoWithin
-    $near
-    $nearSphere
-    
-    $all
-    $elemMatch
-    $size
-    
-    $bitsAllClear
-    $bitsAllSet
-    $bitsAnyClear
-    $bitsAnySet
+        Queries for documents that match exactly what you specify.
 
-# AGGREGATION STAGES
+            { title: 'The Room' }                   { title: { $eq: 'The Room' } }
+            { type: 'fruit', name: 'orange' }       { type: { $eq: 'fruit' },
+                                                      name: { $eq: 'orange' } }
 
-    { $addFields: { <field name>: <aggregation expression>, ... } }
+    -   Comparison Operators
+
+        Queries for documents based on comparisons of values.
+
+            { qty: { $gt: 5 } }
+
+    -   Logical Operators
+
+        Queries for documents based on logic applied to comparison and literal operators.
+
+            { qty: { $not: { $gt: 5 } } }
+
+    -   Element Operators
+
+        Queries based on the present, absence, or type of a field.
+
+            { microsieverts: { $exists: true } }
+
+    -   Evaluation Operators
+
+        Queries based on higher level logic such as regex and text searches.
+
+            { qty: { $mod: [3, 0] } }   // get records whose qty are multiples of three
+
+-   Aggregation Operations
+
+        coll.aggregate(pipeline, [options])
+        
+    An aggregation pipeline is an array of aggregation stages.
     
-    $bucket
-    $bucketAuto
-    $collStats
-    $count
-    $facet
-    $geoNear
-    $graphLookup
-    $group
-    $indexStats
-    $limit
-    $listSessions
-    $lookup
-    $match
-    $merge
-    $out
-    $planCacheStats
-    $project
-    $redact
-    $replaceRoot
-    $replaceWith
-    $sample
-    $search
-    $set
-    $setWindowFields
-    $skip
-    $sort
-    $sortByCount
-    $unionWith
-    $unset
-    $unwind
+        coll.aggregate([
+            stage1,
+            stage2,
+            ...
+        ], [options]);
+        
+    Types of aggregation stages include, but are not limited to:
     
-    { $addFields: { <new field>: <expression>, ... } }
+        $match
+        $group
+        $sort
+        $limit
+    
+    An example pipeline:
+    
+        const pipeline = [
+            { $match: { categories: 'Bakery' } },
+            { $group: { _id: '$stars', count: { $sum: 1 } } },
+            { $sort: { count: -1 } },       // decreasing order of count
+        ];
+        coll.aggregate(pipeline);
+    
+    
 
-    { $unwind: <field path> }
-    { $unwind: { path: <field path>,
-                 includeArrayIndex: <string>,
-                 preserveNullAndEmptyArrays: <boolean> } }
-                 
-    <new field> is a field path without the '$' prefix.
+## Types of Objects
 
-# EXPRESSIONS
+### Query Documents
 
-    Expressions can be:
+https://www.mongodb.com/docs/drivers/node/current/fundamentals/crud/query-document/
+
+### Query Operations
+
+https://www.mongodb.com/docs/manual/reference/operator/query/
+
+    Comparison Expression Operators     $cmp
+                                        $eq $gt $gte $lt $lte $ne
+    Logical                             $and $not $nor $or
+    Evaluation                          $expr       // use of aggregation expressions
+                                        $jsonSchema $mod $regex $text $where
+    ...
+
+### Aggregation Pipelines and Aggregation Stages
+
+https://www.mongodb.com/docs/manual/reference/operator/aggregation-pipeline/
+
+    { $addFields: { <field-name>: <expression>, ... } }
+    { $bucket: { } }
+    { $bucketAuto: { } }
+    { $changeStream: { } }
+    { $collStats: { } }
+    { $count: { } }
+    { $densify: { } }
+    { $documents: { } }
+    { $facet: { } }
+    { $fill: { } }
+    { $geoNear: { } }
+    { $graphLookup: { } }
+    { $group: { } }
+    { $indexStats: { } }
+    { $limit: { } }
+    { $listSessions: { } }
+    { $lookup: { } }
+    { $match: <query> }
+    { $merge: { } }
+    { $out: { } }
+    { $planCacheStats: { } }
+    { $project: { } }
+    { $redact: { } }
+    { $replaceRoot: { } }
+    { $replaceWith: { } }
+    { $sample: { } }
+    { $search: { } }
+    { $searchMeta: { } }
+    { $set: { } }
+    { $setWindowFields: { } }
+    { $skip: { } }
+    { $sort: { } }
+    { $sortByCount: { } }
+    { $unionWith: { } }
+    { $unset: { } }
+    { $unwind: { } }
+
+### Aggregation Expressions
+
+https://www.mongodb.com/docs/manual/meta/aggregation-quick-reference/#std-label-aggregation-expressions
+
+Expressions can include:
+
     -   field paths
     -   literals
     -   system variables
     -   expression objects
     -   expression operators
 
-# FIELD PATHS
+Field paths are dotted field names prefixed with `$`.
 
-    Examples:
+    $user                       $$CURRENT.user
+    $user.name                  $$CURRENT.user.name
+    $users.1                    $$CURRENT.users.1
 
-        '$sizes'
-        '$items.tags'
+Aggregation variables, aka system variables:
 
-# LITERALS
+https://www.mongodb.com/docs/manual/reference/aggregation-variables/#std-label-agg-system-variables
 
-    Examples:
+    $$NOW
+    $$CLUSTER_TIME
+    $$ROOT
+    $$CURRENT
+    $$REMOVE
+    $$DESCEND
+    $$PRUNE
+    $$KEEP
 
-        null
-        'three dollars and fifty cents'
-        { $literal: true }
-        { $literal: 3.59 }
-        { $literal: '$3.59' }
+Literals:
 
-    You can specify a literal of any type.  BUT...
-    -   A string starting with a '$' is a FIELD PATH.
-    -   Numeric and boolean literals become PROJECTION FLAGS.
-    
-    Specify a { $literal: <value> } expression to specify
-    a string literal starting with a '$' or a number or boolean.
-    
-# SYSTEM VARIABLES
+    { literal: '$PATH' }        // not a field path
+    { literal: true }           // not a projection flag (expression objects)
+    { literal: 5 }              // not a projection flag (expression objects)
 
-    '$$NOW'
-    '$$CLUSTER_TIME'
-    '$$ROOT'
-    '$$CURRENT'
-    '$$REMOVE'
-    '$$DESCEND'
-    '$$PRUNE'
-    '$$KEEP'
-    
-# EXPRESSION OBJECTS
+Expression Objects:
 
-    { <field name>: <expression>, <field name>: <expression>, ... }
+    { <field>: <expression>, ... }
 
-    <expressions> have the same caveat as literals.
-    
-    To specify a string starting with '$', a number, or a boolean,
-    you must specify { $literal: <value> }
-    
-    Examples:
-    
-        { cdfi: { $literal: true }, mdi: { $literal: false }, name: 'Bank of Podunk' }
+Operator Expressions:
 
-# EXPRESSION OPERATORS
+    { <operator>: <argument> }
+    { <operator>: [ <argument> ] }
+    { <operator>: [ <argument>, ... ] }
 
-    Arithmetic Expression Operators
-        $abs
-        $add
-        $ceil
-        $divide
-        $exp
-        $floor
-        $ln
-        $log
-        $log10
-        $mod
-        $multiply
-        $pow
-        $round
-        $sqrt
-        $subtract
-        $trunc
+    Arithmetic Expression Operators     $abs
+                                        $add $divide $mod $multiply $subtract
+                                        $ceil $floor $round $trunc
+                                        $exp $ln $log $log10 $pow
+                                        $sqrt
+    Array Expression Operators          $arrayElemAt $slice
+                                        $arrayToObject $objectToArray
+                                        $concatArrays $zip
+                                        $filter $map $reduce
+                                        $first $firstN $last $lastN
+                                        $maxN $minN
+                                        $in $indexOfArray
+                                        $isArray
+                                        $range
+                                        $reverseArray $sortArray
+                                        $size
+    Boolean Expression Operators        $and $not $or
+    Comparison Expression Operators     $cmp
+                                        $eq $gt $gte $lt $lte $ne
+    Conditional Expression Operators    $cond
+                                        $ifNull
+                                        $switch
+    Custom Aggregation Expression Operators         $accumulator
+                                                    $function
+    Data Size Expression Operators      $binarySize $bsonSize
+    Date Expression Operators           $dateAdd $dateSubtract $dateDiff
+                                        $dateFromParts $dateFromString
+                                        $dateToParts $dateToString
+                                        $dateTrunc
+                                        $dayOfMonth $dayOfWeek $dayOfYear $isoDayOfWeek 
+                                        $isoWeek $week
+                                        $isoWeekYear $year
+                                        $month
+                                        $hour $millisecond $minute $second
+                                        $toDate
+    Literal Expression Operator         $literal
+    Miscellaneous Operators             $getField
+                                        $rand
+                                        $sampleRate
+    Object Expression Operators         $mergeObjects
+                                        $objectToArray
+                                        $setField
+    Set Expression Operators            $allElementsTrue $anyElementTrue
+                                        $setDifference $setIntersection $setUnion
+                                        $setEquals $setIsSubset
+    String Expression Operators         $concat
+                                        $dateFromString $dateToString
+                                        $indexOfBytes $indexOfCP
+                                        $ltrim $rtrim $trim
+                                        $regexFind $regexFindAll $regexMatch
+                                        $replaceOne $replaceAll
+                                        $split
+                                        $strlenBytes $strlenCP
+                                        $strcasecmp
+                                        $substr $substrBytes $substrCP
+                                        $toLower $toUpper
+                                        $toString
+    Text Expression Operator            $meta
+    Trigonometry                        $sin $cos $tan $asin $acos $atan $atan2
+                                        $sinh $cosh $tanh $asinh $acosh $atanh
+                                        $degreesToRadians $radiansToDegrees
+    Type Expression Operators           $convert $type $isNumber
+                                        $toBool $toDate $toDecimal $toDouble $toInt
+                                        $toLong $toObjectId $toString $type
+    Accumulators                        $accumulator
+                                        $addToSet
+                                        $avg $count $max $min $stdDevPop $stdDevSamp $sum
+                                        $bottom $bottomN $top $topN
+                                        $first $firstN $last $lastN
+                                        $mergeObjects
+                                        $push
+                                        # some but not all can be used in non-$group stages
+    Variable Expression Operators       $let
+    Window Operators                    $addToSet
+                                        $avg $bottom $bottomN $count $covariancePop $covarianceSamp
+                                        $denseRank $derivative $documentNumber $expMovingAvg
+                                        $first $integral $last $linearFill $locf $max $min $minN $push $rank $shift $stdDevPop $stdDevSamp
+                                        $sum $top $topN 
 
-    Array Expression Operators
-        $arrayElemAt
-        $arrayToObject
-        $concatArrays
-        $filter
-        $first
-        $in
-        $indexOfArray
-        $isArray
-        $last
-        $map
-        $objectToArray
-        $range
-        $reduce
-        $reverseArray
-        $size
-        $slice
-        $zip
-    
-    Boolean Expression Operators
-        $and
-        $not
-        { $or: [ <expr1>, <expr2>, ... ] }
-    
-    Comparison Expression Operators
-        $cmp
-        { $eq: [ <expr1>, <expr2> ] }
-        $gt
-        $gte
-        $lt
-        $lte
-        $ne
-    
-    Conditional Expression Operators
-        $cond
-        $ifNull
-        $switch
-    
-    Custom Aggregation Expression Operators
-        $accumulator
-        $function
-    
-    Data Size Expression Operators
-        $binarySize
-        $bsonSize
-    
-    Date Expression Operators
-        $dateAdd
-        $dateDiff
-        $dateFromParts
-        $dateFromString
-        $dateSubtract
-        $dateToParts
-        $dateToString
-        ...
-    
-    Literal Expression Operator
-        $literal
-    
-    Miscellaneous Operators
-        $getField
-        $rand
-        $sampleRate
-    
-    Object Expression Operators
-        $mergeObjects
-        $objectToArray
-        $setField
-    
-    Set Expression Operators
-        $allElementsTrue
-        $anyElementTrue
-        $setDifference
-        $setEquals
-        $setIntersection
-        $setIsSubset
-        $setUnion
-    
-    String Expression Operators
-        $concat
-        $dateFromString
-        $dateToString
-        $indexOfBytes
-        $indexOfCP
-        $ltrim
-        $regexFind
-        $regexFindAll
-        $regexMatch
-        $replaceOne
-        $replaceAll
-        $rtrim
-        $split
-        $strLenBytes
-        $strLenCP
-        $strcasecmp
-        $substr
-        $substrBytes
-        $substrCP
-        $toLower
-        $toString
-        $trim
-        $toUpper
-
-    Text
-        $meta
-        
-    Trigonometry
-        $sin
-        $cos
-        $tan
-        $asin
-        $acos
-        $atan
-        $atan2
-        $asinh
-        $acosh
-        $atanh
-        $sinh
-        $cosh
-        $tanh
-        $degreesToRadians
-        $radiansToDegrees
-
-    Type
-        $convert
-        $isNumber
-        $toBool
-        $toDate
-        $toDecimal
-        $toDouble
-        $toInt
-        $toLong
-        $toObjectId
-        $toString
-        $type
-
-    Accumulators
-        $accumulator
-        $addToSet
-        $avg
-        $count
-        $first
-        $last
-        $max
-        $mergeObjects
-        $min
-        $push
-        $stdDevPop
-        $stdDevSamp
-        $sum
-
-    Variable Expression Operators
-        $let
-    
-    Window Operators
+    Aggregation Commands
+        aggregate
+        count
+        distinct
+        mapReduce
+    Aggregation Methods
+        coll.aggregate()
+        coll.mapReduce()
