@@ -1,0 +1,58 @@
+grep [OPTION...] PATTERNS [FILE...]
+grep [OPTION...] -e PATTERNS ... [FILE...]
+grep [OPTION...] -f PATTERN_FILE ... [FILE...]
+
+--help
+-V, --version
+PATTERN SYNTAX
+    -E, --extended-regexp
+    -F, --fixed-strings
+    -G, --basic-regexp
+    -P, --perl-regexp
+MATCHING CONTROL
+    -e PATTERNS, --regexp=PATTERNS
+    -f FILE, --file=FILE
+    -i, --ignore-case
+    --no-ignore-case
+    -v, --invert-match
+    -w, --word-regexp
+    -x, --line-regexp
+GENERAL OUTPUT CONTROL
+    -c, --count
+    --color[=never|always|auto]
+    -L, --files-without-match
+    -l, --files-with-matches
+    -m NUM, --max-count=NUM
+    -o, --only-matching
+    -q, --quiet, --silent
+    -s, --no-messages
+OUTPUT LINE PREFIX CONTROL
+    -b, --byte-offset
+    -H, --with-filename
+    -h, --no-filename
+    --label=LABEL
+    -n, --line-number
+    -T, --initial-tab
+    -Z, --null
+CONTEXT LINE CONTROL
+    -A NUM, --after-context=NUM
+    -B NUM, --before-context=NUM
+    -C NUM, -NUM, --context=NUM
+    --group-separator=SEP
+    --no-group-separator
+FILE AND DIRECTORY SELECTION
+    -a, --text, --binary-files=text
+    --binary-files=binary|without-match|text
+    -D, --devices=read|skip
+    -d, --directories=read|skip|recurse
+    --exclude=GLOB
+    --exclude-from=FILE
+    --exclude-dir=GLOB
+    -I, --binary-files=without-match
+    --include=GLOB
+    -r, --recursive
+    -R, --dereference-recursive
+OTHER OPTIONS
+    --line-buffered
+    -U, --binary (treat all files)
+    -z, --null-data
