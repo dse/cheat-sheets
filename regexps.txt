@@ -1,0 +1,32 @@
+                                Basic Regular   Extended Reg.
+                                Expressions     Expressions     Perl            JavaScript
+
+escapes
+    ordinary chars. otherwise   \( \( \{ \}
+                                \1 ... \9
+                                [\a]
+    special characters          . [ \ * ^ $     . [ \ * ^ $
+                                                ( ) * + { |
+    ordchar preceded by \                       undefined
+single character
+    any character               .               .
+    bracket expr.               [...]           same as BRE
+        matching list expr      [abc]
+        non-matching list expr  [^abc]
+        lose their meaning      . * [ \
+        collating symbol        [. ... .]
+        equivalence class       [= ... =]
+        character class         [: ... :]
+        range expression        [0-9A-Fa-f]
+multiple characters
+    concatenation               ab              ab
+    subexpression               \( ... \)
+    back-reference expr         \1 ... \9
+    zero or more occurrences    *               *
+    one or more                                 +
+    zero or one                                 ?
+    exactly m occurrences       \{m\}           {m}
+    m or more occurrences       \{m,\}          {m,}
+    between m and n, inclsve.   \{m,n\}         {m,n}
+anchoring begin/end of string   ^ $             ^ $
+alternation                                     |
