@@ -2,31 +2,112 @@
                                 Expressions     Expressions     Perl            JavaScript
 
 escapes
-    ordinary chars. otherwise   \( \( \{ \}
+    ordchars if !preceded by \  \( \( \{ \}
                                 \1 ... \9
                                 [\a]
     special characters          . [ \ * ^ $     . [ \ * ^ $
                                                 ( ) * + { |
-    ordchar preceded by \                       undefined
+    specl chars preceded by \   literal         literal         literal         literal
+    other chars preceded by \   <undefined>     <undefined>
 single character
-    any character               .               .
+    any character               .               .               . under /s
+        any char except \n                                      .
     bracket expr.               [...]           same as BRE
-        matching list expr      [abc]
-        non-matching list expr  [^abc]
+        matching list expr      [abc]                           [abc]           [abc]
+        non-matching list expr  [^abc]                          [^abc]          [^abc]
         lose their meaning      . * [ \
-        collating symbol        [. ... .]
-        equivalence class       [= ... =]
-        character class         [: ... :]
-        range expression        [0-9A-Fa-f]
+                                sometimes - ]                   <same as BRE>
+        collating symbol        [[. ... .]]
+        equivalence class       [[= ... =]]
+        character class         [[: ... :]]                     [[: ... :]]
+        range expression        [0-9A-Fa-f]                     [0-9A-Fa-f]     [0-9A-Fa-f]
+        extd brakt charclass                                    (?[...])
 multiple characters
-    concatenation               ab              ab
-    subexpression               \( ... \)
-    back-reference expr         \1 ... \9
-    zero or more occurrences    *               *
-    one or more                                 +
-    zero or one                                 ?
-    exactly m occurrences       \{m\}           {m}
-    m or more occurrences       \{m,\}          {m,}
-    between m and n, inclsve.   \{m,n\}         {m,n}
-anchoring begin/end of string   ^ $             ^ $
-alternation                                     |
+    concatenation               ab              ab              ab              ab
+    subexpression
+        capturing               \( ... \)       <none>          (...)           (...)
+        non-capturing           <none>          (...)           (?:...)         (?:...)
+    named groups                                                (?<name>text)   (?<name>text)
+                                                                (?'name'text)
+    back-reference expr         \1 ... \9       <none>          \1 ... \9       \1 ... \9
+                                                                \10 ...         \10 ...
+                                                                \g1
+                                                                \g{10}
+        relative prev. group                                    \g{-1}
+    named backreferences                                        \k<name>        \k<name>
+                                                                \k'name'
+                                                                \k{name}
+                                                                \g{name}
+repeating
+    zero or more occurrences    *               *               *               *
+    one or more                 <none>          +               +               +
+    zero or one                 <none>          ?               ?               ?
+    exactly m occurrences       \{m\}           {m}             {m}             {m}
+    m or more occurrences       \{m,\}          {m,}            {m,}            {m,}
+    between m and n, inclsve.   \{m,n\}         {m,n}           {m,n}           {m,n}
+    n or fewer                                                  {,n}
+    non-greedy                                                  *? +? ?? ...    *? +? ?? ...
+    super greedy (no backtrack)                                 *+ ++ ?+ ...
+anchoring begin/end of string   ^ $             ^ $             ^               ^
+    begin of line                                               ^ under /m      ^ under /m
+    before \n ending string                                     $
+    before any \n                                               $ under /m
+    begin string only                                           \A
+    end string only                                             \z              $
+    end string only or before \n at end                         \Z
+    end of string or before any \n                                              $ under /s
+alternation                     <none>          |               |               |
+control chars.                                                  \r \n \t \f     \r \n \t \f
+                                                                \a \e           \v
+    backspace                                                                   [\b]
+                                                                \c@ ... \c_     \cX
+octal                                                           \000 ... \777
+                                                                \o{...}
+hexadecimal                                                     \x00 ... \xff   \x00 ... \xff
+                                                                \x{...}         \uxxxx
+                                                                                \u{xxx...}
+    null if not followed by another digit                                       \0
+named Unicode character                                         \N{SNOWMAN}
+codepoint                                                       \N{U+1F4A9}
+lowercase, uppercase next char                                  \l \u
+lowercase, uppercase                                            \L ... \E
+                                                                \U ... \E
+quote                                                           \Q ... \E
+comment to EOL                                                  # under /x
+comment                                                         (?#...)
+embedded pattern-match modifiers on/off                         (?...-...)
+    turn off only                                               (?^...)
+groups                                                          (?flags:text)
+
+word character, non-word                                        \w \W           \w \W
+whitespace character, non-whitespace                            \s \S           \s \S
+digit, non-digit                                                \d \D           \d \D
+match single-character named property                           \pP \PP
+match named property                                            \p{prop} \P{}   \p{} \P{}
+match extended grapheme cluster                                 \X
+any character except \n                                         \N
+vertical whitespace, or not                                     \v \V
+horizontal whitespace, or not                                   \h \H
+line break                                                      \R
+match at type of unicode boundary, or not                       \b{} \B{}
+match at word boundary, or not                                  \b \B           \b \B
+
+PLA - zero width positive lookahead                             (?=pattern)     (?=text)
+NLA - zero width negative lookahead                             (?!pattern)     (?!text)
+PLB - zero width positive lookbehind                            (?<=pattern)    (?<=text)
+NLB - zero width negative lookbehind                            (?<!pattern)    (?<!text)
+
+branch reset                                                    (?|pattern)
+execute code                                                    (?{ code })
+                                                                (??{ code })
+recursive subpattern                                            (?num) (?-num)
+                                                                (?+num) (?R) (?0)
+                                                                (?&name)
+conditional                                                     (?(cond)yes|no)
+
+flags
+    multiple lines                                              /m
+    single line ('.' includes \n)                               /s
+    case-insensitive                                            /i
+    permit whitespace and comments                              /x
+    match the pattern repeatedly                                /g
