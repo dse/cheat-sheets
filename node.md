@@ -136,6 +136,69 @@ releases.
 -   `Array#findLastIndex`
 -   standardize hashbang `#!/wash/your/hands`
 
+## Modules
+
+-   color
+    -   `@colors/colors`
+    -   `chalk` (used by `console-stamp`)
+-   logging
+    -   `console-stamp`
+-   formatting
+    -   `strftime`
+    -   `dayjs`, the formatting replacement for `moment`
+    -   `sprintf-js`
+-   objects
+    -   `deepmerge`
+    -   `json-stable-stringify`
+-   HTTP
+    -   `node-fetch`
+    -   `http-link-header`
+-   email
+    -   `emailjs-addressparser`
+    -   `emailjs-mime-codec`
+-   CLI
+    -   `posix-getopt`
+-   YAML
+    -   `yaml`
+-   caching
+    -   `node-file-cache`
+-   performance
+    -   `time-require`
+-   strings
+    -   `camelcase`
+    -   `decamelize`
+    -   `yn`
+-   base64
+    -   `btoa`
+    -   `atob`
+-   text
+    -   `word-wrap`
+-   files
+    -   `glob` (already has a sync)
+    -   `findup`
+-   debugging
+    -   `debug`
+-   versioning
+    -   `semver`
+-   date parsing
+    -   `chrono-node`
+-   zip
+    -   `jszip`
+-   misc
+    -   anymatch
+-   HTML/CSS
+    -   foundation-sites
+    -   bootstrap
+    -   normalize.css
+    -   what-input
+    -   bourbon
+    -   bourbon-neat
+    -   swiper
+-   misc
+    -   lodash
+
+
+
 ## Pure ESM
 
 [https://gist.github.com/sindresorhus/a39789f98801d908bbc7ff3ecc99d99c](why your favorite package is pure ESM now)
