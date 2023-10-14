@@ -2,6 +2,8 @@
 
 -   [Details](https://css-tricks.com/snippets/css/a-guide-to-flexbox/>)
 
+-   [MDN](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Flexbox)
+
 ## Properties for the Flex Container (parent)
 
 ```
@@ -21,7 +23,7 @@
     flex-wrap: nowrap;                      /* default */
                wrap;                        /* top->bottom|left->right */
                wrap-reverse;                /* bottom->top|right->left */
-               
+
     /* shorthand */
     place-content: <align-content> <justify-content>;
 

@@ -13,7 +13,7 @@ file) and specify one of the following syntaxes:
 | `/ssh:hostname:/etc/squid.conf`  | Use an absolute path.       |
 | `/ssh:user@hostname:.emacs`      | Log in as another user.  Starts at their home directory. |
 | `/ssh:hostname#port:.emacs`      | Use a custom port number.   |
-| `/ftp:user@hostname:.emacs`      | User another protocol.      |
+| `/ftp:user@hostname#port:.emacs`      | User another protocol.      |
 | `/su::/etc/passwd`               | Local privilege escalation. |
 | `/sudo::/etc/passwd`             | Local privilege escalation.
 
