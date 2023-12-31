@@ -2,54 +2,18 @@
 
 https://developer.mozilla.org/en-US/docs/Web/JavaScript/Enumerability_and_ownership_of_properties
 
-### for...in
-
-Iterates over all properties that are:
-- own or inherited
-- enumerable
-- string-keyed
-
-### Object.entries()
-
-Returns key-value pairs for properties that are:
-- own
-- enumerable
-- string-keyed
-
-### Object.keys()
-
-Returns all properties that are:
-- own
-- enumerable
-- string-keyed
-
-### Object.values()
-
-- own
-- enumerable
-- string-keyed
-
-### Object.getOwnPropertyNames()
-
-- own
-- enumerable or non-enumerable
-- string-keyed
-
-### Object.getOwnPropertySymbols()
-
-- own
-- enumerable or non-enumerable
-- symbol-keyed
-
-## typeof values
-
-```
-undefined
-object
-boolean
-number
-bigint
-string
-symbol
-function
-```
+|                                         |       |            |        |                                                        |
+|:----------------------------------------|-------|------------|--------|--------------------------------------------------------|
+| for ... in                              |       | enumerable | string | own or inherited                                       |
+| Object.entries()                        | own   | enumerable | string |                                                        |
+| Object.keys()                           | own   | enumerable | string |                                                        |
+| Object.values()                         | own   | enumerable | string |                                                        |
+| Object.getOwnPropertyNames()            | own   |            | string | enum or non-enum                                       |
+| Object.getOwnPropertySymbols()          | own   |            | symbol | enum or non-enum                                       |
+| Object.assign()                         | own   | enumerable |        | string or symbol                                       |
+|:----------------------------------------|-------|------------|--------|--------------------------------------------------------|
+| Object.hasOwn()                         | own   |            |        | string or symbol, enum or non-enum                     |
+| Object.prototype.hasOwnProperty()       | own   |            |        | string or symbol, enum or non-enum                     |
+| Object.prototype.propertyIsEnumerable() | own   | enumerable |        | string or symbol                                       |
+| in                                      |       |            |        | string or symbol, own or inherited, (enum or non-enum) |
+| delete                                  | (own) |            |        |                                                        |
