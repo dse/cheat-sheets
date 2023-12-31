@@ -99,8 +99,6 @@ what you're using them for.
             { $sort: { count: -1 } },       // decreasing order of count
         ];
         coll.aggregate(pipeline);
-    
-    
 
 ## Types of Objects
 
