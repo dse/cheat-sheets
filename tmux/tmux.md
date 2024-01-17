@@ -27,22 +27,19 @@ Space           Arrange the current window in the next preset layout.
 ### Panes
 
 ```
-C-o             Rotate the panes in the current window forwards.
-!               Break the current pane out of the window.
-"               Split the current pane into two, top and bottom.
-%               Split the current pane into two, left and right.
-;               Move to the previously active pane.
-o               Select the next pane in the current window.
-q               Briefly display pane indexes.
-m               Mark the current pane (see select-pane -m).
-M               Clear the marked pane.
-x               Kill the current pane.
-z               Toggle zoom state of the current pane.
-{               Swap the current pane with the previous pane.
-}               Swap the current pane with the next pane.
-Left, Right     Change to the pane above, below, to the left, or to the right of the current pane.
+C-o, M-o        ROTATE the panes in the current window forwards/backwards.
+", %            SPLIT the current pane into two, " top and bottom, % left and right
+!               BREAK the current pane out of the window.
+;               MOVE to the previously active pane.
+o               Select the NEXT PANE in the current window.
+q               Briefly display pane INDEXES.
+m               MARK the current pane (see select-pane -m).
+M               CLEAR the marked pane.
+x               KILL the current pane.
+z               Toggle ZOOM state of the current pane.
+{ }             SWAP the current pane with the { previous, } next pane.
+Left, Right     CHANGE to the pane above, below, to the left, or to the right of the current pane.
 M-1 to M-5      Arrange panes in one of the five preset layouts: even-horizontal, even-vertical, main-horizontal, main-vertical, or tiled.
-M-o             Rotate the panes in the current window backwards.
 C-Up/Dn/Lt/Rt   Resize the current pane in steps of one cell.
 M-Up/Dn/Lt/Rt   Resize the current pane in steps of five cells.
 ```
