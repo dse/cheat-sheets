@@ -34,6 +34,7 @@
                      space-between;             /* |[X]      [X]      [X]| */
                      space-around;              /* |  [X]    [X]    [X]  | */
                      space-evenly;              /* |   [X]   [X]   [X]   | */
+                     stretch;                   /* |[XXXXX][XXXXX][XXXXX]| */
 
     /* alignment along cross axis; align-self on child overrides */
     align-items: flex-start;
