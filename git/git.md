@@ -120,6 +120,13 @@ lol.
 
 ## Mirroring a Repository
 
+-   best instrns
+
+        git clone --mirror <old-remote> <temp-dir>
+        cd <temp-dir>
+        git remote add new <new-remote>
+        git push --mirror new
+
 -   don't remember whence, probably atlassian instructions
 
         git clone --mirror <old-remote> <dir>
@@ -132,6 +139,7 @@ lol.
 -   https://docs.github.com/en/repositories/creating-and-managing-repositories/duplicating-a-repository#mirroring-a-repository
 
         git clone --bare <old-remote>
+        # --mirror does more.
         cd <dir>.git
         git checkout master
         git push --mirror <new-remote>

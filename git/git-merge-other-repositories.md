@@ -8,9 +8,12 @@ and put it into `current` in the form of a subdirectory within
 
     `git-filter-repo` is a tool that will make things a lot easier.
 
--   `git clone <old-URL> old-TEMP`
+-   `git clone [-b <branch>] <old-URL> old-TEMP`
 
     A temporary clone you won't push.
+    
+    You specify a `<branch>` if the content you want to copy is in
+    that branch.
 
 -   `git clone <current-URL> current` but only if it's not already
     there.  You might want to use a fresh clone for this, anyway.
