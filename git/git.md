@@ -169,3 +169,99 @@ lol.
     codecommit::us-east-1://<repos>
     codecommit::us-east-1://<profile>@<repos>
 
+## Cool Things in Git
+
+https://www.youtube.com/watch?v=aolI_Rz0ZqY
+
+### Old Shit
+
+    git blame
+    
+    git blame -L 15,26:<pathname>           blame a "little" portion of the file
+    git log -L 15,26:<pathname>
+    git log -L :<function>:<pathname>
+    git log -L :<class>:<pathname>
+        ...
+    
+    git blame -w            ignores whitespace
+        -w -C               detect lines moved/copied
+        -w -C -C                or commit that created file
+        -w -C -C -C             or any commit
+
+    git log -S              the pickaxe
+        -S <regexp> -p      any change with that regexp in it
+    
+    git reflog              a log of references
+    
+    git diff --word-diff
+    
+    git config --global rerere.enabled true     no reason not to do this
+            REuse REcorded REsolution --- stores how conflicts get resolved
+            for when you have the same merge conflicts often
+    
+### New Shit
+
+    git branch --column
+        git config --global column.ui auto
+    
+    git config --global branch.sort -committerdate
+        (list branches in order of which ones have last commit first)
+        
+    git column --mode=column --padding=5
+        (for anything)
+        
+    git push --force-with-lease
+        a safer `git push --force`
+    
+        does a git fetch
+        checks if reference stays the same
+        then pushes
+    
+    signing commits with ssh (which has a signing feature now)
+    (so you can use instead of gpg)
+    
+    git push --signed
+        you can sign your pushes (kernel.org supports it)
+        
+    git maintenance start
+        # adds a cron job to do hourly maintenance tasks
+        # makes your shit faster
+    
+### bigrepo/monorepo stuff
+
+    windows added a bunch of stuff
+    -   vfs for git
+    -   scalar
+    -   git
+    prefetching
+    commit-graph
+    -   for large repositories, makes git log --graph faster
+        -   git config --global fetch.writeCommitGraph true
+    -   filesystem monitor
+        -   git config core.fsmonitor true
+            -   watch for inode events
+        -   git config core.untrackedcache true
+            -   makes git status operations fast
+    -   partial cloning
+        -   git clone --filter=blob:none
+            -   git will get as needed
+        -   git clone --filter=tree:0
+            -   not useful except for ci stuff
+        -   blame becomes much slower
+    -   multipack indexes, reachability bitmaps, geometric repacking
+    -   github.blog/2021-04-09
+    
+    sparse-checkout
+    -   give me only these three directories
+
+### new shit github
+
+    -   allowed merge types
+        -   you can decide to allow/disallow squash merging, base merging, merge commits
+    -   auto merge
+        -   merge if passes CI
+    -   merge queue
+    -   linear history
+    -   require signed commits
+    
+    
