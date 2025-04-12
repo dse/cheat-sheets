@@ -11,12 +11,16 @@
 |:---------------|:---------------|:--------------------------------------|
 | `.`            |                | any character except newline          |
 |                |                | \  if `/m`, also matches newline      |
+| `\A`, `\z`     |                | only at beginning or end of string    |
 | `\|`           | `\|`           | alternation                           |
 | `(...)`        | `(...)`        | capturing group                       |
-| `(?:...)`      | `(?:...)`      | non-capturing group                   |
+| `\1` ... `\9`  | `\1` ... `\9`  | backreference                         |
 | `(?<name>...)` | `(?<name>...)` | named group                           |
+| `\k<name>`     | `\k<name>`     | named backreference                   |
+| `(?:...)`      | `(?:...)`      | non-capturing group                   |
 | `\000`...      | `\000`...      | octal                                 |
 | `\x00`...      | `\x00`...      | hexadecimal                           |
+|                | `\u0000`       | "                                     |
 | `\x{...}`      | `\u{...}`      | "                                     |
 | `[abc]`        | `[abc]`        | character class                       |
 | `[a-z]`        | `[a-z]`        | character range                       |
