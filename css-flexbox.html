@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+        <title>Page Title</title>
+        <style>
+            body {
+                font-size: 12px;
+            }
+            .container {
+                max-width: 768px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            *, *::before, *::after {
+                box-sizing: border-box;
+            }
+            .flex1 {
+                display: flex;
+                flex-flow: row wrap;
+                width: 100%;
+                margin-bottom: 1rem;
+                border: 0.5rem solid #cccccc;
+                height: 60vw;
+            }
+            .flex1__child {
+                border-width: 0.5rem;
+                border-style: solid;
+                padding: 0.5rem;
+                overflow: hidden;
+                flex-grow: 0;
+                flex-shrink: 0;
+            }
+            .flex1__child--1 { flex-basis: 12vw; border-color: #ccccff; background-color: #ffffcc; }
+            .flex1__child--2 { flex-basis: 15vw; border-color: #ccffcc; background-color: #ffccff; }
+            .flex1__child--3 { flex-basis: 18vw; border-color: #ffcccc; background-color: #ccffff; }
+            .flex1__child--4 { flex-basis: 15vw; border-color: #ccccff; background-color: #ffffcc; }
+            .flex1__child--5 { flex-basis: 18vw; border-color: #ccffcc; background-color: #ffccff; }
+            .flex1__child--6 { flex-basis: 21vw; border-color: #ffcccc; background-color: #ccffff; }
+            .flex1__child--7 { flex-basis: 12vw; border-color: #ccccff; background-color: #ffffcc; }
+            .flex1__child--8 { flex-basis: 15vw; border-color: #ccffcc; background-color: #ffccff; }
+            .flex1__child--9 { flex-basis: 18vw; border-color: #ffcccc; background-color: #ccffff; }
+            .label {
+                display: block;
+                margin-bottom: 0.5rem;
+            }
+        </style>
+    </head>
+    <body>
+
+        <div id="flex1" class="flex1">
+            <div class="flex1__child flex1__child--1">
+                Lorem ipsum dolor sit amet, consectetur adipiscing
+                elit. Maecenas sed est non mi condimentum pharetra a
+                in odio. Sed ac ipsum purus.
+            </div>
+            <div class="flex1__child flex1__child--2">
+                Lorem ipsum dolor sit amet, consectetur adipiscing
+                elit. Maecenas sed est non mi condimentum pharetra a
+                in odio. Sed ac ipsum purus.
+            </div>
+            <div class="flex1__child flex1__child--3">
+                Lorem ipsum dolor sit amet, consectetur adipiscing
+                elit. Maecenas sed est non mi condimentum pharetra a
+                in odio. Sed ac ipsum purus.
+            </div>
+            <div class="flex1__child flex1__child--4">
+                Lorem ipsum dolor sit amet, consectetur adipiscing
+                elit. Maecenas sed est non mi condimentum pharetra a
+                in odio. Sed ac ipsum purus.
+            </div>
+            <div class="flex1__child flex1__child--5">
+                Lorem ipsum dolor sit amet, consectetur adipiscing
+                elit. Maecenas sed est non mi condimentum pharetra a
+                in odio. Sed ac ipsum purus.
+            </div>
+            <div class="flex1__child flex1__child--6">
+                Lorem ipsum dolor sit amet, consectetur adipiscing
+                elit. Maecenas sed est non mi condimentum pharetra a
+                in odio. Sed ac ipsum purus.
+            </div>
+            <div class="flex1__child flex1__child--7">
+                Lorem ipsum dolor sit amet, consectetur adipiscing
+                elit. Maecenas sed est non mi condimentum pharetra a
+                in odio. Sed ac ipsum purus.
+            </div>
+            <div class="flex1__child flex1__child--8">
+                Lorem ipsum dolor sit amet, consectetur adipiscing
+                elit. Maecenas sed est non mi condimentum pharetra a
+                in odio. Sed ac ipsum purus.
+            </div>
+            <div class="flex1__child flex1__child--9">
+                Lorem ipsum dolor sit amet, consectetur adipiscing
+                elit. Maecenas sed est non mi condimentum pharetra a
+                in odio. Sed ac ipsum purus.
+            </div>
+        </div>
+
+        <label class="label">
+            align-content:
+            <select data-css="alignContent" id="align-content" name="align-content">
+                <option value="">default</option>
+                <option>start</option>
+                <option>end</option>
+                <option>flex-start</option>
+                <option>flex-end</option>
+                <option>center</option>
+                <option>normal</option>
+                <option>baseline</option>
+                <option>first-baseline</option>
+                <option>last-baseline</option>
+                <option>space-between</option>
+                <option>space-around</option>
+                <option>space-evenly</option>
+                <option>stretch</option>
+                <option>safe</option>
+                <option>unsafe</option>
+            </select>
+        </label>
+        <label class="label">
+            justify-content:
+            <select data-css="justifyContent" id="justify-content" name="justify-content">
+                <option value="">default</option>
+                <option>start</option>
+                <option>end</option>
+                <option>flex-start</option>
+                <option>flex-end</option>
+                <option>center</option>
+                <option>normal</option>
+                <option>space-between</option>
+                <option>space-around</option>
+                <option>space-evenly</option>
+                <option>stretch</option>
+                <option>safe</option>
+                <option>unsafe</option>
+                <option>left</option>
+                <option>right</option>
+            </select>
+        </label>
+        <label class="label">
+            align-items:
+            <select data-css="alignItems" id="align-items" name="align-items">
+                <option value="">default</option>
+                <option>start</option>
+                <option>end</option>
+                <option>flex-start</option>
+                <option>flex-end</option>
+                <option>center</option>
+                <option>normal</option>
+                <option>space-between</option>
+                <option>space-around</option>
+                <option>space-evenly</option>
+                <option>stretch</option>
+                <option>safe</option>
+                <option>unsafe</option>
+                <option>left</option>
+                <option>right</option>
+            </select>
+        </label>
+        <script>
+            const box = document.getElementById('flex1');
+            console.log(box);
+            const dropdowns = document.querySelectorAll('[data-css]');
+            console.log(dropdowns);
+            dropdowns.forEach(function (dropdown) {
+                function update() {
+                    const propName = dropdown.getAttribute('data-css');
+                    const propValue = dropdown.options[dropdown.selectedIndex].value;
+                    console.log(`box.style.${propName} = ${propValue}`);
+                    box.style[propName] = propValue;
+                    console.log(box.style);
+                }
+                update();
+                dropdown.addEventListener('change', update);
+            });
+        </script>
+
+    </body>
+</html>

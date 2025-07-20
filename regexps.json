@@ -1,0 +1,25 @@
+{
+    "escape the next character": {
+        "default": "\\"
+    },
+    "match the beginning of the string": {
+        "default": "^"
+    },
+    "match the beginning of the line if the /m flag is in effect": {
+        "default": "^"
+    },
+    "bracketed character class": {
+        "default": "[...]"
+    },
+    "negated bracketed character class": {
+        "default": "[^...]"
+    },
+    "alternation": {
+        "default": "|"
+    },
+    "grouping": {
+        "default": "(...)"
+    },
+    "match the preceding element 0 or more times": {
+    },
+}

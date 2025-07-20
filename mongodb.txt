@@ -1,0 +1,103 @@
+EXPRESSION OPERATORS
+https://www.mongodb.com/docs/manual/crud/
+https://www.mongodb.com/docs/manual/tutorial/query-documents/#std-label-read-operations-query-argument
+    find(QUERY, PROJECTION, OPTIONS)
+        all documents: find() or find({})
+    EQUALITY QUERIES:
+        find({ field: value, ... }
+    QUERIES USING QUERY OPERATORS:
+        find({ field: { operator: value }, ... }
+
+THESE ARE QUERY EXPRESSIONS OR OPERATOR EXPRESSIONS
+
+    IMPLICIT EQUALITY
+        { field: value }
+    QUERY OPERATORS
+        { field: { $eq: value } }
+                   $gt, $lt
+                   $gte, $lte
+                   $ne
+        { field: { $in: [value1, value2, ...] } }
+                   $nin
+    NESTED FIELDS
+        { name: { name: value } }
+        { 'name.name': value }
+    IMPLICIT AND
+        { field: value, field: value, ... }
+    OR CONDITIONS
+        { $or: [ { status: 'A',
+                   qty: { $lt: 30 } } ] }
+    REGULAR EXPRESSIONS
+        { item: /^p/ }
+        { item: { $regex: '^p' } }
+    USE AGGREGATION EXPRESSIONS INSTEAD
+        { $expr: { AGGREGATION-EXPRESSION } }
+
+    COMPARISON QUERY OPERATORS
+        { FIELD: { $eq: VALUE } }
+        { FIELD: { $ne: VALUE } }
+        { FIELD: { $lt: VALUE } }
+        { FIELD: { $gt: VALUE } }
+        { FIELD: { $lte: VALUE } }
+        { FIELD: { $gte: VALUE } }
+        { FIELD: { $in: [VALUE, VALUE, ...] } }
+        { FIELD: { $nin: [VALUE, VALUE, ...] } }
+    LOGICAL QUERY OPERATORS
+        { $and: [ { FIELD: VALUE }, { QUERY-EXPR }, ... ] }
+        { $or:  [ { FIELD: VALUE }, { QUERY-EXPR }, ... ] }
+        { $nor: [ { FIELD: VALUE }, { QUERY-EXPR }, ... ] }
+        { $not: { QUERY-EXPR } }
+    ELEMENT QUERY OPERATORS
+        { FIELD: { $exists: BOOLEAN } }
+        { FIELD: { $type: BSON-TYPE } }
+            undefined, null
+            bool
+            int, long               // 32-bit, 64-bit
+            decimal, double         // BSON Decimal128, 64-bit signed floatpt
+            string
+            object
+            array
+            objectId
+            binData
+            date, timestamp
+            regex
+            ...
+    EVALUATION QUERY OPERATORS
+        { $expr: { AGGREGATION-EXPRESSION } }
+        $jsonSchema
+        { FIELD: { $mod: [ DIVISOR, REMAINDER ] } }        is REMAINDER modulo DIVISOR
+        { FIELD: { $regex: /pattern/, 'imxs' } }
+        { FIELD: { $regex: 'pattern' } }
+        { FIELD: { $text: { ... } }
+        { FIELD: { $where: 'JAVASCRIPT-EXPR' } }
+        { FIELD: { $where: <function> } }
+
+
+
+
+
+
+
+
+
+
+
+
+
+    { $expr: { $and: [ { EXPR1 }, { EXPR2 }, ... ] } }
+               $or
+    { $expr: { $not: { OPER-EXPR } } }
+EMBEDDED FIELDS
+    { "name1.name2": value }
+    { "name1.name2": { $eq: value } }
+
+
+AGGREGATION PIPELINE STAGES
+
+AGGREGATION PIPELINE OPERATORS
+
+
+
+REFERENCES
+    QUERY AND PROJECTION OPERATORS
+        https://www.mongodb.com/docs/manual/reference/operator/query/
